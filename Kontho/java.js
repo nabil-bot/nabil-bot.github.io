@@ -14,6 +14,29 @@ window.addEventListener("load", function() {
     }, 50); 
   });
 
+// Get the required elements
+const planOptions = document.querySelectorAll('input[name="select"]');
+const quantityInput = document.getElementById('quantity');
+const cancellationInput = document.getElementById('cancellation');
+
+// Add event listeners for plan options and quantity input
+planOptions.forEach((option) => {
+  option.addEventListener('change', calculateCancellation);
+});
+
+quantityInput.addEventListener('input', calculateCancellation);
+
+// Calculate the cancellation value based on the selected plan and quantity
+function calculateCancellation() {
+  const selectedPlan = document.querySelector('input[name="select"]:checked').value;
+  const quantity = quantityInput.value;
+
+  const cancellation = selectedPlan * quantity;
+
+  cancellationInput.value = cancellation + " BDT";
+}
+
+
 
 
 
