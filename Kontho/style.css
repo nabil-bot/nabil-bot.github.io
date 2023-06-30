@@ -87,8 +87,8 @@ nav a {
 }
 
 .description {
-	display: flex;
-	flex-direction: column;
+	/*display: flex;
+	flex-direction: column;*/
 }
 
 .description h1 {
@@ -250,7 +250,7 @@ div.table tr th:nth-child(3) {
 }
 .instructionpara{
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 .binod img {
@@ -420,3 +420,4 @@ input[type="radio"] {
 #option-3:checked:checked ~ .option-3 span {
   color: #fff;
 }
+
