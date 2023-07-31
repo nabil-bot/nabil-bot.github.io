@@ -248,6 +248,11 @@ div.table tr th:nth-child(3) {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
+.whatTodo{
+	padding-top: 35px;
+	padding-bottom: 50px;
+}
 .instructionpara{
   padding-top: 25px;
   padding-bottom: 25px;
