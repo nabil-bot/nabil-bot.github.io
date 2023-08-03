@@ -157,7 +157,7 @@ section h4 {
 }
 section h5 {
 	font-size: 18px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 }
 
 
@@ -259,8 +259,8 @@ div.table tr th:nth-child(3) {
 }
 
 .binod img {
-	padding-top: 15px;
-	width: 85px;
+	padding-top: 0px;
+	width: 180px;
 }
 
 
