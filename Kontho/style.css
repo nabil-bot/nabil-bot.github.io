@@ -426,3 +426,62 @@ input[type="radio"] {
   color: #fff;
 }
 
+
+
+
+
+
+
+
+/* Style the footer */
+footer {
+  background-color: #00aeff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Style social icons */
+.social-icons {
+  margin-bottom: 10px;
+}
+/* Facebook */
+.social-icons a.facebook {
+  color: #1877f2; /* Official Facebook color */
+}
+
+/* Youtube */
+.social-icons a.youtube {
+  color: #ff0000; /* Official YouTube color */
+}
+
+/* Instagram */
+.social-icons a.instagram {
+  color: #e4405f; /* Official Instagram color */
+}
+
+/* Adjust other social icons as needed */
+.social-icons a {
+  color: white;
+  font-size: 26px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #6db6ff;
+}
+
+/* Style copyright text */
+.footer-content .copyright {
+  font-size: 14px;
+}
+
+/* Clearfix for footer content */
+.footer-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
