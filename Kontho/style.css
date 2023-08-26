@@ -16,15 +16,15 @@ body {
 
 
 nav {
-	/* position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
-	justify-content: space-between;
-  	align-items: center; */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  justify-content: space-between;
+    align-items: center; */
 
   justify-content: space-between;
   align-items: center;
@@ -42,29 +42,29 @@ nav {
   }
   
 nav img {
-	position: fixed;
-	height: 55px;
-	width: 55px;
-	margin-right: 10px;
-	border-radius: 50%;
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  margin-right: 10px;
+  border-radius: 50%;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
-	list-style: none;
-	display: flex;
-  	justify-content: flex-end;
+  list-style: none;
+  display: flex;
+    justify-content: flex-end;
 }
 
 nav li {
-	margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .logo {
@@ -122,7 +122,7 @@ nav a {
 }
 
 section {
-	padding: 35px;
+	padding: 30px;
 }
 
 
@@ -493,3 +493,88 @@ footer {
   clear: both;
 }
 
+
+
+
+
+
+
+
+/* Style the submenu indicator */
+.has-submenu > a::after {
+  content: '▼'; /* You can use an arrow icon or another symbol */
+  margin-left: 8px;
+}
+
+/* Style the submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgb(133, 216, 255);
+  box-shadow: 0 3px 5px rgba(16, 15, 15, 0.1);
+  width: 75px; /* Set minimum width to 100% */
+  }
+
+/* Style the submenu text */
+.submenu a {
+  display: block;
+  padding: 3px;
+  color: white; /* Set the font color for submenu text */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change submenu text color on hover */
+.submenu a:hover {
+  color: rgb(253, 253, 253); /* Set the font color for submenu text */
+  background-color: rgb(133, 216, 255); /* Change background color on hover */
+  width: 75px; /* Set minimum width to 100% */
+}
+
+/* Show submenu on hover */
+li:hover .submenu {
+  display: block;
+  }
+
+  
+/* Change main menu text color on hover */
+.main-menu li:hover a {
+  color: rgb(13, 1, 1); /* Set the font color for submenu text */
+  transition: color 0.3s; /* Add transition for smooth hover effect */
+}
+
+/* Add styles for other main menu items */
+
+/* Style social icons in the header */
+.main-menu li a.facebook {
+  color: #1877f2; /* Official Facebook color */
+  transition: color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.main-menu li a.youtube {
+  color: #ff0000; /* Official YouTube color */
+  transition: color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.main-menu li a.instagram {
+  color: #e4405f; /* Official Instagram color */
+  transition: color 0.3s; /* Add transition for smooth hover effect */
+}
+
+/* Apply hover effect to social icons */
+.main-menu li a.facebook:hover,
+.main-menu li a.youtube:hover,
+.main-menu li a.instagram:hover {
+    color: #6db6ff; /* Change color on hover */
+}
+
+
+/* Apply hover effect to tutorial section iframes */
+#tutorial iframe {
+  width: 560px;
+  height: 315px;
+  transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+#tutorial iframe:hover {
+  transform: scale(1.04); /* Increase size on hover */
+}
