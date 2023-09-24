@@ -117,8 +117,26 @@ nav a {
   text-align: center;
 }
 
+.readMe-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: gray;
+  background-color: white;
+  border-radius: 5px;
+  border:none;
+  text-decoration: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease;
+  width: 175px;
+  text-align: center;
+  cursor: pointer;
+}
+
 .download-btn:hover {
 	background-color: #3e8e41;
+  font-size: 18px;
 }
 
 section {

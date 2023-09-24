@@ -1,3 +1,15 @@
+
+document.getElementById('readMeButton').addEventListener('click', function() {
+    // Define the file path (assuming "ReadMe.txt" is in the same directory)
+    var filePath = 'ReadMe.txt';
+
+    // Open the file in a new tab/window
+    window.open(filePath, '_blank');
+});
+
+
+
+
 window.addEventListener("load", function() {
     const text = document.querySelector("#typing-text");
     const originalText = text.innerHTML; 
