@@ -7,3 +7,10 @@ This was my school project that I began working on during the pandemic in 2020. 
 🔹Nms Kontho has been 🚩flagged by antivirus software due to specific functionalities it incorporates.I am working on obtaining a 📑code signing certificate.🎀
 🔹If you come across any bugs🐛 or issues, please report them on the Nms Kontho Facebook page.🔗 https://www.facebook.com/profile.php?id=100093403287567 😇
 
+🔵FAQ
+🔷Why do I have to pay for the Access Plus edition❓
+💠Because Google Cloud API is not free‼
+
+🔷Why is the website link like this❓
+💠The website link appears this way because it's my personal GitHub repository, and this isn't a commercial application.
+
