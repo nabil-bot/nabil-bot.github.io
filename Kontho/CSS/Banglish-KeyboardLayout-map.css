@@ -1,0 +1,598 @@
+:root {
+  --text-color: #fff;
+  --bg-color: #1b1f24;
+  --second-bg-color: #22282f;
+  --main-color: #00aeff;
+  --other-color: #C5D9F0;
+  --brdr-clr: rgb(0, 0, 0);
+  --Case-Sensetive: rgb(0, 162, 255);
+  --example-clr: #12FF12;
+
+  --h1-font-size: 40px;
+  --h2-font-Eng: 32px;
+  --h2-font-Ban: 32px;
+  --h4-font-size: 25px;
+  --h5-font-size: 20px;
+  --font-ban-p: 22px;
+  --font-eng-p: 21px;
+  --button-font: 14px:
+}
+
+
+
+
+.konthobtn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(3, 1, 1);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5% 5% / 50% 50%;
+  box-shadow: 0px 8px 10px 10px rgba(94, 93, 93, 0.3);
+  padding: 6px 8px;
+  font-size: var(--btn-font-size);
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 1s;
+  margin: 20px auto;
+
+}
+
+.konthobtn2:hover {
+  border: 1px solid #51ff00;
+  background: #36d8f4;
+  color: var(--text-color);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=35, Direction=0, Color=#36D8F4)";
+  -moz-box-shadow: 0 2px 35px 15px rgba(54,216,244,0.8);
+  -webkit-box-shadow: 0 2px 35px 15px rgba(54,216,244,0.8);
+  box-shadow: 0 2px 35px 15px rgba(54,216,244,0.8);
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=35, Direction=135, Color=#36D8F4); 
+}
+
+.banglishlayout {
+  width: 100%;
+  margin: -40px auto -35px auto;
+  background: linear-gradient(rgb(1, 102, 133, .8) 50%, rgb(1, 61, 80, .8) 100%);
+  align-items: center;
+  align-content: center;
+  z-index: -1;
+}
+
+.banglishlayout .row{
+  font-size: var(--font-eng-p);
+  font-family: 'Tiro Bangla', serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.banglishlayout .row .row1 p{
+  padding: 0 20px;
+  background: #365F91;
+  color: var(--text-color);
+}
+
+.banglishlayout .row .row2 p{
+  background: #234060;
+  color: var(--text-color);
+  margin: 5px auto;
+}
+
+.banglishlayout .row .pdfdownload p{
+  padding: 0 30px;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+.banglishlayout .banglishhead {
+  width: 90%;
+  display: flex;
+  padding: 30px 0;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banglishlayout .banglishhead .headleft {
+  margin: 0;
+}
+
+.banglishlayout .banglishhead .headleft .konthologo {
+  padding-top: 20px;
+  text-align: left;
+  height: 70px;
+  width: 70px;
+  transition: 1s;
+}
+
+.banglishlayout .banglishhead .headleft h2 {
+  color: var(--other-color);
+  font-family: 'Tiro Bangla', serif;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: var(--h2-font-Eng);
+  padding-top: 20px;
+  padding-left: 40px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+
+
+.banglishlayout .banglishhead .headright {
+  right: 0;
+}
+
+
+.banglishlayout .banglishhead .headright ul li {
+  font-family: 'Tiro Bangla', serif;
+  font-size: var(--font-eng-p);
+  text-align: left;
+  font-weight: 600;
+  color: var(--other-color);
+  line-height: 1.7;
+  list-style: inside;
+
+}
+
+.banglishlayout .banglishhead .headright ul li span {
+  color: var(--Case-Sensetive);
+}
+
+
+.banglishlayout .banglishhead .headright p {
+  font-family: 'Tiro Bangla', serif;
+  font-size: var(--font-eng-p);
+  text-align: left;
+  font-weight: 500;
+  color: var(--other-color);
+  line-height: 1.7;
+}
+
+.banglishlayout .consonantTable{
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.banglishlayout .consonantTable table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background: linear-gradient(rgb(1, 102, 133) 0%, rgb(2, 89, 116) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=50, Direction=0, Color=#A8E5FF)";
+  -moz-box-shadow: -3px 0 50px 4px rgba(168,229,255,0.7);
+  -webkit-box-shadow: -3px 0 50px 4px rgba(168,229,255,0.7);
+  box-shadow: -3px 0 50px 4px rgba(168,229,255,0.7);
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=50, Direction=135, Color=#A8E5FF); 
+}
+
+.banglishlayout .consonantTable table .ban {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-ban-p);
+  font-family: 'Tiro Bangla', serif;
+  /* width: 20px; */
+  border: 1px solid var(--brdr-clr);
+  /* line-height: 25px; */
+  text-align: center;
+  padding: 10px 5px;
+  text-wrap: nowrap;
+}
+
+.banglishlayout .consonantTable table .eng {
+  color: var(--text-color);
+  font-family: 'Tiro Bangla', serif;
+  text-decoration: none;
+  font-size: var(--font-eng-p);
+  text-align: left;
+  /* width: 20px; */
+  border: 1px solid var(--brdr-clr);
+  /* line-height: 25px; */
+  padding: 10px 5px;
+  text-wrap: nowrap;
+}
+
+.banglishlayout .consonantTable table span{
+  color: var(--Case-Sensetive);
+}
+
+.banglishlayout .consonantTable table img{
+  height: 25px;
+  width: 20px;
+}
+
+
+
+
+
+
+.banglishlayout .jointCharTable{
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.banglishlayout .jointCharTable .row3{
+  color: var(--example-clr);
+  text-align: right;
+  font-size: var(--font-eng-p);
+  padding-bottom: 10px;
+}
+.banglishlayout .jointCharTable .row3 .box{
+  background: var(--example-clr);
+}
+
+.banglishlayout .jointCharTable table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  border: 1px solid var(--brdr-clr);
+  background: linear-gradient(rgb(1, 102, 133) 0%, rgb(2, 89, 116) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=50, Direction=0, Color=#A8E5FF)";
+  -moz-box-shadow: -3px 0 50px 4px rgba(168,229,255,0.7);
+  -webkit-box-shadow: -3px 0 50px 4px rgba(168,229,255,0.7);
+  box-shadow: -3px 0 50px 4px rgba(168,229,255,0.7);
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=50, Direction=135, Color=#A8E5FF); 
+}
+
+
+.banglishlayout .jointCharTable table .ban {
+  color: var(--text-color);
+  font-family: 'Tiro Bangla', serif;
+  text-decoration: none;
+  font-size: var(--font-ban-p);
+  /* width: 20px; */
+  border: 1px solid var(--brdr-clr);
+  text-align: left;
+  padding: 10px 5px;
+  text-wrap: nowrap;
+}
+
+.banglishlayout .jointCharTable table .eng {
+  color: var(--text-color);
+  font-family: 'Tiro Bangla', serif;
+  text-decoration: none;
+  font-size: var(--font-eng-p);
+  text-align: left;
+  /* width: 20px; */
+  border: 1px solid var(--brdr-clr);
+  padding: 10px 5px;
+  text-wrap: nowrap;
+}
+
+.banglishlayout .jointCharTable table span{
+  color: var(--example-clr);
+}
+
+.banglishlayout .jointCharTable table img{
+  height: 25px;
+  width: 20px;
+}
+
+
+
+@media screen and (max-width: 1220px) {
+  :root {
+    --h2-font-Eng: 26px;
+    --h2-font-Ban: 26px;
+    --font-ban-p: 18px;
+    --font-eng-p: 18px;
+    --button-font: 12px:
+  }
+  .banglishlayout {
+    padding: 30px 0;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 868px) {
+  :root {
+    --h2-font-Eng: 22px;
+    --h2-font-Ban: 22px;
+    --font-ban-p: 16px;
+    --font-eng-p: 16px;
+    --button-font: 12px:
+  }
+
+  .banglishlayout {
+    padding: 30px 0;
+  }
+  
+  .banglishlayout .row .row1 p{
+    padding: 0 20px;
+  }
+  
+  .banglishlayout .row .row2 p{
+    padding: 0 20px;
+    margin: 5px auto;
+  }
+  .banglishlayout .consonantTable{
+    padding: 20px;
+  }
+  .banglishlayout .jointCharTable{
+    padding: 0 20px;
+  }
+
+  
+}
+
+@media screen and (min-width: 668px) and (max-width: 768px) {
+  :root {
+    --h2-font-Eng: 20px;
+    --h2-font-Ban: 20px;
+    --font-ban-p: 15px;
+    --font-eng-p: 15px;
+    --button-font: 11.5px:
+  }
+
+  .banglishlayout .row .row1 p{
+    padding: 0 20px;
+  }
+  
+  .banglishlayout .row .row2 p{
+    padding: 0 20px;
+    margin: 5px auto;
+  }
+  
+  .banglishlayout .consonantTable{
+    width: 100%;
+    padding: 15px 0;
+  }
+  .banglishlayout .consonantTable table img{
+    height: 20px;
+    width: 17px;
+  }
+  .banglishlayout .consonantTable table .ban {
+    padding: 4px;
+  }
+  
+  .banglishlayout .consonantTable table .eng {
+    padding: 4px;
+  }
+ 
+  .banglishlayout .jointCharTable{
+    width: 100%;
+    padding: 5px 0;
+  }
+  .banglishlayout .jointCharTable .row3{
+    margin-right: 20px;
+  }
+
+  .banglishlayout .jointCharTable table .ban {
+    padding: 4px;
+  }
+  
+  .banglishlayout .jointCharTable table .eng {
+    padding: 4px;
+  }
+
+
+}
+
+@media screen and (min-width: 568px) and (max-width: 668px) {
+  :root {
+    --h2-font-Eng: 16px;
+    --h2-font-Ban: 16px;
+    --font-ban-p: 12px;
+    --font-eng-p: 12px;
+    --button-font: 11.5px:
+  }
+
+    
+  .banglishlayout .banglishhead .headleft .konthologo {
+    padding-top: 15px;
+    height: 60px;
+    width: 60px;
+    transition: 1s;
+  }
+
+  .banglishlayout .banglishhead .headleft h2 {
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: left;
+  }
+
+  .banglishlayout .row .row1 p{
+    padding: 0 20px;
+  }
+  
+  .banglishlayout .row .row2 p{
+    padding: 0 20px;
+    margin: 5px auto;
+  }
+  .banglishlayout .banglishhead {
+    padding: 20px 0;
+  }
+
+  .banglishlayout .consonantTable{
+    width: 100%;
+    padding: 5px 0;
+  }
+  .banglishlayout .consonantTable table img{
+    height: 16px;
+    width: 16px;
+  }
+  .banglishlayout .consonantTable table .ban {
+    padding: 5px;
+    text-wrap: wrap;
+  }
+  
+  .banglishlayout .consonantTable table .eng {
+    padding: 5px;
+    text-wrap: wrap;
+  }
+
+  .banglishlayout .jointCharTable{
+    width: 100%;
+    padding: 5px 0;
+  }
+  .banglishlayout .jointCharTable .row3{
+    margin-right: 20px;
+  }
+
+  .banglishlayout .jointCharTable table .ban {
+    padding: 5px;
+    text-wrap: wrap;
+  }
+  
+  .banglishlayout .jointCharTable table .eng {
+    padding: 5px;
+    text-wrap: wrap;
+  }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 568px) {
+  :root {
+    --h2-font-Eng: 14px;
+    --h2-font-Ban: 14px;
+    --font-ban-p: 10px;
+    --font-eng-p: 10px;
+    --button-font: 10px:
+  }
+
+  .banglishlayout .banglishhead {
+    padding: 20px 0;
+  }
+    
+  .banglishlayout .banglishhead .headleft .konthologo {
+    padding-top: 15px;
+    height: 55px;
+    width: 55px;
+    transition: 1s;
+  }
+
+  .banglishlayout .banglishhead .headleft h2 {
+    padding-top: 20px;
+    padding-left: 25px;
+    text-align: left;
+  }
+
+  .banglishlayout .row .row1 p{
+    padding: 0 20px;
+  }
+  
+  .banglishlayout .row .row2 p{
+    padding: 0 20px;
+    margin: 5px auto;
+  }
+
+  .banglishlayout .consonantTable{
+    padding: 5px;
+  }
+  .banglishlayout .consonantTable table img{
+    height: 14px;
+    width: 14px;
+  }
+  .banglishlayout .consonantTable table .ban {
+    padding: 2px;
+    text-wrap: wrap;
+  }
+  
+  .banglishlayout .consonantTable table .eng {
+    padding: 2px;
+    text-wrap: wrap;
+  }
+
+  .banglishlayout .jointCharTable{
+    width: 100%;
+    padding: 5px 0;
+  }
+  .banglishlayout .jointCharTable .row3{
+    margin-right: 20px;
+  }
+  .banglishlayout .jointCharTable table td:nth-child(3){
+    text-wrap: wrap;
+  }
+
+  .banglishlayout .jointCharTable table .ban {
+    padding: 2px;
+    text-wrap: wrap;
+  }
+  
+  .banglishlayout .jointCharTable table .eng {
+    padding: 2px;
+    text-wrap: wrap;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  :root {
+    --h2-font-Eng: 14px;
+    --h2-font-Ban: 14px;
+    --font-ban-p: 8px;
+    --font-eng-p: 8px;
+  }
+  .banglishlayout .banglishhead {
+    padding: 20px 0;
+  }
+
+  .banglishlayout .banglishhead .headleft .konthologo {
+    padding-top: 15px;
+    height: 45px;
+    width: 45px;
+    transition: 1s;
+  }
+
+  .banglishlayout .banglishhead .headleft h2 {
+    padding-top: 20px;
+    padding-left: 25px;
+    text-align: left;
+  }
+  .banglishlayout .row .row1 p{
+    padding: 0 20px;
+  }
+  
+  .banglishlayout .row .row2 p{
+    padding: 0 20px;
+    margin: 5px auto;
+  }
+
+  .banglishlayout .consonantTable{
+    padding: 5px;
+  }
+  .banglishlayout .consonantTable table img{
+    height: 12px;
+    width: 12px;
+  }
+  .banglishlayout .consonantTable table .ban {
+    padding: 5px 1px;
+    text-wrap: wrap;
+  }
+  
+  .banglishlayout .consonantTable table .eng {
+    padding: 5px 1px;
+    text-wrap: wrap;
+  }
+
+  .banglishlayout .jointCharTable{
+    width: 100%;
+    padding: 5px 0;
+  }
+  .banglishlayout .jointCharTable table td:nth-child(3){
+    text-wrap: wrap;
+  }
+  .banglishlayout .jointCharTable .row3{
+    margin-right: 10px;
+  }
+  .banglishlayout .jointCharTable table .ban {
+    padding: 5px 1px;
+    text-wrap: wrap;
+  }
+  
+  .banglishlayout .jointCharTable table .eng {
+    padding: 5px 1px;
+    text-wrap: wrap;
+  }
+}

@@ -1,0 +1,882 @@
+@font-face {
+    font-family: "SutonnyMJ";
+    src: url("../Assets/SutonnyMJRegular.ttf");
+}
+
+/* Kontho See more, learn more etc button */
+
+:root {
+    --text-color: #fff;
+    --bg-color: #1b1f24;
+    --second-bg-color: #22282f;
+    --main-color: #00aeff;
+    --other-color: #c3cad5;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --h4-font-size: 25px;
+    --h5-font-size: 20px;
+    --font-ban-p: 25px;
+    --font-eng-p: 24px;
+    --font-size-p: 19px;
+    --btn-font-size: 16px;
+}
+
+
+.konthobtn2 {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(3, 1, 1);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5% 5% / 50% 50%;
+    box-shadow: 0px 8px 10px 10px rgba(94, 93, 93, 0.3);
+    padding: 6px 8px;
+    font-size: var(--btn-font-size);
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    margin: 20px auto;
+
+}
+
+.konthobtn2:hover {
+    border: 1px solid #51ff00;
+    background: #36d8f4;
+    color: var(--text-color);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=35, Direction=0, Color=#36D8F4)";
+    -moz-box-shadow: 0 2px 35px 15px rgba(54,216,244,0.8);
+    -webkit-box-shadow: 0 2px 35px 15px rgba(54,216,244,0.8);
+    box-shadow: 0 2px 35px 15px rgba(54,216,244,0.8);
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=35, Direction=135, Color=#36D8F4); 
+  }
+
+
+.niralalayout {
+    width: 100%;
+    margin: -40px auto -34px auto;
+    align-items: center;
+    align-content: center;
+    z-index: -1;
+    background: linear-gradient(rgb(125, 245, 209) 0%, rgb(85, 149, 231) 100%);
+}
+
+.niralalayout .niralahead {
+    width: 90%;
+    padding: 60px 10px 0 20px;
+    margin: auto;
+}
+
+.niralalayout .niralahead .konthologo {
+    text-align: left;
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+}
+
+.niralalayout .niralahead h2 {
+    color: black;
+    font-family: "Arial Black", sans-serif;
+    text-decoration: none;
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.niralalayout .niralahead .Layouttitle {
+    width: 90%;
+    display: block;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 92%;
+    padding-top: 10px;
+}
+
+
+.niralalayout .textbox {
+    width: 90%;
+    display: block;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+.niralalayout .textbox p {
+    color: black;
+    font-family: SutonnyMJ;
+    text-decoration: none;
+    font-size: var(--font-ban-p);
+}
+
+
+.niralalayout .textbox .eng {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--font-eng-p);
+}
+
+
+
+.niralalayout h2 {
+    width: 90%;
+    margin: 0 auto;
+    color: black;
+    font-family: SutonnyMJ;
+    text-decoration: none;
+    font-size: var(--h2-font-size);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+.niralalayout .table {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+}
+.niralalayout .table table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 3px solid #0059ff;
+    outline: none;
+    background: rgba(255, 255, 255, 0.747);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=29, Direction=0, Color=#081082)";
+    
+    -moz-box-shadow: 0 0 29px 15px rgba(8, 16, 130, 0.7);
+    
+    -webkit-box-shadow: 0 0 29px 15px rgba(8, 16, 130, 0.7);
+    
+    box-shadow: 0 0 29px 15px rgba(8, 16, 130, 0.7);
+    
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=29, Direction=135, Color=#081082);
+    
+}
+
+.niralalayout .table table tr {
+    align-items: center;
+    align-content: center;
+    border: 1px solid #616161;
+}
+
+.niralalayout .table table td {
+    height: 30px;
+    border-bottom: 1px solid #616161;
+}
+
+
+.niralalayout .table table .ban {
+    color: black;
+    font-family: SutonnyMJ;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: var(--font-ban-p);
+    text-align: right;
+    padding: 4px;
+    width: 50px;
+}
+
+.niralalayout .table table .equal {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--font-ban-p);
+    padding: 4px;
+    text-align: center;
+    width: 20px;
+}
+
+.niralalayout .table table .eng {
+    width: 90px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-wrap: nowrap;
+    font-size: var(--font-eng-p);
+    padding: 4px;
+    text-align: left;
+    border-right: 1px solid #616161;
+}
+
+.niralalayout .table table span {
+    font-size: var(--font-size-p)
+}
+
+
+.niralalayout .table3 {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+}
+.niralalayout .table3 table {
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    border-collapse: collapse;
+    border: 3px solid #0059ff;
+    outline: none;
+    background: rgba(255, 255, 255, 0.747);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=29, Direction=0, Color=#081082)";
+    
+    -moz-box-shadow: 0 0 29px 15px rgba(8, 16, 130, 0.7);
+    
+    -webkit-box-shadow: 0 0 29px 15px rgba(8, 16, 130, 0.7);
+    
+    box-shadow: 0 0 29px 15px rgba(8, 16, 130, 0.7);
+    
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=29, Direction=135, Color=#081082);
+    
+}
+
+.niralalayout .table3 tr {
+    align-items: center;
+    align-content: center;
+    border: 1px solid #616161;
+}
+
+.niralalayout .table3 td {
+    height: 30px;
+    border-bottom: 1px solid #616161;
+}
+
+
+.niralalayout .table3 .ban {
+    color: black;
+    font-family: SutonnyMJ;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: var(--font-ban-p);
+    width: 50px;
+    text-align: right;
+    padding: 4px;
+
+}
+
+.niralalayout .table3 .ban .unicode {
+    font-size: var(--font-size-p);
+}
+
+.niralalayout .table3 .equal {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--font-ban-p);
+    padding: 4px;
+    text-align: center;
+    width: 20px;
+}
+
+.niralalayout .table3 .eng {
+    width: 90px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-wrap: nowrap;
+    font-size: var(--font-eng-p);
+    padding: 4px;
+    text-align: left;
+    border-right: 1px solid #616161;
+}
+
+.niralalayout .table3 .eng span {
+    font-size: var(--font-eng-p);
+}
+
+.niralalayout .content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: "Edu SA Beginner", sans-serif;
+    text-decoration: none;
+    font-size: var(--font-eng-p);
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.niralalayout .content a {
+    color: black;
+    font-family: "Edu SA Beginner", sans-serif;
+    text-decoration: none;
+    font-size: var(--font-eng-p);
+}
+
+.niralalayout .info {
+    width: 90%;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: var(--font-size-p);
+    text-align: justify;
+    padding: 20px 30px 30px 20px;
+}
+
+
+
+
+@media screen and (min-width: 868px) and (max-width: 1020px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 32px;
+        --h4-font-size: 25px;
+        --h5-font-size: 20px;
+        --font-ban-p: 25px;
+        --font-eng-p: 24px;
+        --font-size-p: 16px;
+        --btn-font-size: 16px;
+    }
+    .niralalayout {
+        margin: -40px auto -34px auto;
+    }
+
+    .niralalayout .niralahead h2 {
+        padding-left: 50px;
+    }
+
+    .niralalayout .niralahead .Layouttitle {
+        width: 92%;
+        padding-top: 10px;
+    }
+
+
+    .niralalayout .textbox {
+        width: 90%;
+        padding: 15px;
+    }
+
+
+    .niralalayout h2 {
+        padding: 10px 0;
+    }
+    .niralalayout .table table td {
+        height: 30px;
+    }
+
+
+    .niralalayout .table table .ban {
+        padding: 4px;
+        width: 50px;
+    }
+
+    .niralalayout .table table .equal {
+        padding: 4px;
+        width: 20px;
+    }
+
+    .niralalayout .table table .eng {
+        width: 90px;
+        padding: 4px;
+    }
+
+    .niralalayout .table3 {
+        width: 95%;
+    }
+
+    .niralalayout .table3 td {
+        height: 30px;
+    }
+
+
+    .niralalayout .table3 .ban {
+        width: 50px;
+        padding: 3px;
+
+    }
+
+    .niralalayout .table3 .equal {
+        padding: 4px;
+         width: 20px;
+    }
+
+    .niralalayout .table3 .eng {
+        width: 90px;
+        padding: 4px;
+    }
+
+    .niralalayout .content {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .niralalayout .info {
+        margin: 25px auto;
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 868px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 30px;
+        --h4-font-size: 25px;
+        --h5-font-size: 20px;
+        --font-ban-p: 22px;
+        --font-eng-p: 18px;
+        --font-size-p: 16px;
+        --btn-font-size: 14px;
+    }
+    .niralalayout {
+        margin: -40px auto -32px auto;
+    }
+    .niralalayout .niralahead h2 {
+        padding-left: 50px;
+    }
+
+    .niralalayout .niralahead .Layouttitle {
+        width: 92%;
+        padding-top: 10px;
+    }
+
+
+    .niralalayout .textbox {
+        width: 90%;
+        padding: 15px;
+    }
+
+
+    .niralalayout h2 {
+        padding: 10px 0;
+    }
+    .niralalayout .table table td {
+        height: 30px;
+    }
+
+
+    .niralalayout .table table .ban {
+        padding: 4px;
+        width: 50px;
+    }
+
+    .niralalayout .table table .equal {
+        padding: 4px;
+        width: 20px;
+    }
+
+    .niralalayout .table table .eng {
+        width: 90px;
+        padding: 4px;
+    }
+
+    .niralalayout .table3 {
+        width: 95%;
+    }
+
+    .niralalayout .table3 td {
+        height: 0;
+    }
+
+
+    .niralalayout .table3 .ban {
+        width: 40px;
+        padding: 3px;
+
+    }
+
+    .niralalayout .table3 .equal {
+        padding: 3px;
+        width: 15px;
+    }
+
+    .niralalayout .table3 .eng {
+        width: 90px;
+        padding: 2px;
+        text-wrap: wrap;
+    }
+
+    .niralalayout .content {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .niralalayout .info {
+        margin: 20px auto;
+        padding: 0;
+    }
+
+
+
+}
+
+@media screen and (min-width: 668px) and (max-width: 768px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 28px;
+        --font-ban-p: 18px;
+        --font-eng-p: 16px;
+        --font-size-p: 15px;
+        --btn-font-size: 13px;
+    }
+    .niralalayout {
+        margin: -40px auto -24px auto;
+    }
+    .niralalayout .niralahead h2 {
+        padding-left: 50px;
+    }
+
+    .niralalayout .niralahead .Layouttitle {
+        width: 92%;
+        padding-top: 10px;
+    }
+
+
+    .niralalayout .textbox {
+        width: 90%;
+        padding: 15px;
+    }
+
+
+    .niralalayout h2 {
+        padding: 10px 0;
+    }
+    .niralalayout .table table td {
+        height: 30px;
+    }
+
+
+    .niralalayout .table table .ban {
+        padding: 4px;
+        width: 50px;
+    }
+
+    .niralalayout .table table .equal {
+        padding: 4px;
+        width: 20px;
+    }
+
+    .niralalayout .table table .eng {
+        width: 90px;
+        padding: 4px;
+    }
+
+    .niralalayout .table3 {
+        width: 95%;
+    }
+
+    .niralalayout .table3 td {
+        height: 0;
+    }
+
+
+    .niralalayout .table3 .ban {
+        width: 40px;
+        padding: 3px;
+
+    }
+
+    .niralalayout .table3 .equal {
+        padding: 3px;
+        width: 15px;
+    }
+
+    .niralalayout .table3 .eng {
+        width: 90px;
+        padding: 2px;
+        text-wrap: wrap;
+    }
+
+    .niralalayout .content {
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+
+    .niralalayout .info {
+        margin: 20px auto;
+        padding: 20px 30px 30px 20px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 568px) and (max-width: 668px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 26px;
+        --font-ban-p: 18px;
+        --font-eng-p: 15px;
+        --font-size-p: 14px;
+        --btn-font-size: 12px;
+    }
+    .niralalayout {
+        margin: -40px auto -24px auto;
+    }
+    .niralalayout .niralahead h2 {
+        padding-left: 40px;
+    }
+
+    .niralalayout .niralahead .Layouttitle {
+        width: 92%;
+        padding-top: 10px;
+    }
+
+
+    .niralalayout .textbox {
+        width: 90%;
+        padding: 15px 0;
+    }
+
+
+    .niralalayout h2 {
+        padding: 10px 0;
+    }
+    .niralalayout .table table td {
+        height: 30px;
+    }
+
+
+    .niralalayout .table table .ban {
+        padding: 4px;
+        width: 50px;
+        text-wrap: nowrap;
+    }
+
+    .niralalayout .table table .equal {
+        padding: 4px;
+        width: 20px;
+    }
+
+    .niralalayout .table table .eng {
+        width: 90px;
+        padding: 4px;
+    }
+
+    .niralalayout .table3 {
+        width: 95%;
+    }
+
+    .niralalayout .table3 td {
+        height: 0;
+    }
+
+
+    .niralalayout .table3 .ban {
+        width: 40px;
+        padding: 3px;
+
+    }
+
+    .niralalayout .table3 .equal {
+        padding: 3px;
+        width: 15px;
+    }
+
+    .niralalayout .table3 .eng {
+        width: 90px;
+        padding: 2px;
+        text-wrap: wrap;
+    }
+
+    .niralalayout .content {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .niralalayout .info {
+        margin: 20px auto;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 468px) and (max-width: 568px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 22px;
+        --font-ban-p: 17px;
+        --font-eng-p: 15px;
+        --font-size-p: 13px;
+        --btn-font-size: 12px;
+    }
+    .niralalayout {
+        margin: -40px auto -24px auto;
+    }
+    .niralalayout .niralahead h2 {
+        padding-left: 40px;
+    }
+
+    .niralalayout .niralahead .Layouttitle {
+        width: 92%;
+        padding-top: 10px;
+    }
+
+
+    .niralalayout .textbox {
+        width: 90%;
+        padding: 15px 0;
+    }
+
+
+    .niralalayout h2 {
+        padding: 10px 0;
+    }
+    .niralalayout .table table td {
+        height: 0;
+    }
+
+
+    .niralalayout .table table .ban {
+        padding: 2px;
+        width: 30px;
+        text-wrap: nowrap;
+    }
+
+    .niralalayout .table table .equal {
+        padding: 2px;
+        width: 20px;
+    }
+
+    .niralalayout .table table .eng {
+        width: 40px;
+        padding: 2px;
+    }
+
+    .niralalayout .table3 {
+        width: 95%;
+    }
+
+    .niralalayout .table3 td {
+        height: 0;
+    }
+
+
+    .niralalayout .table3 .ban {
+        width: 0;
+        padding: 3px;
+
+    }
+
+    .niralalayout .table3 .equal {
+        padding: 3px;
+        width: 0;
+    }
+
+    .niralalayout .table3 .eng {
+        width: auto;
+        padding: 2px;
+        text-wrap: wrap;
+    }
+
+
+    .niralalayout .content {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .niralalayout .info {
+        margin: 20px auto;
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width: 468px) {
+    :root {
+        --h1-font-size: 40px;
+        --h2-font-size: 22px;
+        --font-ban-p: 16px;
+        --font-eng-p: 14px;
+        --font-size-p: 13px;
+        --btn-font-size: 11px;
+    }
+    .niralalayout {
+        margin: -40px auto -24px auto;
+    }
+    .niralalayout .niralahead h2 {
+        padding-left: 40px;
+    }
+
+    .niralalayout .niralahead .Layouttitle {
+        width: 92%;
+        padding-top: 10px;
+    }
+
+
+    .niralalayout .textbox {
+        width: 90%;
+        padding: 15px 0;
+    }
+
+
+    .niralalayout h2 {
+        padding: 10px 0;
+    }
+    .niralalayout .table table td {
+        height: 0;
+    }
+
+
+    .niralalayout .table table .ban {
+        padding: 2px;
+        width: auto;
+        text-wrap: nowrap;
+    }
+
+    .niralalayout .table table .equal {
+        padding: 2px;
+        width: auto;
+    }
+
+    .niralalayout .table table .eng {
+        width: auto;
+        padding: 2px;
+        text-wrap: wrap;
+    }
+
+    .niralalayout .table3 {
+        width: 90%;
+    }
+
+    .niralalayout .table3 td {
+        height: auto;
+    }
+
+
+    .niralalayout .table3 .ban {
+        width: auto;
+        padding: 3px;
+
+    }
+
+    .niralalayout .table3 .equal {
+        padding: 2px;
+        width: auto;
+    }
+
+    .niralalayout .table3 .eng {
+        width: auto;
+        padding: 2px;
+        text-wrap: wrap;
+    }
+
+    .niralalayout .content {
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .niralalayout .info {
+        margin: 20px auto;
+        padding: 0;
+    }
+}
