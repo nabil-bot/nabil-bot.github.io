@@ -74,7 +74,7 @@ body {
 .download .kontho-logo img {
   height: 190px;
   width: 180px;
-  margin: 15px 90px;
+  margin: 15px 85px;
   border-radius: 10px;
   transition: transform 0.3s;
   align-items: center;
@@ -140,17 +140,14 @@ body {
 
 .download .kontho-logo .softwaredescription .btn-container .downloadbtn {
 
-
-
   cursor: pointer;
   padding: 10px 20px;
   margin-top: 12px;
   margin-right: 15px;
   height: 60px;
   width: 170px;
-  font-size: var(--button-font-size);
+  font-size: 12px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #4caf50;
   border-radius: 5px;
