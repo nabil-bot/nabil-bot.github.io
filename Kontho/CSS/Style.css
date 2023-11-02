@@ -80,6 +80,7 @@ body {
   align-items: center;
   justify-items: center;
   transition: 0.5s;
+  
 }
 
 .download .kontho-logo img:hover {
@@ -1554,3 +1555,14 @@ div.table tr th:nth-child(3) {
 }
 
 
+
+/* Apply hover effect to tutorial section iframes */
+#tutorial iframe {
+  width: 560px;
+  height: 315px;
+  transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+#tutorial iframe:hover {
+  transform: scale(1.04); /* Increase size on hover */
+}
