@@ -113,7 +113,7 @@ document.body.addEventListener('click', (event) => {
 // cursor animation
 
 // create instance of kinet with custom settings
-var kinet = new Kinet({
+var kinet = Kinet({
   acceleration: 0.06,
   friction: 0.20,
   names: ["x", "y"],
