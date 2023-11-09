@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   $("#variableValue").animate({
-    value: 2.48
+    value: 2.49
   }, {
     duration: 4000,
     easing: "linear",
