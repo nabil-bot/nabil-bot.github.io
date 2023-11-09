@@ -1,7 +1,8 @@
+var version = 2.5
 
 $(document).ready(function() {
   $("#variableValue").animate({
-    value: 2.49
+    value: version
   }, {
     duration: 4000,
     easing: "linear",

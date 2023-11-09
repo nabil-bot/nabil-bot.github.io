@@ -23,8 +23,8 @@
   --copyright-text-size: 16px;
   --Footer-btn-font-size: 15px;
   --Buttom-To-Top-font-size: 25px;
-}
 
+}
 
 * {
   margin: 0;
@@ -1570,16 +1570,44 @@ div.table tr th:nth-child(3) {
 
 
 
-.circle {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(to top left, #0062bE, #00A2FE);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -20px 0 0 -20px;
-  pointer-events: none;
-  mix-blend-mode: multiply;
-  z-index: 10;
+
+
+
+
+
+.loader {
+/*  background-color: var(--main-color);*/
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+/*  position: fixed;*/
+  top: 0; left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center;  
+  z-index: 100000;
+  text-align: center;
+  object-position: center;
+}
+
+.loader__element {
+  border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size)*2);
+}
+
+.loader__element:nth-child(1) {
+  animation: preloader .6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) {
+  animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.loader__element:nth-child(3) {
+  animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+@keyframes preloader {
+  100% { transform: scale(2); }
 }
