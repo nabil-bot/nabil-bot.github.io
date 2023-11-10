@@ -119,4 +119,43 @@ document.body.addEventListener('click', (event) => {
 
 
 
+function confirmAction0() {
+  document.getElementById("download-section").style.filter = "blur(10px)";
+  document.getElementById("confirm-window0").style.display = "block";
+}
+function OpenInMsStore() {
+window.open("https://www.microsoft.com/store/apps/9NZ2FZ4SJN7Z", "_blank");
+}
+function hideMSStoreConWindow (){
+document.getElementById("download-section").style.filter = "blur(0px)";
+document.getElementById("confirm-window0").style.display = "";
+}
 
+
+
+
+function confirmAction() {
+    document.getElementById("download-section").style.filter = "blur(10px)";
+    document.getElementById("confirm-window").style.display = "block";
+}
+function startInstallerDownload() {
+  window.location = 'https://github.com/nabil-bot/KonthoExes/raw/main/Kontho_Installer.zip';
+}
+function hideInstallerConWindow (){
+  document.getElementById("download-section").style.filter = "blur(0px)";
+  document.getElementById("confirm-window").style.display = "";
+}
+
+
+
+function confirmAction2() {
+  document.getElementById("download-section").style.filter = "blur(10px)";
+  document.getElementById("confirm-window2").style.display = "block";
+}
+function startPortableDownload() {
+  window.location = 'https://github.com/nabil-bot/KonthoExes/raw/main/Kontho_Portable.zip';
+}
+function hideportableConWindow (){
+document.getElementById("download-section").style.filter = "blur(0px)";
+document.getElementById("confirm-window2").style.display = "";
+}

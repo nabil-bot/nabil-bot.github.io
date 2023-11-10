@@ -1611,3 +1611,72 @@ div.table tr th:nth-child(3) {
 @keyframes preloader {
   100% { transform: scale(2); }
 }
+
+
+
+/*confirmation ===========================================>*/
+
+.confirm-window {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 45%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #12ff0a;
+  z-index: 1000;
+}
+
+.confirm-window h3 {
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.confirm-window p {
+  padding-bottom: 25px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.confirm-window a {
+  text-decoration: none;
+  color: #3498db;
+  font-size: 18px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.confirm-window a:hover {
+  color: #026fb8;
+  font-size: 16px;
+  transform: scale(1.1);
+}
+
+.confirm-window button {
+/*  float: right, bottom;*/
+  
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: #3498db;
+  color: #fff;
+
+}
+
+
+.confirm-window button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}

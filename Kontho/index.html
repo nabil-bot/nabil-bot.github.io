@@ -47,6 +47,29 @@
     <link rel="stylesheet" type="text/css" href="CSS/Activation-Style.css" />
 </head>
 
+
+<div class="confirm-window" id="confirm-window0">
+  <h3>Before installing Nms Kontho from the Microsoft Store,</h3>
+  <p><b>If you have previously installed Nms Kontho using the installer version, please ensure that there is no 'Kontho' folder in your Documents directory.</b><br><br>Additionally, please install these fonts to your system if they are not already installed.<br>💠<a href="https://github.com/nabil-bot/KonthoExes/raw/main/kalpurush.ttf">Kalpurush</a><br>💠<a href="https://github.com/nabil-bot/KonthoExes/raw/main/kalpurush%20ANSI.ttf">Kalpurush ANSI</a><br>💠<a href="https://github.com/nabil-bot/KonthoExes/raw/main/HindSiliguri-Medium.ttf">HindSiliguri-Medium</a></p>
+  <button type="button" onclick="OpenInMsStore()"><i class="fas fa-external-link-alt"></i> go to Microsoft Store</button>
+  <button type="button" onclick="hideMSStoreConWindow()">Cancel</button>
+</div>
+
+
+<div class="confirm-window" id="confirm-window">
+  <h3>Are you sure you want to download the Nms Kontho installer?</h3>
+  <p>Please note that while it is completely <b>safe</b> to use the Installer, but <b>some antivirus applications may flag it</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.<br><br>Sometimes the version available on the Microsoft Store may not be the latest one.</p>
+  <button type="button" onclick="startInstallerDownload()">Download</button>
+  <button type="button" onclick="hideInstallerConWindow()">Cancel</button>
+</div>
+
+<div class="confirm-window" id="confirm-window2">
+    <h3>Are you sure you want to download the Nms Kontho Portable?</h3>
+    <p>Please note that while it is completely <b>safe</b> to use the Portable version, but <b>some antivirus applications may flag it</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.<br><br>Sometimes the version available on the Microsoft Store may not be the latest one.</p>
+    <button type="button" onclick="startPortableDownload()">Download</button>
+    <button type="button" onclick="hideportableConWindow()">Cancel</button>
+</div>
+
 <body>
     <header>
         <div class="nav_image">
@@ -80,9 +103,13 @@
         </nav>
     </header>
 
+    <!-- confirmation ================================================================== -->
+
+    
+    <!-- /confirmation ================================================================== -->
 
   
-    <section class="download" data-aos="fade-down">
+    <section class="download" id="download-section" data-aos="fade-down">
 
     	
         <div class="typekontho">
@@ -104,12 +131,12 @@
             <div class="btn-container">
               <div data-aos="fade-up" class="aos-init aos-animate" style="margin-top: 10px;">
                 <!-- <button class="downloadbtn"><i class="fa fa-download"></i> Setup.exe</button> -->
-                
-                <a href="https://www.microsoft.com/store/apps/9NZ2FZ4SJN7Z" class="downloadbtn" title="Install Nms Kontho directly from the Microsoft App Store.">Microsoft Store</a>
+                <!-- href="https://www.microsoft.com/store/apps/9NZ2FZ4SJN7Z" -->
+                <a onclick="confirmAction0()" class="downloadbtn" title="Install Nms Kontho directly from the Microsoft App Store.">Microsoft Store</a>
                 <!-- title="Some antivirus may flag the Installer version." -->
-                <a href="https://github.com/nabil-bot/KonthoExes/raw/main/Kontho_Installer.zip" class="downloadbtn" title="Some antivirus may flag the Installer version."><i class="fa fa-download"></i> Installer</a>
+                <a  onclick="confirmAction()" class="downloadbtn"  title="Some antivirus may flag the Installer version."><i class="fa fa-download"></i> Installer</a>
                 <!-- title="Some antivirus may flag the portable version." -->
-                <a href="https://github.com/nabil-bot/KonthoExes/raw/main/Kontho_Portable.zip" class="downloadbtn" title="Some antivirus may flag the portable version."><i class="fa fa-download"></i> Portable</a>
+                <a onclick="confirmAction2()" class="downloadbtn" title="Some antivirus may flag the portable version."><i class="fa fa-download"></i> Portable</a>
                 <!-- title="Install Nms Kontho directly from the Microsoft App Store." -->
                 
               </div>
@@ -355,7 +382,7 @@
             <div class="subcriptions" data-aos="fade-up">
                 
                 <div style="margin-bottom: 30px;">
-                <p style="font-size: : 30px;">Students can purchase a lifetime serial key at a 25% discount (600 BDT) for the Home version, which is later upgradable to the Office version.</p>
+                <p style="font-size:30px;">Students can purchase a lifetime serial key at a 25% discount (600 BDT) for the Home version, which is later upgradable to the Office version.</p>
                 
                 </div>
 
