@@ -1,10 +1,10 @@
-var version = 2.55
+var version = 2.56
 
 $(document).ready(function() {
   $("#variableValue").animate({
     value: version
   }, {
-    duration: 4000,
+    duration: 4500,
     easing: "linear",
     step: function(now) {
       $(this).text(now.toFixed(2));
