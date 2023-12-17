@@ -1,4 +1,4 @@
-var version = 3.21
+var version = 3.3
 
 $(document).ready(function() {
   $("#variableValue").animate({
@@ -159,3 +159,6 @@ function hideportableConWindow (){
 document.getElementById("download-section").style.filter = "blur(0px)";
 document.getElementById("confirm-window2").style.display = "";
 }
+
+
+
