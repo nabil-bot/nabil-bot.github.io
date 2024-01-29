@@ -1,4 +1,4 @@
-var version = 4.51
+var version = 4.52
 
 $(document).ready(function() {
   $("#variableValue").animate({
