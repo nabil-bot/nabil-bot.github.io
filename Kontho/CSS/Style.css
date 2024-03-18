@@ -71,7 +71,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=11, Direction=135, Color=#000000);
 }
 
-.download .kontho-logo img {
+/*.download .kontho-logo img {
   height: 190px;
   width: 180px;
   margin: 15px 85px;
@@ -81,7 +81,7 @@ body {
   justify-items: center;
   transition: 0.5s;
   
-}
+}*/
 
 .download .kontho-logo img:hover {
   transform: scale(1.05);
@@ -95,6 +95,11 @@ body {
   border: 1px;
   border-color: var(--border-clr);
   transition: 0.5s;
+}
+
+
+.softwaredescription{
+  min-width: 390px;
 }
 
 
@@ -142,12 +147,12 @@ body {
 .download .kontho-logo .softwaredescription .btn-container .downloadbtn {
 
   cursor: pointer;
-  padding: 10px 20px;
-  margin-top: 12px;
-  margin-right: 15px;
+  padding: 10px 10px;
+  margin-top: 15px;
+  margin-right: 12px;
   height: 60px;
   width: 170px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   color: #ffffff;
   background-color: #4caf50;
@@ -156,24 +161,10 @@ body {
   transition: 0.5s;
   text-align: center;
   border:none;
-
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-
-  /*display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #4caf50;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.2s ease;
-  width: 175px;
-  text-align: center;
-  border:none;*/
 }
+
+
 
 .download .kontho-logo .softwaredescription .btn-container .downloadbtn:hover{
 background-color: #3e8e41;
@@ -1529,11 +1520,17 @@ div.table tr th:nth-child(3) {
 .instructionpara{
   padding-top: 25px;
   padding-bottom: 25px;
+  display: flex;
+      flex-direction: row;
 }
 
 .binod img {
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 180px;
+
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1679,4 +1676,120 @@ div.table tr th:nth-child(3) {
 .confirm-window button:hover {
     background-color: #2980b9;
     transform: scale(1.05);
+}
+
+
+
+.number-container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.mobile-number {
+      width: 120 px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .copy-button {
+      padding: 10px;
+      border: 1px solid #007bff;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+
+/*.other-options{
+  display: flex;
+  flex-direction: row;
+}*/
+
+
+
+
+
+    .skrill-div {
+
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+    .skrill-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+    }
+    .skrill-logo {
+      width: 130px;
+      height: 130px;
+      margin-right: 10px;
+    }
+
+
+
+
+  
+.downloadbtn img {
+      vertical-align: middle;
+      margin-right: 5px;
+      width: 20px; /* Set the width of the image */
+      height: 20px; /* Set the height of the image */
+    }
+
+
+    .shopbd {
+      padding: 100px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 10px;
+}
+
+.shopbd a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.shopbd img {
+  width: 300px;
+  height: 130px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+.styled-paragraph {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  border-left: 26px solid #007bff;
+  border-right: 26px solid #007bff;
+  border-bottom: 4px solid #dbe9ff;
+  border-top: 4px solid #dbe9ff;
+
+  padding-left: 10px;
+}
+
+/* Hover Effect */
+.styled-paragraph:hover {
+  background-color: #f7f7f7;
 }

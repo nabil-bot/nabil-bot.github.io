@@ -117,6 +117,62 @@ document.body.addEventListener('click', (event) => {
 })(jQuery);
 
 
+(function ($) {
+  "use strict";
+
+  $(document).ready(function () {
+    // Initialize Tilt.js on your image
+    $(".skrill-div").tilt({
+      maxTilt: 18,
+      perspective: 1400,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      speed: 1200,
+      glare: true,
+      maxGlare: 0.3,
+      scale: 1.04,
+    });
+  });
+})(jQuery);
+
+
+(function ($) {
+  "use strict";
+
+  $(document).ready(function () {
+    // Initialize Tilt.js on your image
+    $(".shopbd").tilt({
+      maxTilt: 18,
+      perspective: 1400,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      speed: 1200,
+      glare: true,
+      maxGlare: 0.3,
+      scale: 1.04,
+    });
+  });
+})(jQuery);
+
+
+
+(function ($) {
+  "use strict";
+
+  $(document).ready(function () {
+    // Initialize Tilt.js on your image
+    $(".binod").tilt({
+      maxTilt: 18,
+      perspective: 1400,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      speed: 1200,
+      glare: true,
+      maxGlare: 0.3,
+      scale: 1.04,
+    });
+  });
+})(jQuery);
+
+
+
 
 
 function confirmAction0() {
@@ -161,4 +217,15 @@ document.getElementById("confirm-window2").style.display = "";
 }
 
 
+
+function copyMobileNumber() {
+      const mobileNumber = document.getElementById("mobileNumber");
+      const el = document.createElement("textarea");
+      el.value = mobileNumber.textContent.trim();
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+      alert("Mobile number copied: " + el.value);
+    }
 
