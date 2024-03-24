@@ -1,4 +1,4 @@
-var version = 4.69
+var version = 4.7
 
 $(document).ready(function() {
   $("#variableValue").animate({
@@ -173,10 +173,23 @@ document.body.addEventListener('click', (event) => {
 
 
 
+function showWhatsNew() {
+  document.getElementById("download-section").style.filter = "blur(20px)";
+  document.getElementById("install-section").style.filter = "blur(20px)";
+  document.getElementById("changelog-window").style.display = "block";
+}
+
+function hideWhatsNew() {
+  document.getElementById("download-section").style.filter = "blur(0px)";
+  document.getElementById("install-section").style.filter = "blur(0px)";
+  document.getElementById("changelog-window").style.display = "";
+}
+
 
 
 function confirmAction0() {
-  document.getElementById("download-section").style.filter = "blur(10px)";
+  document.getElementById("download-section").style.filter = "blur(20px)";
+  document.getElementById("install-section").style.filter = "blur(20px)";
   document.getElementById("confirm-window0").style.display = "block";
 }
 function OpenInMsStore() {
@@ -184,14 +197,13 @@ window.open("https://www.microsoft.com/store/apps/9NZ2FZ4SJN7Z", "_blank");
 }
 function hideMSStoreConWindow (){
 document.getElementById("download-section").style.filter = "blur(0px)";
+document.getElementById("install-section").style.filter = "blur(0px)";
 document.getElementById("confirm-window0").style.display = "";
 }
 
-
-
-
 function confirmAction() {
-    document.getElementById("download-section").style.filter = "blur(10px)";
+    document.getElementById("download-section").style.filter = "blur(20px)";
+    document.getElementById("install-section").style.filter = "blur(20px)";
     document.getElementById("confirm-window").style.display = "block";
 }
 function startInstallerDownload() {
@@ -199,6 +211,7 @@ function startInstallerDownload() {
 }
 function hideInstallerConWindow (){
   document.getElementById("download-section").style.filter = "blur(0px)";
+  document.getElementById("install-section").style.filter = "blur(0px)";
   document.getElementById("confirm-window").style.display = "";
 }
 

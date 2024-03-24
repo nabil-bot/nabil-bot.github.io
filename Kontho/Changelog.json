@@ -1,0 +1,10 @@
+{
+    "version": 4.69,
+    "Changelog": "\ud83c\udf89In this version pro features are free until April 1, 2024 (for BETA testing).\ud83c\udf88\ud83d\udc99\n\n1.The hover animation duration can now be customized.\n2. Tried to fix some small bugs.\n3. Faster speech recognition.\n4. Added vertical top bar option for the pro version. \n5. Now, you have the option to set the opacity of the topbar when it is inactive.",
+    "size": "12 MB",
+    "reinstall": false,
+    "minVersion": 4.69,
+    "releaseDate": "20-03-2024",
+    "mandatory": false,
+    "outDatedVersion": 4.6
+}

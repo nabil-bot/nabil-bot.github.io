@@ -1613,7 +1613,7 @@ div.table tr th:nth-child(3) {
 
 /*confirmation ===========================================>*/
 
-.confirm-window {
+.confirm-window, .changelog-window {
   display: none;
   position: fixed;
   top: 50%;
@@ -1629,33 +1629,33 @@ div.table tr th:nth-child(3) {
   z-index: 1000;
 }
 
-.confirm-window h3 {
+.confirm-window h3, .changelog-window h3 {
   text-align: center;
   background-color: aliceblue;
   border-radius: 10px;
   font-size: 18px;
 }
 
-.confirm-window p {
+.confirm-window p, .changelog-window p {
   padding-bottom: 25px;
   padding-top: 10px;
   font-size: 14px;
 }
 
-.confirm-window a {
+.confirm-window a, .changelog-window a {
   text-decoration: none;
   color: #3498db;
   font-size: 18px;
   transition: color 0.3s, transform 0.3s;
 }
 
-.confirm-window a:hover {
+.confirm-window a:hover, .changelog-window a:hover {
   color: #026fb8;
   font-size: 16px;
   transform: scale(1.1);
 }
 
-.confirm-window button {
+.confirm-window button, .changelog-window button {
 /*  float: right, bottom;*/
   
   padding: 10px 20px;
@@ -1673,7 +1673,7 @@ div.table tr th:nth-child(3) {
 }
 
 
-.confirm-window button:hover {
+.confirm-window button:hover, .changelog-window button:hover {
     background-color: #2980b9;
     transform: scale(1.05);
 }

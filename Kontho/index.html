@@ -56,6 +56,12 @@
 </div>
 
 
+<div class="changelog-window" id="changelog-window">
+  <h3>Whats new in this version?</h3>
+  <p>Please note that while it is completely <b>safe</b> to use the Installer, but <b>some antivirus applications may flag it</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.<br><br>But sometimes the version available on the Microsoft Store may not be the latest one.</p>
+  <button type="button" onclick="hideWhatsNew()">Ok</button>
+</div>
+
 <div class="confirm-window" id="confirm-window">
   <h3>Are you sure you want to download Nms Kontho installer?</h3>
   <p>Please note that while it is completely <b>safe</b> to use the Installer, but <b>some antivirus applications may flag it</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.<br><br>But sometimes the version available on the Microsoft Store may not be the latest one.</p>
@@ -118,7 +124,7 @@
 
         <div class="kontho-logo aos-init aos-animate" data-aos="fade-down">
 	
-          <img data-aos="fade-right" src="./Assets/Kontho3.png" alt="Image" width="160px" height="160px" class="card">
+          <a onclick="showWhatsNew()" title="What's New in this version?"><img data-aos="fade-right" src="./Assets/Kontho3.png" alt="Image" width="160px" height="160px" class="card"><a>
 
           <div class="softwaredescription">
             <div class="versiondetails aos-init aos-animate" data-aos="fade-up">
@@ -149,7 +155,7 @@
     </div> 
 
 
-    <section class="install">
+    <section class="install" id="install-section">
         <h2 data-aos="fade-down">Installation</h2>
         <div class="dev-message" data-aos="fade-up">
 
