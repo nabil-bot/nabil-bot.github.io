@@ -1619,8 +1619,8 @@ div.table tr th:nth-child(3) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
-  height: 45%;
+  width: 75%;
+  height: 40%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -1652,12 +1652,11 @@ div.table tr th:nth-child(3) {
 .confirm-window a:hover, .changelog-window a:hover {
   color: #026fb8;
   font-size: 16px;
-  transform: scale(1.1);
+  transform: scale(1.4);
 }
 
-.confirm-window button, .changelog-window button {
-/*  float: right, bottom;*/
-  
+
+.confirm-window #CancelInstallerDownlod ,.confirm-window #CancelPortableDownlod,.changelog-window button, .confirm-window button {
   padding: 10px 20px;
   font-size: 15px;
   font-weight: bold;
@@ -1669,7 +1668,23 @@ div.table tr th:nth-child(3) {
   transition: background-color 0.3s, transform 0.3s;
   background-color: #3498db;
   color: #fff;
+}
 
+
+.confirm-window #installerDownlodButton, .confirm-window #PortableDownlodButton{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: darkgray;
+  color: #fff;
+  opacity: 0.5; /* Dim the button */
+  cursor: not-allowed; /* Show not-allowed cursor */
 }
 
 
@@ -1678,6 +1693,20 @@ div.table tr th:nth-child(3) {
     transform: scale(1.05);
 }
 
+
+#enableDownloadButtonCheckbox,
+#enableDownloadButtonCheckbox + label, #enableDownloadButtonCheckbox2,
+#enableDownloadButtonCheckbox2 + label{
+ padding-left:  5px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#enableDownloadButtonCheckbox, #enableDownloadButtonCheckbox2 {
+  padding-left:  10px;
+  transform: scale(1.6); /* Scales the checkbox by 2 */
+}
 
 
 .number-container{
@@ -1793,3 +1822,22 @@ div.table tr th:nth-child(3) {
 .styled-paragraph:hover {
   background-color: #f7f7f7;
 }
+
+
+
+label {
+  display: inline-block;
+  padding: 10px 30px 0px 2px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+

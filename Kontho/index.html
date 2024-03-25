@@ -57,23 +57,38 @@
 
 
 <div class="changelog-window" id="changelog-window">
-  <h3>Whats new in this version?</h3>
-  <p>Please note that while it is completely <b>safe</b> to use the Installer, but <b>some antivirus applications may flag it</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.<br><br>But sometimes the version available on the Microsoft Store may not be the latest one.</p>
+  <h3>Whats new in this version❓</h3>
+  <p id="changelogs_para">💙In this version pro features are free until April 1, 2024 (for BETA testing)👈.<br>
+    <br>🔷1. The hover animation duration can now be customized.
+    <br>🔷2. Tried to fix some small bugs.
+    <br>🔷3. Faster speech recognition.
+    <br>🔷4. Added vertical top bar option for the pro version.
+    <br>🔷5. Now, you have the option to set the opacity of the topbar when it is inactive.</p>
   <button type="button" onclick="hideWhatsNew()">Ok</button>
 </div>
 
 <div class="confirm-window" id="confirm-window">
-  <h3>Are you sure you want to download Nms Kontho installer?</h3>
-  <p>Please note that while it is completely <b>safe</b> to use the Installer, but <b>some antivirus applications may flag it</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.<br><br>But sometimes the version available on the Microsoft Store may not be the latest one.</p>
-  <button type="button" onclick="startInstallerDownload()">Download</button>
-  <button type="button" onclick="hideInstallerConWindow()">Cancel</button>
+  <h3>Are you sure you want to download Nms Kontho installer❓</h3>
+  <p>📢Please note that while it is completely <b>✅safe</b> to use the Installer, but <b>some antivirus may flag it 🚩</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.💥<br>
+    <br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.</p>
+
+    <input type="checkbox" id="enableDownloadButtonCheckbox" onchange="enableInstallerDownloadBtn()">
+    <label for="enableDownloadButtonCheckbox">I've read the warning and I would like to download the installer.</label>
+    <br>
+    <button type="button" onclick="startInstallerDownload()" id="installerDownlodButton" disabled>Download</button>
+  <button type="button" onclick="hideInstallerConWindow()" id="CancelInstallerDownlod">Cancel</button>
 </div>
 
 <div class="confirm-window" id="confirm-window2">
-    <h3>Are you sure you want to download Nms Kontho Portable?</h3>
-    <p>Please note that while it is completely <b>safe</b> to use the Portable version, but <b>some antivirus applications may flag it</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.<br><br>Sometimes the version available on the Microsoft Store may not be the latest one.</p>
-    <button type="button" onclick="startPortableDownload()">Download</button>
-    <button type="button" onclick="hideportableConWindow()">Cancel</button>
+    <h3>Are you sure you want to download Nms Kontho Portable❓</h3>
+    <p>📢Please note that while it is completely <b>✅safe</b> to use the Portable version, but <b>some antivirus may flag it🚩</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.💥<br>
+        <br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.</p>
+    
+        <input type="checkbox" id="enableDownloadButtonCheckbox2" onchange="enablePortableDownloadBtn()">
+        <label for="enableDownloadButtonCheckbox2">I've read the warning and I would like to download the portable folder.</label>
+        <br>
+    <button type="button" onclick="startPortableDownload()" id="PortableDownlodButton" disabled>Download</button>
+    <button type="button" onclick="hideportableConWindow()" id="CancelPortableDownlod">Cancel</button>
 </div>
 
 <body>
@@ -134,7 +149,7 @@
               <h1 style="font-size: 16px; padding-bottom: 10px; font-weight: 300;">Nms Kontho is <span></span></h1>
               <!-- <p id="typing-text" data-aos="zoom-in" class="aos-init aos-animate">কণ্ঠ : হোক লেখা প্রাণবন্ত।</p> -->
             </div>
-            <div class="btn-container">
+            <div class="btn-container", id="btn-container">
               <div data-aos="fade-up" class="aos-init aos-animate" style="margin-top: 10px;">
 
                 <a onclick="confirmAction0()" style="background-color: #edf6ff;color: #00264f;" class="downloadbtn" title="Install Nms Kontho directly from the Microsoft App Store."><img src="./Assets/ms_store_logo.png"> MS Store</a>
@@ -187,7 +202,7 @@
                     </li>
                 <li data-aos="zoom-in">বাংলা ফনেটিক এর মাধ্যমে সহজেই বাংলা টাইপিং এর পাশাপাশি নিরালা লেআউটে বিজয়ের মতো এবং নিরালা ইউনি লেআউটে ইউনিবিজয়ের মতো করে টাইপ করা যায়।
                     </li>
-                <li data-aos="zoom-in">আউটপুট হিসেবে Unicode, ANSI 1 (কালপুরুষ) ও ANSI 2 (সুতনী এম জে) তিন রকম এনকোডিং এর ব্যবস্থা  রয়েছে।
+                <li data-aos="zoom-in">আউটপুট হিসেবে Unicode, ANSI 1 (Kalpurush ANSI) ও ANSI 2 (SutonnyMJ) তিন রকম এনকোডিং এর ব্যবস্থা  রয়েছে।
                 </li>
                 <li data-aos="zoom-in"> লেখার সময় বানান ভুল হলে সম্ভাব্য সঠিক শব্দ সাজেস্ট করে।</li>
                 <li data-aos="zoom-in">প্রো ভার্সন-এ গুগল এপিআই ব্যবহার করায়, কোন একটি শব্দ ডিকশনারিতে সেভ না করা থাকলেও তা সাজেস্ট করবে।</li>
@@ -494,8 +509,9 @@
                 </div>
 
                 <div class="dicections">
-                    <p class="styled-paragraph">
-                      উপরিউক্ত নাম্বারে বিকাশ অথবা নগদ পেমেন্ট সম্পন্ন করে Nms Kontho ফেসবুক পেজ অথবা হোয়াটস অ্যাপে মেসেজ করুন। 
+                    <p class="styled-paragraph"><b>
+                      উপরিউক্ত নাম্বারে বিকাশ অথবা নগদ সেন্ড মানি করে Nms Kontho ফেসবুক পেজ অথবা হোয়াটস অ্যাপে মেসেজ করুন। <br>
+                      ডিমান্ড বেশি থাকা অবস্থায় key সেন্ড করতে কিছুটা দেরি হতে পারে। </b>
                     </p>
                 </div>
 

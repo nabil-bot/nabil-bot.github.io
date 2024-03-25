@@ -1,5 +1,41 @@
 var version = 4.7
 
+
+
+function adjustHeight() {
+  var div = document.getElementById('confirm-window');
+  var div2 = document.getElementById('confirm-window2');
+  var div3 = document.getElementById('changelog-window');
+  var btn_container = document.getElementById('btn-container');
+  var windowWidth = window.innerWidth;
+  
+  if (windowWidth < 950) {
+    // Adjust height for small screens
+    div.style.height = '65%';
+    div2.style.height = '65%';
+    div3.style.height = '65%';
+  } 
+
+  else if (windowWidth < 700) {
+    // Adjust height for small screens
+    btn_container.style.flexDirection = 'column';
+  } 
+  
+  else {
+    // Reset height for larger screens
+    div.style.height = '40%';
+    div2.style.height = '40%';
+    div3.style.height = '40%';
+    btn_container.style.flexDirection = 'row';
+  }
+}
+
+// Call adjustHeight on page load and when window is resized
+window.onload = adjustHeight;
+window.onresize = adjustHeight;
+
+
+
 $(document).ready(function() {
   $("#variableValue").animate({
     value: version
@@ -177,6 +213,26 @@ function showWhatsNew() {
   document.getElementById("download-section").style.filter = "blur(20px)";
   document.getElementById("install-section").style.filter = "blur(20px)";
   document.getElementById("changelog-window").style.display = "block";
+
+    // fetch('Changelog.json')
+    // .then(response => response.json())
+    // .then(data => {
+    //   const changelogs = data.Changelog;
+    //   const nameElement = document.getElementById('changelogs_para');
+
+    //   // Clear existing content
+    //   nameElement.innerHTML = '';
+
+    //   // Loop through changelogs and create list items
+    //   changelogs.forEach(changelog => {
+    //     const listItem = document.createElement('li');
+    //     listItem.textContent = changelog;
+    //     nameElement.appendChild(listItem);
+    //   });
+    // })
+    // .catch(error => console.error('Error fetching JSON:', error));
+
+
 }
 
 function hideWhatsNew() {
@@ -242,3 +298,49 @@ function copyMobileNumber() {
       alert("Mobile number copied: " + el.value);
     }
 
+
+
+
+
+function enableInstallerDownloadBtn() {
+    var downloadBtnCheckbox = document.getElementById('enableDownloadButtonCheckbox');
+    var InstallerDownloadBtn = document.getElementById('installerDownlodButton');
+    if (downloadBtnCheckbox.checked) {
+        // console.log('Checkbox is checked!');
+        InstallerDownloadBtn.disabled = false;
+        InstallerDownloadBtn.style.cursor = "pointer";
+        InstallerDownloadBtn.style.opacity = "1";
+        InstallerDownloadBtn.style.backgroundColor = "#3498db";
+
+
+      } else {
+        // console.log('Checkbox is not checked!');
+        InstallerDownloadBtn.disabled = true;
+        InstallerDownloadBtn.style.cursor = "not-allowed";
+        InstallerDownloadBtn.style.opacity = "0.5";
+        InstallerDownloadBtn.style.backgroundColor = "darkgray";
+        
+      }
+}
+
+
+function enablePortableDownloadBtn() {
+  var downloadBtnCheckbox = document.getElementById('enableDownloadButtonCheckbox2');
+  var InstallerDownloadBtn = document.getElementById('PortableDownlodButton');
+  if (downloadBtnCheckbox.checked) {
+      // console.log('Checkbox is checked!');
+      InstallerDownloadBtn.disabled = false;
+      InstallerDownloadBtn.style.cursor = "pointer";
+      InstallerDownloadBtn.style.opacity = "1";
+      InstallerDownloadBtn.style.backgroundColor = "#3498db";
+
+
+    } else {
+      // console.log('Checkbox is not checked!');
+      InstallerDownloadBtn.disabled = true;
+      InstallerDownloadBtn.style.cursor = "not-allowed";
+      InstallerDownloadBtn.style.opacity = "0.5";
+      InstallerDownloadBtn.style.backgroundColor = "darkgray";
+      
+    }
+}
