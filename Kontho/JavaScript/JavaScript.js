@@ -1,4 +1,4 @@
-var version = 4.71
+var version = 4.72
 
 
 
