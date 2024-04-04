@@ -1834,6 +1834,12 @@ label {
 }
 
 
+#free_Vs_pro_table th:last-child {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-color: blue;
+}
 
 
 
