@@ -7,26 +7,30 @@ function adjustHeight() {
   var div2 = document.getElementById('confirm-window2');
   var div3 = document.getElementById('changelog-window');
   var btn_container = document.getElementById('btn-container');
+  var softdes = document.querySelector('.softwaredescription');
   var windowWidth = window.innerWidth;
   
-  if (windowWidth < 950) {
+  if (windowWidth < 950 && windowWidth > 700) {
     // Adjust height for small screens
     div.style.height = '65%';
     div2.style.height = '65%';
     div3.style.height = '65%';
+    softdes.style.marginLeft = '10px';
   } 
 
-  else if (windowWidth < 700) {
+  else if (windowWidth <= 700) {
     // Adjust height for small screens
     btn_container.style.flexDirection = 'column';
+    softdes.style.marginLeft = '0px';
   } 
-  
+
   else {
     // Reset height for larger screens
     div.style.height = '40%';
     div2.style.height = '40%';
     div3.style.height = '40%';
     btn_container.style.flexDirection = 'row';
+    softdes.style.marginLeft = '60px';
   }
 }
 
@@ -210,8 +214,9 @@ document.body.addEventListener('click', (event) => {
 
 
 function showWhatsNew() {
-  document.getElementById("download-section").style.filter = "blur(20px)";
-  document.getElementById("install-section").style.filter = "blur(20px)";
+  document.getElementById("download-section").style.filter = "blur(80px)";
+  document.getElementById("install-section").style.filter = "blur(80px)";
+  document.getElementById("features").style.filter = "blur(80px)";
   document.getElementById("changelog-window").style.display = "block";
 
     // fetch('Changelog.json')
@@ -238,6 +243,7 @@ function showWhatsNew() {
 function hideWhatsNew() {
   document.getElementById("download-section").style.filter = "blur(0px)";
   document.getElementById("install-section").style.filter = "blur(0px)";
+  document.getElementById("features").style.filter = "blur(0px)";
   document.getElementById("changelog-window").style.display = "";
 }
 
@@ -344,3 +350,103 @@ function enablePortableDownloadBtn() {
       
     }
 }
+
+function setPrice(count) {
+  let basePrices = {
+    count10DA: [25, 50],  // Base prices for count = 1, 2, 3
+    count1MA: [60, 120],
+    count3MA: [160, 300],
+    count6MA: [250, 480],
+    count1YA: [425, 800],
+    count8YA: [875, 1020],
+    count8YAINR: [820, 920]
+  };
+
+  if (count == 1){
+    countIndex = 0;
+  } else {
+    countIndex = 1;
+  };
+
+  // Update prices based on count
+  count10DA.textContent = `${calculatePrice(basePrices.count10DA[countIndex], count)} BDT`;
+  count1MA.textContent = `${calculatePrice(basePrices.count1MA[countIndex], count)} BDT`;
+  count3MA.textContent = `${calculatePrice(basePrices.count3MA[countIndex], count)} BDT`;
+  count6MA.textContent = `${calculatePrice(basePrices.count6MA[countIndex], count)} BDT`;
+  count1YA.textContent = `${calculatePrice(basePrices.count1YA[countIndex], count)} BDT`;
+  count8YA.textContent = `${calculatePrice(basePrices.count8YA[countIndex], count)} BDT\n\n${calculatePrice(basePrices.count8YAINR[countIndex], count)} INR`;
+}
+
+// Function to calculate price based on count and increase percentage
+function calculatePrice(basePrice, count) {
+  if (count <= 2) {
+    return basePrice;
+  } else if (basePrice == 50){
+      return (20*count)
+  } else if (basePrice == 120){
+      return (50*count)
+  } else if (basePrice == 300){
+    return (140*count)
+  } else if (basePrice == 480){
+    return (230*count)
+  }
+  else if (basePrice == 800){
+    return (380*count)
+  }
+  else if (basePrice == 1020){
+    return (400*count)
+  }
+  else if (basePrice == 920){
+    return (380*count)
+  }
+}
+
+// Get the increase and decrease buttons
+const increaseBtn = document.querySelector('.increase-btn');
+const decreaseBtn = document.querySelector('.decrease-btn');
+
+const NODElement = document.getElementById('NOD');
+const count10DA = document.getElementById('10DA');
+const count1MA = document.getElementById('1MA');
+const count3MA = document.getElementById('3MA');
+const count6MA = document.getElementById('6MA');
+const count1YA = document.getElementById('1YA');
+const count8YA = document.getElementById('8YA');
+
+
+// Add click event listeners
+increaseBtn.addEventListener('click', function() {
+  increaseCount();
+});
+
+decreaseBtn.addEventListener('click', function() {
+  decreaseCount();
+});
+
+// Function to increase count
+function increaseCount() {
+  let count = parseInt(NODElement.textContent);
+  count++;
+
+  NODElement.textContent = count;
+
+
+  setPrice(count)
+}
+
+
+// Function to decrease count
+function decreaseCount() {
+  // Assuming there's an element with an ID "count"
+
+  // Get the current count
+  let count = parseInt(NODElement.textContent);
+
+  // Decrement the count, ensuring it doesn't go below 0
+  count = count > 1 ? count - 1 : 1;
+
+  NODElement.textContent = count;
+
+  setPrice(count)
+};
+

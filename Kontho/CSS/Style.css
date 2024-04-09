@@ -1541,6 +1541,16 @@ div.table tr th:nth-child(3) {
   border-color: blue;
 }
 
+#subscriptions h3 {
+  background-color: red;
+  color: white;
+  width: 200px;
+  padding: 10px; /* Optional: Add padding for better readability */
+  text-align: center; /* Optional: Center the text */
+  border-radius: 25px;
+}
+
+
 #activation h2, #tutorial h2 {
   font-size: 32px;
   margin-bottom: 20px;
@@ -1613,14 +1623,14 @@ div.table tr th:nth-child(3) {
 
 /*confirmation ===========================================>*/
 
-.confirm-window, .changelog-window {
+.confirm-window{
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
-  height: 40%;
+  height: 45%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -1629,10 +1639,28 @@ div.table tr th:nth-child(3) {
   z-index: 1000;
 }
 
-.confirm-window h3, .changelog-window h3 {
+
+.changelog-window {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 70%;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.confirm-window h3 {
   text-align: center;
   background-color: aliceblue;
   border-radius: 10px;
+  font-size: 18px;
+}
+
+.changelog-window h3 {
+  text-align: center;
   font-size: 18px;
 }
 
@@ -1842,8 +1870,41 @@ label {
 }
 
 
+/* 
+.ND-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.increase-btn,
+.decrease-btn {
+  padding: 5px 5px 5px 5px;
+  border: none;
+  background-color: rgba(0, 174, 255, 0.56);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.increase-btn:hover,
+.decrease-btn:hover {
+  background-color: darkblue;
+}
+
+.increase-btn i,
+.decrease-btn i {
+  margin-right: 5px;
+} */
 
 
 
 
 
+
+
+#NOD {
+  font-size: 18px;
+  font-weight: bold;
+}

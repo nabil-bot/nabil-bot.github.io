@@ -58,12 +58,7 @@
 
 <div class="changelog-window" id="changelog-window">
   <h3>Whats new in this version❓</h3>
-  <p id="changelogs_para">💙In this version pro features are free until April 1, 2024 (for BETA testing)👈.<br>
-    <br>🔷1. The hover animation duration can now be customized.
-    <br>🔷2. Tried to fix some small bugs.
-    <br>🔷3. Faster speech recognition.
-    <br>🔷4. Added vertical top bar option for the pro version.
-    <br>🔷5. Now, you have the option to set the opacity of the topbar when it is inactive.</p>
+  <p id="changelogs_para">Fixed a couple of bugs, including:<br>* the issue of not putting space after each line while voice typing.<br>*as well as the Nirala Uni and Banglish layout bugs.<br><br>📢Please note: Updating to this version will also update the settings,<br>which means it will not retain the settings from earlier versions.<br>and you can not import settings, saved from the earlier versiions.<br><br>Updates:<br>1. Added sentence modifier feature powered by Gemini AI (Ctrl + Right click).<br>2. Voice typing bug has been fixed.<br>3.  Kontho topbar stylesheet is now fully customizable.<br>4. Improved memory management.<br>5. Improved loading speed.</p>
   <button type="button" onclick="hideWhatsNew()">Ok</button>
 </div>
 
@@ -137,7 +132,7 @@
             <!-- <h1>Nms Kontho is <span></span></h1> -->
         </div>
 
-        <div class="kontho-logo aos-init aos-animate" data-aos="fade-down">
+        <div class="kontho-logo aos-init aos-animate" data-aos="fade-down" id="logoAndDownBtnHolder">
 	
           <a onclick="showWhatsNew()" title="What's New in this version?"><img data-aos="fade-right" src="./Assets/Kontho3.png" alt="Image" width="160px" height="160px" class="card"><a>
 
@@ -456,37 +451,41 @@
                 <p style="font-size:18px;">Obtain Your Free Trial Key from the Nms Kontho Facebook Page.<br>📣<b>We encourage users to try the application using the trial key before considering a purchase.</b></p>
                 </div>
 
-                <div style="margin-bottom: 30px;" data-aos="fade-up">
+                <div style="margin-bottom: 30px;" data-aos="fade-up" id="subscriptions">
                     <h3>Subscription Plans</h3>
                 </div>
                 <table id="subscriptionPlanTable">
                     <tr data-aos="fade-up">
                         <th>Activation Periods</th>
                         <th>10 Days</th>
-                        <th>One Month</th>
-                        <th>Three Months</th>
-                        <th>Six Months</th>
-                        <th>One year</th>
+                        <th>30 Days</th>
+                        <th>90 Days</th>
+                        <th>180 Days</th>
+                        <th>365 Days</th>
                         <th>Life time<br>8 years</th>
                     </tr>
                     <tr data-aos="fade-up">
                         <td>Total Amount</td>
-                        <td>25 BDT</td>
-                        <td>60 BDT</td>
-                        <td>160 BDT</td>
-                        <td>250 BDT</td>
-                        <td>425 BDT</td>
-                        <td><s>999</s><br>875 BDT<br>800 INR</td>
+                        <td id="10DA">25 BDT</td>
+                        <td id="1MA">60 BDT</td>
+                        <td id="3MA">160 BDT</td>
+                        <td id="6MA">250 BDT</td>
+                        <td id="1YA">425 BDT</td>
+                        <td id="8YA"><s>999</s><br>875 BDT<br>800 INR</td>
                     </tr>
                    
                     <tr>
-                        <td>Number of devices</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>Number of devices<br>
+                            <div class="ND-button-container">
+                            <button class="increase-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="decrease-btn">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            </div>
+                        </td>
+                        <td id="NOD" colspan="6">1</td>
                     </tr>
                 </table>
             </div>
@@ -518,12 +517,9 @@
                 <div class="dicections">
                     <p class="styled-paragraph"><b>
                       উপরিউক্ত নাম্বারে বিকাশ অথবা নগদ সেন্ড মানি করে Nms Kontho ফেসবুক পেজ অথবা হোয়াটস অ্যাপে মেসেজ করুন। <br>
-                      ডিমান্ড বেশি থাকা অবস্থায় key সেন্ড করতে কিছুটা দেরি হতে পারে। </b>
+                      ডিমান্ড বেশি থাকা অবস্থায় key পাঠাতে কিছুটা দেরি হতে পারে।</b>
                     </p>
                 </div>
-
-
-
 
                 <p class="instructionpara">
                     <div class="other-options">
