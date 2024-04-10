@@ -16,12 +16,14 @@ function adjustHeight() {
     div2.style.height = '65%';
     div3.style.height = '65%';
     softdes.style.marginLeft = '10px';
+    softdes.style.paddingLeft = '10px';
   } 
 
   else if (windowWidth <= 700) {
     // Adjust height for small screens
     btn_container.style.flexDirection = 'column';
     softdes.style.marginLeft = '0px';
+    softdes.style.paddingLeft = '0px';
   } 
 
   else {
@@ -31,6 +33,7 @@ function adjustHeight() {
     div3.style.height = '40%';
     btn_container.style.flexDirection = 'row';
     softdes.style.marginLeft = '60px';
+    softdes.style.paddingLeft = '20px';
   }
 }
 
