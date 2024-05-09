@@ -147,12 +147,12 @@ body {
 .download .kontho-logo .softwaredescription .btn-container .downloadbtn {
 
   cursor: pointer;
-  padding: 10px 10px;
+  padding: 8px 6px;
   margin-top: 15px;
   margin-right: 12px;
   height: 60px;
   width: 170px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   color: #ffffff;
   background-color: #4caf50;
@@ -168,9 +168,8 @@ body {
 
 .download .kontho-logo .softwaredescription .btn-container .downloadbtn:hover{
 background-color: #3e8e41;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
-
 }
 
 /* download ===================================================== */
