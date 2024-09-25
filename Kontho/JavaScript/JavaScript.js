@@ -1,4 +1,4 @@
-var version = 5.11
+var version = 6.1
 
 
 function adjustHeight() {
@@ -286,8 +286,8 @@ function confirmAction2() {
   document.getElementById("confirm-window2").style.display = "block";
 }
 function startPortableDownload() {
-  // window.location = 'https://github.com/nabil-bot/KonthoExes/raw/main/Kontho_Portable.zip';
-  window.location = 'https://icedrive.net/s/zCBRXYtDtjabD65jwif8f55zu8aF';
+  window.location = 'https://github.com/nabil-bot/KonthoExes/raw/main/Kontho_Portable.zip';
+  // window.location = 'https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Kontho_Portable.zip';
 
 }
 function hideportableConWindow (){
