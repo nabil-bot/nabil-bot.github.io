@@ -1,4 +1,4 @@
-var version = 6.11
+var version = 6.12
 
 
 function adjustHeight() {
