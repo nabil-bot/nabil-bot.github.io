@@ -25,6 +25,23 @@
   --Buttom-To-Top-font-size: 25px;
 
 }
+.subcriptions #subscriptions h3 {
+    background-color: #00AEFF;
+}
+.ND-button-container .increase-btn .fas.fa-plus {
+    min-height: 25px;
+    min-width: 25px;
+}
+.ND-button-container .decrease-btn .fas.fa-minus {
+    min-width: 25px;
+    min-height: 25px;
+    text-align: center;
+    text-shadow: 0 0px;
+    padding-top: 0px;
+}
+
+
+
 
 * {
   margin: 0;
