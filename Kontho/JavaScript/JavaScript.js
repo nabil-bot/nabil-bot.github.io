@@ -49,7 +49,7 @@ $(document).ready(function() {
     duration: 4500,
     easing: "linear",
     step: function(now) {
-      $(this).text(now.toFixed(2));
+      $(this).text(now.toFixed(3));
     }
   });
 });
