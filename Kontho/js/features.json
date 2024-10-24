@@ -1,0 +1,47 @@
+{
+    "Continuous Word Prediction": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=264",
+        "description": "While typing, Kontho will continuously try to guess the word you want, even for misspelled words. If you are using the Pro version, suggestions will come from the Google Recommendation API. Most of the time, you wont need to type the whole word just select it from the suggestion window to complete it."
+    },
+    "Advanced Spellchecker": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=160",
+        "description": "You can add context to receive specific spelling recommendations from Google suggestions, Gemini AI, and the Google Transliteration API. This helps you get more accurate word suggestions. So even if the word is not saved in your offline dictionary, you can still get suggestions. This means that you do not have to search Google every time you want to check the spelling of a word or name."
+    },
+	"Next word prediction": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=233",
+        "description": "Leveraging Google's advanced algorithms to predict the next word as you type. This feature helps you write faster by suggesting the most likely words based on context, saving you time and effort. Context aware word suggestion, reduce the need to type out every word manually."
+    },
+    "Word Customization": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=810",
+        "description": "Adding or customizing a word in the offline dictionary is literally just a matter of 3 clicks. Each word can have up to 4 different keywords, allowing you to type the word using any phonetic variation you prefer. Not only can you save words, but you can also store special characters, making the use of special characters much easier."
+    },
+	"Special Words": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1782",
+        "description": "In addition to regular words, you can save special entries like email addresses, phone numbers, and web URLs. After saving, just type a small part of the text, and Kontho will suggest the full entry, allowing you to easily complete it. This way, you don't need to remember the entire text or worry about copying and pasting."
+    },
+	
+	"Speech to Text (Voice typing)": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1380",
+        "description": "With Kontho, you can use voice typing in any application. Switching between English and Bangla is just one click away. You can also set the encoder for the voice typing output, eliminating the need to convert your text after each voice typing session. Unlike Google Voice Typing, the output text from Kontho's Speech to Text feature doesn't break when using popular Bangla fonts."
+    },
+    "Gemini Ai": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1036",
+        "description": "You can use Gemini AI to format selected text in Kontho. The application allows you to add your own prompts or fine-tune existing ones. Additionally, it offers a variety of word suggestions for more precise writing."
+    },
+	"How to add Gemini API key?": {
+        "videoSrcLink": "https://www.youtube.com/embed/XHmYZkKCLOA",
+        "description": "To get suggestions or generate text using Gemini AI, you first need to add your Gemini API key in Kontho, which you can obtain for free."
+    },
+	"Abbreviation:": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1883",
+        "description": "Save lengthy text using an easily memorable keyword. Later, when you need the text, simply type the keyword and press space to complete the entire text. This way, you won't have to remember where you saved it or deal with the hassle of copy-pasting."
+    },
+	"Encoder Options:": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=530",
+        "description": "While Avro only supports the ANSI 1 encoder, and Bijoy's output is ANSI 2, Kontho gives you the flexibility to choose any encoder you like or even create your own. This applies not just for Bangla, but for English as well"
+    },
+	"Custom Layout Builder:": {
+        "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1883",
+        "description": "Unlike Avro, Kontho allows you to build advanced layouts like Phonetic and customize each of the default layouts. You have the flexibility to decide what output each key should produce."
+    }
+}

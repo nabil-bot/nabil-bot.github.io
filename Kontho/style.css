@@ -1,0 +1,448 @@
+@charset "utf-8";
+/* ===== Google Font Import - Poppins and Edu SA Beginner ===== */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.container-fluid .container #mainFooterId {
+    text-align: center;
+    font-weight: bold;
+    background-color: #F3F9FF;
+    -webkit-box-shadow: 0px 0px 3px #0028FF;
+    box-shadow: 0px 0px 3px #0028FF;
+    border-radius: 4px;
+}
+
+
+.card {
+	border: none;
+}
+
+.container-fluid .container .row {
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-top: 12px;
+    text-shadow: 0 0px;
+    -webkit-box-shadow: 0 0 5px #002FFF;
+    box-shadow: 0 0 5px #002FFF;
+    border-radius: 14px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+.container #confirmationWindow h4 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background-color: #DBE9FF;
+    border-radius: 47px;
+}
+.container-fluid .container #confirmationWindow {
+    background-color: #EFF5FF;
+    padding-bottom: 24px;
+    padding-top: 20px;
+    border-radius: 14px;
+}
+
+
+.card-body .container .btn.installer {
+    background-color: #C5FFC7;
+    color: #000000;
+}
+
+.container .row .col-lg-10 {
+    display: flex;
+    align-items: center;
+    /* [disabled]background-color: #FF0004; */
+}
+
+.container .row .col-lg-2 {
+display: flex;
+  justify-content: center;  /* Horizontal centering */
+  align-items: center;  
+}
+.card-body  {
+    margin: 5;
+    padding: 10;
+    border: none;
+    /* [disabled]background-color: #FF0004; */
+}
+
+
+
+
+.row .col-lg-2 .img-fluid {
+}
+.card-body .container .btn.btn-primary {
+    background-color: #EDF6FF;
+    color: #000723;
+}
+.installer {
+}
+
+.container-fluid .container .container {
+    margin-top: 25px;
+    
+}
+.container .container .text-center {
+    background-color: #F8F9FA;
+    border-radius: 34px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    -webkit-box-shadow: 0px 0px 4px #0011FF;
+    box-shadow: 0px 0px 4px #0011FF;
+}
+.container-fluid .container .navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light {
+    -webkit-box-shadow: 0px 0px 5px #0004FF;
+    box-shadow: 0px 0px 5px #0004FF;
+background-color: #eafaff !important;
+}
+
+.container{
+		padding-top: 20px;
+}
+
+
+#confirmationWindow{
+    	display: none;
+    position: fixed;
+    z-index: 1000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.container .container #enableInstallerBtnCheckbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    text-shadow: 0 0;
+}
+.container .container label {
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    height: 28px;
+
+}
+
+
+
+#enableInstallerBtnCheckbox + label{
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+.col-lg-5 .embed-responsive.embed-responsive-16by9 .embed-responsive-item {
+    border-radius: 12px;
+}
+
+.card.col-md-4.col-lg-12 .card-body .card-text {
+    border: none;
+}
+.container .container .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h2 {
+    text-align: center;
+	box-shadow: 0px 0px 4px #0011FF;
+	border-radius: 34px;
+	padding: 8px;
+	background-color: #F8F9FA;
+}
+
+.col-lg-7 .card.col-md-4.col-lg-12 .card-body {
+    border: none;
+}
+/*
+.container .container p {
+    text-align: center;
+}
+*/
+
+.subsHeader{
+	align-content: center;
+}
+
+.subsHeader h5 {
+    width: 225px; /* Set the width of the div */
+    margin: 0 auto; /* Center the div */
+    text-align: center; /* Optional: Center the text inside the div */
+    padding: 8px;
+    font-weight: 700;
+    background-color: #FF0004;
+    color: #FFFFFF;
+    border-radius: 55px;
+	
+}
+tbody tr th {
+    background-color: #E5F9FF;
+    min-width: 70px;
+    border-radius: 2px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+}
+#activation .container p {
+    text-align: center;
+    background-color: #EAFAFF;
+    border-radius: 38px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+tr .maxSubHead  {
+    background-color: #FF0004;
+    color: #FFFFFF;
+}
+
+
+.subsHeader table {
+    margin: 0 auto; /* This centers the table */
+    display: block; /* Ensures the table is treated as a block-level element */
+	text-align: center;
+}
+
+tbody tr #8YA {
+    background-color: #FFDEDE;
+}
+tbody tr button {
+    border-radius: 6px;
+    background-color: #2D8CEB;
+    text-shadow: 0px 0px;
+    border: none;
+    color: #FFFFFF;
+}
+
+tbody tr button:hover {
+    border-radius: 6px;
+    background-color: #0069D2;
+    text-shadow: 0px 0px;
+    border: none;
+    color: #FFFFFF;
+}
+
+tbody tr button:focus {
+    border-width: 2px;
+    border-color: #00478E;
+	
+}
+#step1{
+	
+	text-align: center;
+}
+
+.number-container{
+    display: flex;
+    justify-content: center;
+}
+.container .number-container #mobileNumber {
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    background-color: #E5F9FF;
+    border-radius: 6px;
+    border: 2px solid #76DFFF;
+}
+.container .number-container .copy-button {
+    background-color: #208CFF;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 500;
+    border-radius: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.container .number-container .copy-button:hover {
+    background-color: #0065C6;
+}
+#activation {
+    padding-top: 55px;
+}
+.container .container #contactPlat a {
+    font-size: 18px;
+}
+
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 0px;
+    min-height: 0px;
+}
+
+.switch > span {
+    position: absolute;
+    top: 14px;
+    pointer-events: none;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+    width: 50%;
+    text-align: center;
+    height: 0px;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+    color: #208CFF;
+    min-width: 56px;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+    left: 0;
+    padding-left: 2px;
+    color: #208CFF;
+}
+
+.switch > span.off {
+    right: 0;
+    padding-right: 4px;
+    color: #fff;
+    font-family: "Noto Sans Bengali", sans-serif;
+    font-size: 14px;
+	
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 45px;
+    min-width: 110px;
+}
+
+input.check-toggle-round-flat + label {
+    padding: 2px;
+    width: 97px;
+    height: 35px;
+    background-color: #208CFF;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #208CFF;
+
+
+
+  -webkit-
+  
+  -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 55px;
+    background-color: #fff;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label {
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+}
+/*
+.container .container #howToActivateEmbaded {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+*/
+.container .container #step2 {
+    text-align: center;
+}
+tbody tr #8YA {
+    border-bottom: 2px solid #FF0004;
+    background-color: #FFD5D6;
+}
+.card.col-md-4.col-xl-12 .card-body #howToActivate {
+    background-color: #F2FBFF;
+    border-radius: 4px;
+    text-align: left;
+    font-size: small;
+}
+.col-xl-6 .card.col-md-4.col-xl-12 #activationInstructionsCardBody {
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 8px;
+}
+.container form #radioIdentifier input {
+    width: 20px;
+    height: 20px;
+    margin-top: 22px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    margin-left: 22px;
+}
+.container .container #renewSection {
+    text-align: center;
+}
+.container .container #renewPlat button {
+    min-width: 150px;
+}
+

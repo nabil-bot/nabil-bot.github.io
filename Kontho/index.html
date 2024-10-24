@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>Nms Kontho-হোক লেখা প্রাণবন্ত।</title>
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nms Kontho</title>
     <meta name="title"
         content="Nms Kontho: typing application" />
     <meta name="keywords"
@@ -17,749 +13,234 @@
         content="Kontho typing software, bangla typing software, English typing, Speech recognition software, Bangla speech-to-text software " />
     <meta name="next-head-count" content="8" />
 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="Imgs/Kontho3.png" />
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	  
+	  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body style="padding-top: 70px">
+  	<div class="container-fluid">
+  	  <div class="container">
+        
+		  
+		  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house"></i><strong> Nms Kontho&nbsp;</strong></a>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> <a class="nav-link" href="index2.html#features"><strong>Features</strong>&nbsp;</a></li>
+              <li class="nav-item"> <a class="nav-link" href="index2.html#activation"><i class="fa-solid fa-key"></i> <strong>Activation</strong>&nbsp;</a></li>
+<!--              <li class="nav-item"> <a class="nav-link" href="index2.html#Resources"><strong>Resources</strong></a></li>-->
+              <li class="nav-item"> <a class="nav-link" href="index.html#faq"><i class="fa-solid fa-question"></i> FAQ</a></li>
+              <li class="nav-item"> <a class="nav-link" href="index.html#policy">Policy</a></li>
+				<li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/profile.php?id=100093403287567" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+				<li class="nav-item"> <a class="nav-link" href="https://youtu.be/zbtELYJaAJU" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+				
+				<li class="nav-item"> <a class="nav-link" href="https://wa.me/8801689865823" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+				
+				<li class="nav-item"> <a class="nav-link" href="https://t.me/NmsKontho" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+				
+				<li class="nav-item"> <a class="nav-link" href="mailto:mdnabilmustofa2021@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+				
+				<li class="nav-item"> <a class="nav-link" href="https://github.com/nabil-bot" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
 
-    <link rel="icon" href="Assets/Kontho3.png" />
-
-    <link rel="icon" href="../Assets/Kontho3.png" />
-
-
-    <!-- Here is the CSS google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,700;1,800&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
-
-    <!-- Here is the Fontawesome CDN link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-
-    <!-- Here is the AOS CSS CDN link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.2"></script>
-
-    <!-- Here is the Jquerry CDN link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
-
-    <!-- Here is the CSS link -->
-    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/Section-Style.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/Activation-Style.css" />
-</head>
-
-<!-- <b>This is not the latest version of Nms Kontho! </b> -->
-<div class="confirm-window" id="confirm-window0">
-  <h3>Before installing Nms Kontho from the Microsoft Store,</h3>
-  <p>If you have previously installed Nms Kontho using the installer, check the Documents folder for a 'Kontho' folder and delete it if you find one.<br><br></p>
-  <button type="button" onclick="OpenInMsStore()"><i class="fas fa-external-link-alt"></i> go to Microsoft Store</button>
-  <button type="button" onclick="hideMSStoreConWindow()">Cancel</button>
-</div>
-
-
-<div class="changelog-window" id="changelog-window">
-  <h3>Whats new in this version❓</h3>
-  <p id="changelogs_para">Fixed a couple of bugs, including:<br>* the issue of not putting space after each line while voice typing.<br>*as well as the Nirala Uni and Banglish layout bugs.<br><br>📢Please note: Updating to this version will also update the settings,<br>which means it will not retain the settings from earlier versions.<br>and you can not import settings, saved from the earlier versiions.<br><br>Updates:<br>1. Added sentence modifier feature powered by Gemini AI (Ctrl + Right click).<br>2. Voice typing bug has been fixed.<br>3.  Kontho topbar stylesheet is now fully customizable.<br>4. Improved memory management.<br>5. Improved loading speed.</p>
-  <button type="button" onclick="hideWhatsNew()">Ok</button>
-</div>
-
-<div class="confirm-window" id="confirm-window">
-  <h3>Are you sure you want to download Nms Kontho installer❓</h3>
-  <p>📢Please note that while it is completely <b>✅safe</b> to use the Installer, but <b>some antivirus may flag it 🚩</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.💥<br>
-    <br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.</p>
-
-    <input type="checkbox" id="enableDownloadButtonCheckbox" onchange="enableInstallerDownloadBtn()">
-    <label for="enableDownloadButtonCheckbox">I've read the warning and I would like to download the installer.</label>
-    <br>
-    <button type="button" onclick="startInstallerDownload()" id="installerDownlodButton" disabled>Download</button>
-  <button type="button" onclick="hideInstallerConWindow()" id="CancelInstallerDownlod">Cancel</button>
-</div>
-
-<div class="confirm-window" id="confirm-window2">
-    <h3>Are you sure you want to download Nms Kontho Portable❓</h3>
-    <p>📢Please note that while it is completely <b>✅safe</b> to use the Portable version, but <b>some antivirus may flag it🚩</b>. To avoid this issue, we recommend installing Nms Kontho directly from the Microsoft App Store.💥<br>
-        <br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.</p>
-    
-        <input type="checkbox" id="enableDownloadButtonCheckbox2" onchange="enablePortableDownloadBtn()">
-        <label for="enableDownloadButtonCheckbox2">I've read the warning and I would like to download the portable folder.</label>
-        <br>
-    <button type="button" onclick="startPortableDownload()" id="PortableDownlodButton" disabled>Download</button>
-    <button type="button" onclick="hideportableConWindow()" id="CancelPortableDownlod">Cancel</button>
-</div>
-
-<body>
-    <header>
-        <div class="nav_image">
-            <a href="index.html" title="Kontho Logo">
-                <img src="Assets/Kontho3.png" alt="Logo" max-height="60px" max-width="60px" />
-            </a>
-        </div>
-
-        <nav>
-            <div class="mainmenu" id="mainmenu">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <!-- <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/download.html"> Download</a></li> -->
-                    <li><a href="#activation">Activation</a></li>
-                    <li><a href="#tutorial">Tutorials</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#policy">Policy</a></li>
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=100093403287567" target="_blank"
-                            class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://youtu.be/zbtELYJaAJU" target="_blank" class="youtube"><i
-                                class="fab fa-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </div>
         </nav>
-    </header>
-
-    <!-- confirmation ================================================================== -->
-
-    
-    <!-- /confirmation ================================================================== -->
-
-  
-    <section class="download" id="download-section" data-aos="fade-down">
-
-    	
-        <div class="typekontho">
-            <!-- <h1>Nms Kontho is <span></span></h1> -->
-        </div>
-
-        <div class="kontho-logo aos-init aos-animate" data-aos="fade-down" id="logoAndDownBtnHolder">
+<!--		  <div id="navbarContainer"></div>-->
+		  
+		  <div class="container" id="confirmationWindow">
+  		<h4><strong>Are you sure you want to download Nms Kontho installer❓</strong></h4>
+		  <div class="container" >
+			<p>📢<strong>Please note that while it is completely ✅safe</strong> to use the Installer, but some antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from the <strong><a href="https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare" target="_blank">Microsoft Store</a>.</strong>💥&nbsp;<br><br>
+			  🔵Sometimes the version available on the Microsoft Store may not be the latest one.
+			  </p>
+			<div class="container">
+			  <input type="checkbox" id="enableInstallerBtnCheckbox">
+			  <label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID"><strong>&nbsp;I've read the warning and I would like to download the installer.</strong></label>
+			</div>
+			  <button type="button" class="btn btn-success" id="downloadButton">Download&nbsp;</button>
+			<button type="button" class="btn btn-secondary" onClick="cancelfunc()">Cancel&nbsp;</button>
+		  </div>
+		</div>
 	
-          <a onclick="showWhatsNew()" title="What's New in this version?"><img data-aos="fade-right" src="./Assets/Kontho3.png" alt="Image" width="160px" height="160px" class="card"><a>
-
-          <div class="softwaredescription">
-            <div class="versiondetails aos-init aos-animate" data-aos="fade-up">
-              <h2 data-aos="zoom-in" class="aos-init aos-animate">Nms Kontho v<span id="variableValue">0</span></p></h2>
-              <!-- <h5 data-aos="zoom-in" class="aos-init aos-animate">Version: 2.44</h5> -->
-
-              <h1 style="font-size: 16px; padding-bottom: 10px; font-weight: 300;">Nms Kontho is <span></span></h1>
-              <!-- <p id="typing-text" data-aos="zoom-in" class="aos-init aos-animate">কণ্ঠ : হোক লেখা প্রাণবন্ত।</p> -->
-            </div>
-            <div class="btn-container", id="btn-container">
-              <div data-aos="fade-up" class="aos-init aos-animate" style="margin-top: 10px;">
-
-                <a onclick="confirmAction0()" style="background-color: #edf6ff;color: #00264f;" class="downloadbtn" title="Install Nms Kontho directly from the Microsoft App Store."><img src="./Assets/ms_store_logo.png"> MS Store</a>
-
-                <a  onclick="confirmAction()" class="downloadbtn"  title="Some antivirus may flag the Installer version."><i class="fa fa-download"></i> Installer</a>
-
-                <a onclick="confirmAction2()" class="downloadbtn" title="Some antivirus may flag the portable version."><i class="fa fa-download"></i> Portable</a>
+		  <div class="blurArea">  
+        <div class="row">
+          <div class="col-lg-2"><img src="Imgs/Kontho3.png" alt="" width="799" height="799" class="img-fluid"/>&nbsp;</div>
+          <div class="col-lg-10">
+            <div class="card col-md-4 offset-lg-0 col-lg-12">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Nms Kontho v<span id="variableValue">0</span></strong></h5>
+                <h6 class="card-subtitle mb-2 text-muted">হোক লেখা প্রাণবন্ত&nbsp; &nbsp;</h6>
+                <div class="container">
+                  <button type="button" class="btn btn-primary" onClick="ShowMsStoreMsg()"> <img src="Imgs/ms_store_logo.png" alt="" width="20" height="20" class="img-fluid"/>  <strong>Ms Store</strong>&nbsp;</button>
+                  <button type="button" class="btn installer" onclick="showInstallerConfirmationFunc()" title="Some antivirus may flag the Installer version."><i class="fa fa-download"></i> <strong>Installer</strong>&nbsp;</button>
+                  <button type="button" class="btn installer" onclick="showPortableConfirmationFunc()" title="Some antivirus may flag the Portable version."><i class="fa fa-download"></i> <strong>Portable</strong><strong>&nbsp;</strong>&nbsp;</button>
+                	<button type="button" class="btn btn-primary" title="Older Versions" onclick="openArchive()"><i class="fa-brands fa-github"></i> <strong>Archive</strong>&nbsp;</button>
+			    </div>
               </div>
             </div>
+          &nbsp;</div>
+				</div>
+        <br>
+		  <div class="container">
+		    <div class="container">
+		      <h2 class="text-center" data-aos="zoom-in"><strong>Installation</strong></h2>
+		    </div>
+			  <br>
+		    <div class="container">
+		      <p data-aos="fade-up">📌<strong>System Requirements:</strong> To ensure a seamless installation and utilization of this application, your system must meet the following requirements.&nbsp;</p>
+		      <p data-aos="fade-up">&nbsp;<strong>Operating system:</strong> 64 bit Windows 10, 11, or later (Windows 10 is the minimum requirement)</p>
+		      <p data-aos="fade-up">&nbsp;<strong>RAM</strong>: Minimum 4 GB Recommended.&nbsp;</p>
+		      <p data-aos="fade-up">&nbsp;<strong>Disk space:</strong> 95 MB available.&nbsp;</p>
+		      <p data-aos="fade-up"><strong>&nbsp;Additional Information:</strong> This application is currently  available&nbsp;only for Windows operating systems. However, the developer is working on making it available for Linux and Mac as soon as possible.&nbsp;</p>
+		      <p data-aos="fade-up">🔹<strong>If you intend to download the installer or the portable version, please be aware that some antivirus software may flag these versions. To avoid this issue, you can install the application directly from the Microsoft Store.</strong></p>
+            </div>
           </div>
+		  <br>
+	    <div class="container">
+	      <div class="container"><h2 class="text-center" data-aos="zoom-in"><strong>📧  Message For All Users</strong></h2></div>
+			<br>
+		  <div class="container">
+		    <p data-aos="fade-up">This was my school project that I began working on during the pandemic in 2020. Aimed at automating🚀 my daily tasks. The first release was in 2021, and now thousands of people are using it. There's still a long way to go. I'm the only one working on it, so I'd really appreciate any feedback to make it better.🔥&nbsp;</p>
+		    <p data-aos="fade-up">&nbsp;🐛<strong> Bug Reporting:</strong>&nbsp;No software is entirely free of bugs. If you encounter any anomalies, glitches, or issues during your experience with Nms Kontho, I kindly request that you report them via the official Nms Kontho Facebook page, accessible through this link: 🔗 Nms Kontho Facebook Page.&nbsp;</p>
+		    <p data-aos="fade-up">&nbsp;📌 <strong>Antivirus Flagging:</strong> 🚩Certain antivirus applications may flag the installer and portable version of Nms Kontho. To avoid encountering such issues, we recommend installing Nms Kontho from the Microsoft Store.&nbsp;</p>
+		    <p data-aos="fade-up">&nbsp;Your input and support are deeply appreciated as they contribute to the refinement and enhancement of this project. Thank you for your understanding and collaboration in making Nms Kontho a more robust and reliable application for all users.&nbsp;</p>
+		    <p data-aos="fade-up">&nbsp;🦺<strong>Developer:</strong> <strong>Md Nabil Mostofa</strong></p>
           </div>
         </div>
-    </section>
-
-    <!-- <div><h2 style="text-align: center;">Obtain Your Free Activation Key from the Nms Kontho Facebook Page.</h2>  -->
-    </div> 
-
-
-    <section class="install" id="install-section">
-        <h2 data-aos="fade-down">Installation</h2>
-        <div class="dev-message" data-aos="fade-up">
-
-            <h5 data-aos="zoom-in">📌System Requirements:</h5>
-            <p data-aos="zoom-in"> To ensure a seamless installation and utilization of this application, your system must meet the following requirements.</p>
-            <br>
-            <p data-aos="zoom-in"><b>Operating system:</b>64 bit Windows 10, 11, or later (Windows 10 is the minimum requirement)</p>
-            <br>
-            <p data-aos="zoom-in"><b>RAM:</b> Minimum 4 GB Recommended.</p>
-            <br>
-            <p data-aos="zoom-in"><b>Disk space:</b> 95 MB available.</p>
-            <br>
-
-            <p data-aos="zoom-in"><b>Additional Information:</b><br><b>This application is not optimized for low-end PCs.</b><br>Currently only available for Windows operating systems. However, the developer is working on making it available for Linux and Mac as soon as possible.
-            🔹<b>If you intend to download the installer or the portable version, please be aware that some antivirus software may flag these versions. To avoid this issue, you can install the application directly from the Microsoft App Store.</b></p>
-            <br>
-            
+		  <br>
+		  <div class="container" id="faq"><br>
+		  <div class="container"><h2 class="text-center" data-aos="zoom-in"><strong>Frequently Asked Questins and Answers</strong></h2>
+		  </div>
+			<br>
+			  
+		  <div class="container"> 
+		    <div id="accordion1" role="tablist">
+		      <div class="card">
+		        <div class="card-header" role="tab" id="headingOne1" data-aos="fade-up">
+		          <h5 class="mb-0 d-flex justify-content-between align-items-center"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1"> 🔷Why is the website link like this❓</a>
+			<a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1">
+			  <i class="fa-solid fa-angles-down"></i>
+			</a>
+					</h5>
+	            </div>
+		        <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1" data-aos="fade-up">
+		          <div class="card-body"><strong>Answer:</strong> 💠The website link appears this way because it's hosted on my personal GitHub repository.<br>Since this is <strong>not a commercial</strong> application, I opted for this solution to reduce costs.</div>
+	            </div>
+	          </div>
+		      <div class="card">
+		        <div class="card-header" role="tab" id="headingTwo1" data-aos="fade-up">
+		          <h5 class="mb-0 d-flex justify-content-between align-items-center"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1"> 🔷Why do I have to pay for the Access Plus edition❓&nbsp; </a> 
+					
+					  <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1" data-aos="fade-up">
+					  <i class="fa-solid fa-angles-down"></i></a> 
+					
+					</h5>
+	            </div>
+		        <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1" data-aos="fade-up">
+		          <div class="card-body"><strong>Answer:</strong> Some of the APIs used in this application are not free, and I’m also working on building an ecosystem around it to support ongoing development and maintenance.</div>
+	            </div>
+	          </div>
+		      <div class="card">
+		        <div class="card-header" role="tab" id="headingThree1" data-aos="fade-up">
+		          <h5 class="mb-0 d-flex justify-content-between align-items-center"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1"> 🔷Why do some antivirus software flag the Installer and Portable version❓ </a> 
+					  
+					  <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1">
+					<i class="fa-solid fa-angles-down"></i>
+					</a> 
+					</h5>
+	            </div>
+		        <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1" data-aos="fade-up">
+		          <div class="card-body"><strong>Answer:</strong> 💠Applications of this nature require a code signature certificate to facilitate distribution without encountering flagging issues. As an individual without organizational backing, navigating this process can be challenging.<br><strong>By installing this application through the Microsoft Store, you can avoid encountering the flagging issue.</strong></div>
+	            </div>
+	          </div>
+		      <div class="card">
+		        <div class="card-header" role="tab" id="headingFour1" data-aos="fade-up">
+		          <h5 class="mb-0 d-flex justify-content-between align-items-center"> <a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button" aria-expanded="false" aria-controls="collapseFour1"> 🔷Are Mac or Linux versions available❓</a>
+					
+					  <a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button" aria-expanded="false" aria-controls="collapseFour1">
+					  <i class="fa-solid fa-angles-down"></i></a>
+					</h5>
+	            </div>
+		        <div id="collapseFour1" class="collapse" role="tabpanel" aria-labelledby="headingFour1" data-parent="#accordion1">
+		          <div class="card-body"><strong>Answer:</strong>💠The release of a stable Mac or Linux version may take over a year.</div>
+	            </div>
+	          </div>
+		      <div class="card">
+		        <div class="card-header" role="tab" id="headingFive1" data-aos="fade-up">
+		          <h5 class="mb-0 d-flex justify-content-between align-items-center"> <a class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button" aria-expanded="false" aria-controls="collapseFive"> 🔷How can I get a free trial key❓</a>
+					
+					  <a class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button" aria-expanded="false" aria-controls="collapseFive">
+					  <i class="fa-solid fa-angles-down"></i></a>
+					</h5>
+	            </div>
+		        <div id="collapseFive1" class="collapse" role="tabpanel" aria-labelledby="headingFive1" data-parent="#accordion1">
+		          <div class="card-body"><strong>Answer:</strong>💠To obtain a free trial key, please visit our Facebook page and send a message requesting a trial key. Typically, if demand is moderate, you'll receive your trial key within 10-15 minutes or even less. We encourage users to try the application using the trial key before considering a purchase. Even if you don't intend to buy the serial key, you're welcome to request a trial key. Whenever a new version is released, you can claim a free trial key to test it. Your feedback on new versions is greatly appreciated.<br>
+					<strong>The Trial key duration typically lasts 7-8 days.</strong></div>
+	            </div>
+	          </div>
+		      <div class="card">
+		        <div class="card-header" role="tab" id="headingSix1" data-aos="fade-up">
+		          <h5 class="mb-0 d-flex justify-content-between align-items-center"> <a class="collapsed" data-toggle="collapse" href="#collapseSix1" role="button" aria-expanded="false" aria-controls="collapseSix1"> 🔷How can I request for a feature❓</a>
+					
+					  <a class="collapsed" data-toggle="collapse" href="#collapseSix1" role="button" aria-expanded="false" aria-controls="collapseSix1">
+					  <i class="fa-solid fa-angles-down"></i></a>
+					</h5>
+	            </div>
+		        <div id="collapseSix1" class="collapse" role="tabpanel" aria-labelledby="headingSix1" data-parent="#accordion1">
+		          <div class="card-body"><strong>Answer:</strong>💠If you wish to request a feature for the upcoming version of Nms Kontho, please reach out to the developer via their Gmail at <strong>mdnabilmustofa2021@gmail.com</strong></div>
+	            </div>
+	          </div>
+            </div>
+</div>
         </div>
+<div class="container" id="policy">
+      <div class="container">
+		      <h2 class="text-center" data-aos="zoom-in"><strong>Policy</strong></h2>
+		      <div class="container">
+				  <p data-aos="fade-up"><strong>Acceptance of Terms:</strong> By using this application, you agree to these terms and conditions. If you do not agree, please refrain from using the application.</p>
+				  <p data-aos="fade-up"><strong>Freemium Model:</strong> This application offers both free and paid features. The free version may have limited functionality compared to the Pro version..</p>
+				  <p data-aos="fade-up"><strong>&nbsp;Refund : </strong>Please note that after activating with a serial key, there is no refund policy. Therefore, we encourage users to try the application with a free trial key before considering the purchase of a serial key.&nbsp;</p>
+		        <p data-aos="fade-up"><strong>User-Generated Data:</strong> You can save and manage words using this app. Your dictionary file (.pkl) is stored on your device, and we don't access or share it with any third parties.</p>
+		        <p data-aos="fade-up"><strong>&nbsp;Word Contribution:</strong> You have the option to contribute to our dictionary by adding a word to our Google Firebase data server. This feature is entirely voluntary. You can do so by checking the <i class="fa-solid fa-check"></i> <strong>Send to the server</strong> checkbox when adding a new word. By default, this option is unchecked.&nbsp;</p>
+		        
+		        <p data-aos="fade-up">&nbsp;<strong>No Personal Data Collection:</strong> "Nms Kontho" does not collect any personal data, and we do not share any information with third parties.&nbsp;</p>
+		        <p data-aos="fade-up"><strong>&nbsp;Future Updates: </strong>In the future, we may add or remove features in both the free and Pro versions as needed.</p>
+				  <p data-aos="fade-up"><strong>Changes: </strong>We reserve the right to update these terms and conditions at any time. Any changes will be effective immediately upon posting in the application. We encourage you to review these terms periodically.</p>
+			    
+				  <p data-aos="fade-up"><strong>&nbsp;Limitation of Liability: </strong>The application is provided on an "as is" basis. We are not liable for any direct, indirect, incidental, or consequential damages arising from your use of the application.</p>
+				  <p data-aos="fade-up"><strong>&nbsp;Contact Us: </strong>If you have any questions or concerns about your privacy or this policy, please feel free to contact us at mdnabilmustofa2021@gmail.com</p>
+				  
+	          </div>
+	        </div>
+	    </div>
+		  <br>
+		</div>
 
-    </section>
-    <section class="features" id="features">
-        <h2 data-aos="fade-down">Nms Kontho Features</h2>
+		  <footer class="mainFooter" id="mainFooterId">Copyright © 2023 Nms Kontho | All rights reserved.</footer>
+      </div>
+  	</div>
+  	<!-- body code goes here -->
 
-        <div class="feature_details" data-aos="fade-up">
-            <ul>
-                <li data-aos="zoom-in">লেখার সময় নিরবিচ্ছিন্নভাবে শব্দ সাজেস্ট করা (বাংলা ও ইংরেজি উভয়ই)। 
-                    </li>
-                <li data-aos="zoom-in">বাংলা ফনেটিকের সাহায্যে, সহজেই বাংলা টাইপ করা যায়। এছাড়াও, ইউনিবিজয়ের মতো নিরালা ইউনি লেআউট এবং বিজয়ের মতো নিরালা লেআউটেও টাইপ করা সম্ভব।
-                    </li>
-                <li data-aos="zoom-in">আউটপুট হিসেবে Unicode, ANSI 1 (Kalpurush ANSI) ও ANSI 2 (SutonnyMJ) তিন রকম এনকোডিং এর ব্যবস্থা  রয়েছে।
-                </li>
-                <li data-aos="zoom-in"> লেখার সময় বানান ভুল হলে সম্ভাব্য সঠিক শব্দ সাজেস্ট করে।</li>
-                <li data-aos="zoom-in">প্রো ভার্সন-এ গুগল এপিআই ব্যবহার করায়, কোন একটি শব্দ ডিকশনারিতে সেভ না করা থাকলেও তা সাজেস্ট করবে।</li>
-                <li data-aos="zoom-in"> মাত্র তিন ক্লিকেই নতুন কোনো শব্দ যুক্ত করা বা এডিট করা যায়।</li>
-                <li data-aos="zoom-in"> একটি শব্দ চারটি ভিন্ন ভাবে লেখা যায়। ব্যবহারকারীরা তাদের পছন্দ অনুযায়ী কাস্টমাইজ করতে পারেন।</li>
-                <li data-aos="zoom-in"> <i class="fa-solid fa-microphone" style="color: #00bfff;"> </i> Speech to Text এর মাধ্যেমে ভয়েস টাইপিং করা সম্ভব যে কোন জায়গায়। (বাংলা এবং ইংলিশ উভয়ই) (প্রো ফিচার)
-                </li>
-                <li data-aos="zoom-in"> <i class="fa-solid fa-microphone" style="color: #00bfff;"> </i> ভয়েস টাইপিং এর সময় বাংলা Bangla Output as, ANSI সেট করা থাকলে লেখা সরাসরি সে অনুযায়ী কনভার্ট হয়ে যায়। (প্রো ফিচার)
-                </li>
-                <li data-aos="zoom-in"> Gemini AI এর সাহায্যে লেখাকে বিভিন্ন ভাবে মোডিফাই করা যায়। (প্রো ফিচার)</li>
-                <li data-aos="zoom-in">একটি শব্দ লিখলে সম্ভাব্য পরের শব্দ সাজেস্ট করে (প্রো ফিচার)</li>
-                <li data-aos="zoom-in"> প্রয়োজনে ইউনিকোড থেকে বিজয় কনভার্ট করে নেওয়া যায়।</li>
-                <li data-aos="zoom-in">বাংলা লেখার মাঝে খুব সহজেই শব্দ কে ইংলিশে কনভার্ট করা যায় (F1 press করে)।</li>
-                <li data-aos="zoom-in">ওয়ার্ড ম্যানেজার ব্যবহারকারীদেরকে অভিধানে উপস্থিত লক্ষ লক্ষ বাংলা ও ইংরেজি শব্দ সহজে ব্যবহার করতে সাহায্য করে।</li>
-                <li data-aos="zoom-in">Abbreviation এর মাধ্যমে ছোট শব্দকে সম্পূর্ণ লেখায় কনভার্ট করা সম্ভব। যেমন: brb: Be right back, atm: At the moment.</li>
-                <li data-aos="zoom-in">এই অ্যাপ্লিকেশনের বিভিন্ন ফাংশন এর শর্টকাট নিজের ইচ্ছামত কাস্টমাইজ করে নেওয়া যায়।</li>
-                <li data-aos="zoom-in">এছাড়াও কাস্টমাইজ করা যায় ওয়ার্ড সাজেশন উইন্ডোর ফন্ট ফ্যামিলি, সাইজ, ব্যাকগ্রাউন্ড কালার, বর্ডার রেডিয়াস ইত্যাদি।</li>
-                <li data-aos="zoom-in">এতে রয়েছে অ্যাডভান্স On screen keyboard, যেখানে বাংলা এবং ইংরেজি কিবোর্ড এর পাশাপাশি স্পেশাল ক্যারেক্টার ও ইমোজি কালেকশন রয়েছে।</li>
-                <li data-aos="zoom-in">এছাড়াও লেখার গতি বাড়াতে রয়েছে অসংখ্য টুল।</li>
-            </ul>
-        </div>
-    </section>
+	<script src="js/JavaScript.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
 
-    <section class="message">
-        <h2 data-aos="fade-down" class="aos-init aos-animate">📧 A Message For All Users</h2>
-        <div class="dev-message aos-init aos-animate" data-aos="fade-up">
-
-            <p data-aos="zoom-in" class="aos-init aos-animate">This was my school project that I began working on during the pandemic in 2020. Aimed at automating🚀 my daily tasks. The first release was in 2021, and now thousands of people are using it. There's still a long way to go. I'm the only one working on it, so I'd really appreciate any feedback to make it better.🔥</p>
-            <br>
-            
-            
-            
-            <p data-aos="zoom-in" class="aos-init"><b>🐛 Bug Reporting:</b> While striving for excellence, I understand that no
-                software is entirely free of bugs. If you encounter any anomalies, glitches, or issues during your
-                experience with Nms Kontho, I kindly request that you report them via the official Nms Kontho Facebook
-                page, accessible through this link: 🔗 Nms Kontho Facebook Page.</p>
-            <br>
-
-            <p data-aos="zoom-in" class="aos-init aos-animate"><b>📌 Antivirus Flagging:</b> 🚩Certain antivirus applications may flag the installer and portable version of Nms Kontho. To avoid encountering such issues, we recommend installing Nms Kontho from the <a href="https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"> Microsoft Store.</a></p>
-            <br>
-            <p data-aos="zoom-in" class="aos-init">Your input and support are deeply appreciated as they contribute to the
-                refinement and enhancement of this project. Thank you for your understanding and collaboration in making
-                Nms Kontho a more robust and reliable application for all users.</p>
-
-            <h5 data-aos="zoom-in" class="aos-init aos-animate">🦺Developer: Md Nabil Mostofa</h5>
-        </div>
-
-    </section>
-    <section class="faq" id="faq">
-        <h2 data-aos="fade-down">Frequently Asked Questins and Answers</h2>
-        <div class="accordion" data-aos="fade-up">
-            <!-- accordion qeustions Start From Here  -->
-            <div class="accordion-content" data-aos="zoom-in">
-                <div class="faqheader">
-                    <span class="title">🔷Why is the website link like this❓</span>
-                    <i class="fa-solid fa-angles-down"></i>
-                </div>
-
-                <div class="description">
-                    <p>
-                        <b>Answer: </b>💠The website link appears this way because it's my personal GitHub repository, and this isn't a commercial application.
-                    </p>
-                </div>
-            </div>
-            <!-- Accordion qeustions answer end Here  -->
-
-            <!-- accordion qeustions Start From Here  -->
-            <div class="accordion-content" data-aos="zoom-in">
-                <div class="faqheader">
-                    <span class="title">🔷Why do I have to pay for the Access Plus edition❓</span>
-                    <i class="fa-solid fa-angles-down"></i>
-                </div>
-
-                <div class="description">
-                    <p>
-                        <b>Answer: </b>💠Because Google Cloud API is not free‼💲
-                    </p>
-                </div>
-            </div>
-            <!-- Accordion qeustions answer end Here  -->
-
-            <!-- accordion qeustions Start From Here  -->
-            <div class="accordion-content" data-aos="zoom-in">
-                <div class="faqheader">
-                    <span class="title">🔷How can I get tech support for this application❓</span>
-                    <i class="fa-solid fa-angles-down"></i>
-                </div>
-
-                <div class="description">
-                    <p>
-                        <b>Answer: </b>💠To access technical support, please initiate contact via the Nms Kontho Facebook page. Begin by sending a message detailing the issue you are experiencing. Please be aware that response times may vary, particularly during periods of high traffic. If you require 'Anydesk' assistance, kindly download the application to your device and indicate your need for support.
-                    </p>
-                </div>
-            </div>
-            <!-- Accordion qeustions answer end Here  -->
-
-            <!-- accordion qeustions Start From Here  -->
-            <div class="accordion-content" data-aos="zoom-in">
-                <div class="faqheader">
-                    <span class="title">🔷Why do some antivirus software flag the Installer and Portable version❓</span>
-                    <i class="fa-solid fa-angles-down"></i>
-                </div>
-
-                <div class="description">
-                    <p>
-                        <b>Answer: </b>💠Applications of this nature require a code signature certificate to facilitate distribution without encountering flagging issues. As an individual without organizational backing, navigating this process can be challenging. <b>By installing this application through the Microsoft Store, you can avoid encountering the flagging issue. </b>
-                    </p>
-                </div>
-            </div>
-            <!-- Accordion qeustions answer end Here  -->
-
-
-            <!-- accordion qeustions Start From Here  -->
-            <div class="accordion-content" data-aos="zoom-in">
-                <div class="faqheader">
-                    <span class="title">🔷Are Mac or Linux versions available❓</span>
-                    <i class="fa-solid fa-angles-down"></i>
-                </div>
-
-                <div class="description">
-                    <p>
-                        <b>Answer: </b>💠The release of a stable Mac or Linux version may take over a year.
-                    </p>
-                </div>
-            </div>
-            <!-- Accordion qeustions answer end Here  -->
-
-            <!-- accordion qeustions Start From Here  -->
-            <div class="accordion-content" data-aos="zoom-in">
-                <div class="faqheader">
-                    <span class="title">🔷How can I get a free trial key❓</span>
-                    <i class="fa-solid fa-angles-down"></i>
-                </div>
-
-                <div class="description">
-                    <p>
-                        <b>Answer: </b>💠To obtain a free trial key, please visit our Facebook page and send a message requesting a trial key. Typically, if demand is moderate, you'll receive your trial key within 10-15 minutes or even less. We encourage users to try the application using the trial key before considering a purchase. Even if you don't intend to buy the serial key, you're welcome to request a trial key. Whenever a new version is released, you can claim a free trial key to test it. Your feedback on new versions is greatly appreciated.<br><b>The Trial key duration typically lasts 7-8 days.</b></b>
-                    </p>
-                </div>
-            </div>
-            <!-- Accordion qeustions answer end Here  -->
-
-
-
-            <!-- accordion qeustions Start From Here  -->
-            <div class="accordion-content" data-aos="zoom-in">
-                <div class="faqheader">
-                    <span class="title">🔷How can I request for a feature❓</span>
-                    <i class="fa-solid fa-angles-down"></i>
-                </div>
-
-                <div class="description">
-                    <p>
-                        <b>Answer: </b>💠If you wish to request a feature for the upcoming version of Nms Kontho, please reach out to the developer via their Gmail at mdnabilmustofa2021@gmail.com.
-                    </p>
-                </div>
-            </div>
-            <!-- Accordion qeustions answer end Here  -->
-        </div>
-
-
-    </section>
-
-
-    <section id="activation">
-        <h2 data-aos="fade-down">Nms Kontho Activation</h2>
-        
-        <div class="table" align="center" data-aos="fade-up">
-            <img src="./Assets/Asset 12.png" alt="Kontho pad" width="500" class="card">
-
-            <table id="free_Vs_pro_table">
-            <tr data-aos="fade-up">
-                <th>Features</th>
-                <th>Free Edition</th>
-                <th>Access Plus</th>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Voice typing</td>
-                <td>Limited</td>
-                <td>Unlimited</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Gemini AI (BETA)<br>Text Generator</td>
-                <td>200 characters<br>at a time</td>
-                <td>1200 characters<br>at a time</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Google Word<br>Recommendation</td>
-                <td>-</td>
-                <td>Available</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Response time</td>
-                <td>1200 mili sec.</td>
-                <td>300 mili sec.</td>
-            </tr>
-            
-            <tr data-aos="fade-up">
-                <td>Next word prediction</td>
-                <td>-</td>
-                <td>Available</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Spell checker</td>
-                <td>Basic</td>
-                <td>Advanced</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Word by word<br>Backup</td>
-                <td>-</td>
-                <td>Available</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Custom appearance</td>
-                <td>Top bar only</td>
-                <td>Fonts, background color,<br>border padding etc.</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Custom shortcuts</td>
-                <td>-</td>
-                <td>Available</td>
-            </tr>
-
-            <tr data-aos="fade-up">
-                <td>Word Manager</td>
-                <td>Disabled</td>
-                <td>Enabled</td>
-            </tr>
-
-            <tr data-aos="fade-up"></tr>
-                <td>Custom layout</td>
-                <td>-</td>
-                <td>Available</td>
-            </tr>
-
-            
-
-            <!-- <tr>
-                <td>Ads Frequency</td>
-                <td>Occasional</td>
-                <td>No ads</td>
-            </tr> -->
-            
-            
-            </table>
-
-            <div class="subcriptions" data-aos="fade-up">
-                
-                <div style="margin-bottom: 30px;">
-                <p style="font-size:18px;">Obtain Your Free Trial Key from the Nms Kontho Facebook Page.<br>📣<b>We encourage users to try the application using the trial key before considering a purchase.</b></p>
-                </div>
-
-                <div style="margin-bottom: 30px;" data-aos="fade-up" id="subscriptions">
-                    <h3>Subscription Plans</h3>
-                </div>
-                <table id="subscriptionPlanTable">
-                    <tr data-aos="fade-up">
-                        <th>Activation Periods</th>
-                        <th>10 Days</th>
-                        <th>30 Days</th>
-                        <th>90 Days</th>
-                        <th>180 Days</th>
-                        <th>365 Days</th>
-                        <th>4 years</th>
-                    </tr>
-                    <tr data-aos="fade-up">
-                        <td><strong>Total Amount</strong></td>
-                        <td id="10DA">25 BDT</td>
-                        <td id="1MA">60 BDT</td>
-                        <td id="3MA">160 BDT</td>
-                        <td id="6MA">250 BDT</td>
-                        <td id="1YA">425 BDT</td>
-                        <td id="8YA">875 BDT<br>800 INR</td>
-                    </tr>
-                   
-                    <tr>
-                        <td><strong>Number of devices</strong><br>
-                            <div class="ND-button-container">
-                            <button class="increase-btn">
-                                <i class="fas fa-plus"></i>
-                            </button>
-                            <button class="decrease-btn">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            </div>
-                        </td>
-                        <td id="NOD" colspan="6">1</td>
-                    </tr>
-                </table>
-            </div>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+	  <!-- Here is the Main JavaScript link-->
+	  
+	  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	  
+		<script>
+		  AOS.init();
+		</script>
     
-            <div class="subsInstructions">
-                <h5 style="padding: 20px;">how to buy a serial key?</h5>
-
-                <img src="./Assets/QR.png", width="250" class="card"><img src="Assets/rocket.jpg" class="card" width="260" height="440" alt=""/>
-
-                <!-- <h4>01689865823</h4> -->
-
-                <div class="binod">
-                    <!-- <img src="./imgs/bkash.png"> -->
-                    <img src="./Assets/Nagad.png">
-
-                     <div class="number-container">
-                        <div id="mobileNumber" class="mobile-number"><strong>01689865823</strong></div>
-                        <button class="copy-button" onclick="copyMobileNumber()">Copy</button>
-                      </div>
-                </div>
-
-                <div class="skrill-div">
-                    ভারত থেকে payment এর সুবিধা- <br>(উপরের নাম্বার ব্যবহার করে)
-                    <a href="https://transfers.skrill.com/en/?btag=a_24b_41c_&program=SMT&siteid=24&senderCountry=IND&senderCurrency=INR&recipientCountry=BGD&recipientCurrency=BDT" target="_blank" class="skrill-link">
-                    <img src="./Assets/Skrill-Logo.svg" alt="Skrill Logo" class="skrill-logo">
-                    </a>
-                </div>
-
-                <div class="dicections">
-                    <p class="styled-paragraph"><b>
-                      উপরিউক্ত নাম্বারে বিকাশ অথবা নগদ সেন্ড মানি করে Nms Kontho ফেসবুক পেজ অথবা হোয়াটস অ্যাপে মেসেজ করুন। <br>
-                      ডিমান্ড বেশি থাকা অবস্থায় key পাঠাতে কিছুটা দেরি হতে পারে।</b>
-                    </p>
-                </div>
-
-                <p class="instructionpara">
-                    <div class="other-options">
-                        
-
-                        <div class="shopbd" id="shopbd">
-                            <a href="https://shopeybd.com/product/nms-kontho/" target="_blank">
-
-                            <img src="./Assets/shopeybd-logo.svg" alt="Skrill Logo">
-                            </a>
-                        </div>
-                    <div>
-
-
-                    <!-- উপরিউক্ত নাম্বারে বিকাশ অথবা নগদ দিয়ে টাকা পে করে <b><a href="https://www.facebook.com/profile.php?id=100093403287567" target="_blank">Nms Kontho</b> -র facebook page </a> এ <b>আপনার নাম্বার</b> (যেটি দিয়ে পে করেছেন তার শেষের ৪টি সংখ্যা), <b>সাবস্ক্রিপশন প্লান</b> এবং <b>কয়টি serial key🔑 কিনছেন তার সংখ্যা</b> উল্লেখ করে মেসেজ দিন।<br>যেমন: -->
-                </p>
-                
-                <!-- <div class="messageDemo">
-                    <h6></h6>
-                   <p>1234, ১মাস</p>
-                </div> -->
-
-                <p>If demand is high, it may take up to an hour to send the key.</p>
-
-                
-                <div class="whatTodo">
-                    <h5>What to do with that serial key?<br>Watch the video</h5>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O8AXc6kb0p8" frameborder="0" allowfullscreen></iframe>
-                </div>  
-
-    </section>
-
-    <section id="tutorial">
-        <h2 data-aos="fade-down">Tutorials</h2>
-        <div align="center"  data-aos="fade-up">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XHmYZkKCLOA" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zczX13wCYgQ" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ADgn9s5Dgzc" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ct6iK96QUWE" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NN1UTHZzGVE" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qOTlDUlZ-Fk" frameborder="0" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zbtELYJaAJU" frameborder="0" allowfullscreen></iframe>
-        </div>      
-    </section>
-
-    <section class="policies", id="policy">
-        <h2 data-aos="fade-down" class="aos-init aos-animate">Policy</h2>
-        <div class="dev-message aos-init aos-animate" data-aos="fade-up">
-
-            <p data-aos="zoom-in" class="aos-init aos-animate"><b>This privacy policy describes how Nms Kontho deals with user data.</b></p>
-            <br>
-            <h5 data-aos="zoom-in" class="aos-init aos-animate">User-Generated Data:</h5>
-            <p data-aos="zoom-in" class="aos-init aos-animate">You can save and manage words using this app. Your dictionary file (.pkl) is stored on your device, and we don't access or share it with any third parties.</p>
-            <br>
-            <!-- <h5 data-aos="zoom-in" class="aos-init aos-animate">Clipboard History:</h5>
-            <p data-aos="zoom-in" class="aos-init aos-animate">If you opt to enable the "Track Clipboard" feature, your clipboard history is stored locally on your device. You retain full control to delete or modify this information as needed. It's important to note that by default, this feature is turned off, and no data is collected (even when you are using this feature).</p>
-            <br>
- -->
-            <h5 data-aos="zoom-in" class="aos-init aos-animate">Word Contribution:</h5>
-            <p data-aos="zoom-in" class="aos-init aos-animate">You have the option to contribute to our dictionary by adding a word to our Google Firebase data server. This feature is entirely voluntary. You can do so by checking the "Send to the server" checkbox when adding a new word. By default, this option is unchecked.</p>
-            <br>
-
-            <h5 data-aos="zoom-in" class="aos-init aos-animate">Refund policy:</h5>
-            <p data-aos="zoom-in" class="aos-init aos-animate">Please note that after activating with a serial key, there is no refund policy. Therefore, we encourage users to try the application with a free trial key before considering the purchase of a serial key.</p>
-            <br>
-
-            <h5 data-aos="zoom-in" class="aos-init aos-animate"> No Personal Data Collection:</h5>
-            <p data-aos="zoom-in" class="aos-init aos-animate">"Nms Kontho" does not collect any personal data, and we do not share any information with third parties.</p>
-            <br>
-
-            <h5 data-aos="zoom-in" class="aos-init aos-animate">Contact Us:</h5>
-            <p data-aos="zoom-in" class="aos-init aos-animate">If you have any questions or concerns about your privacy or this policy, please feel free to contact us at mdnabilmustofa2021@gmail.com</p>
-            <br>
-
-            
-        </div>
-
-    </section>
-
-
-    <!-- <section class="activation">
-        <h2 data-aos="fade-down">Trial Offer for First-Time Use</h2>
-
-        <div class="trialoffer" data-aos="fade-up">
-
-            <p data-aos="zoom-in">
-                <abbr title="Nabil Mustafa's Kontho"><b>Nms Kontho</b></abbr>
-                সফ্টওয়্যার এর প্রোফেশনাল সংস্করণের জন্য একটি 7 দিনের বিনামূল্যের
-                ট্রায়াল কী 🔑 পেতে, অনুগ্রহ করে
-                <b><a href="https://www.facebook.com/profile.php?id=100093403287567" target="_blank"
-                        class="fa fa facebook-f">
-                        Nms Kontho</a></b>
-                Facebook পেজ-এর মাধ্যমে যোগাযোগ করুন৷ আপনার অনুরোধ অবিলম্বে প্রক্রিয়া
-                করা হবে। আপনি যদি
-                <b>Nms Kontho</b>
-                সফটওয়্যারটি পছন্দ করেন তবে আপনার বন্ধুদের সাথে শেয়ার করতে দ্বিধা বোধ
-                করবেন না। ধন্যবাদ
-                <i class="fa fa-heart" aria-hidden="true" style="color: red"></i>
-            </p>
-            <br />
-            <p data-aos="zoom-in">
-
-                To obtain a 7-day free trial key 🔑 for the Professional version of
-                <abbr title="Nabil Mustafa's Kontho"><b>Nms Kontho</b></abbr>, kindly reach out through
-                the
-                <b><a href="https://www.facebook.com/profile.php?id=100093403287567" target="_blank"
-                        class="fa fa facebook-f">
-                        Nms Kontho</a></b>
-                Facebook page. Your request will be processed immediately. If you like
-                <b>Nms Kontho</b> software then don't hesitate to share with your
-                friends. Thank you
-                <i class="fa fa-heart" aria-hidden="true" style="color: red"></i>
-            </p>
-        </div>
-    </section> -->
-
-
-
-
-
-    <footer>
-        <!-- <div class="footer-row">
-            <div class="footer-col">
-                <h4 data-aos="fade-down">Info</h4>
-                <ul class="links" data-aos="fade-up">
-                    <li><a href="#features">Kontho Features</a></li>
-                    <li><a href="pages/contact.html">Contact us</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="pages/download.html#trialoffer">Trial Offer</a></li>
-                    <li><a href="pages/activation.html#subscription-plans">Subscription Plans</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4 data-aos="fade-down">Legal</h4>
-                <ul class="links" data-aos="fade-up">
-                    <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="#">License</a></li>
-                    <li><a href="#">Customer Agreement</a></li>
-                    <li><a href="#">Security</a></li>
-
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4 data-aos="fade-down">Explore</h4>
-                <ul class="links" data-aos="fade-up">
-                    <li><a href="#">Updates History</a></li>
-                    <li><a href="#">New Feature</a></li>
-                </ul>
-                <br>
-                <h4 data-aos="fade-down" style="margin-bottom: -10px;">Layout Map</h4>
-                <ul class="links" data-aos="fade-up">
-                    <li><a href="pages/banglish-keyboardlayout.htm">Banglish</a></li>
-                    <li><a href="pages/nirala-keyboard-layout_guide.html">Nirala</a></li>
-                </ul>
-            </div>
-
-
-
-            <div class="footer-col">
-                <h4 data-aos="fade-down">Newsletter</h4>
-                <p data-aos="fade-up">
-                    Subscribe to our newsletter for news, updates, helpful tips, and
-                    exclusive offers.
-                </p>
-
-                <form action="#" data-aos="zoom-in">
-                    <div class="Newsletter">
-                        <input type="text" id="email" class="input-group-input" required>
-                        <label for="email" class="input-group-label">Enter your email</label>
-                    </div>
-                    <button type="submit">SUBSCRIBE</button>
-                </form>
-
-                <div class="icons" data-aos="fade-up">
-                    <a href="https://www.facebook.com/profile.php?id=100093403287567" target="_blank"
-                        class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://youtu.be/zbtELYJaAJU" target="_blank" class="youtube"><i
-                            class="fab fa-youtube"></i></a>
-                    <a href="" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
-
-                </div>
-            </div>
-        </div> -->
-        <div class="footer-row2">
-            <div>
-                <p>Made with <abbr style="text-decoration: none;" title="Heart">❤️</abbr> by <a
-                        href="https://www.facebook.com/Shariful797" style="text-decoration: none; color: blue;">Md.
-                        Shariful Islam</a></p>
-            </div>
-            <div>
-                <p> <span class="one">|</span>Copyright © 2023 <a
-                        href="https://www.facebook.com/profile.php?id=100093403287567"
-                        style="text-decoration: none; color: blue;"> <abbr style="text-decoration: none;"
-                            title="Nabil Mustafa's Kontho">Nms Kontho</abbr></a> | All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- Don't change this for buttom to top scrol can use a different icon from bellow here -->
-    <div id="bottom2top">
-        <button id="buttomtotop" aria-label="Buttom to Top Scroll">
-            <i class="fa-regular fa-circle-up"></i>
-        </button>
-    </div>
-    <div id="circle1" class="circle"></div>
-    <div id="circle2" class="circle1"></div>
-
-
-    <!-- Here is the Main JavaScript link-->
-    <script src="JavaScript/JavaScript.js"></script>
-
-    <!-- Here is the Kontho Spreading Text JavaScript link  -->
-    <script src="JavaScript/KonthoSpreadingText.js"></script>
-
-    <!-- Here is the Accordion JavaScript link  -->
-    <script src="JavaScript/AccordionScript.js"></script>
-
-
-    <!--Here is the GSAP Scrolling and trigger Animatin CDN Script Link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <!-- Here is the AOS Js CDN link -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            delay: 0,
-            offset: 50,
-            duration: 1200,
-            easing: 'ease-in-out-back',
-            disable: window.innerWidth < 400
-        });
-    </script>
-</body>
-
+  </body>
 </html>
