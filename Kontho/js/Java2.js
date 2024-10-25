@@ -1,10 +1,10 @@
 // JavaScript Document
 
-//fetch('navbar.html')
-//            .then(response => response.text())
-//            .then(data => {
-//                document.getElementById('navbarContainer').innerHTML = data;
-//            });
+fetch('navbar.html')
+           .then(response => response.text())
+           .then(data => {
+               document.getElementById('navbarContainer2').innerHTML = data;
+           });
 
 
 

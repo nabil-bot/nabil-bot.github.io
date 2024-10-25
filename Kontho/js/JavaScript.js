@@ -1,11 +1,11 @@
 var version = 6.133;
 
 
-//fetch('navbar.html')
-//            .then(response => response.text())
-//            .then(data => {
-//                document.getElementById('navbarContainer').innerHTML = data;
-//            });
+fetch('navbar.html')
+           .then(response => response.text())
+           .then(data => {
+               document.getElementById('navbarContainer').innerHTML = data;
+           });
 
 $(document).ready(function() {
   $({ value: 0 }).animate({ value: version }, {
@@ -41,6 +41,8 @@ function ShowMsStoreMsg(){
 	document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;I've read the warning and I would like to download the Installer.</strong>";
 	document.querySelector('#confirmationWindow .btn-success').innerHTML = '<i class="fas fa-external-link-alt"></i><strong> Microsoft Store</strong>';
 	
+
+	downloadButton.disabled = false;
 
 	document.getElementById('downloadButton').addEventListener('click', function() {
 		var link = "https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"; // Decide which link to open
