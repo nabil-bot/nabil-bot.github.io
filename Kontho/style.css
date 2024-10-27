@@ -468,3 +468,28 @@ tbody tr #8YA {
     padding-top: 4px;
     padding-bottom: 6px;
 }
+
+
+.col-lg-4 a #lkeyLogo {
+    background-color: #82BFFF;
+    border-radius: 10px;
+    padding-top: 14px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+}
+.row .col-lg-4 .otherPaymentGetways {
+    padding-top: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-bottom: 8px;
+    border: 2px solid #95C8FF;
+    border-radius: 5px;
+}
+.col-lg-4 .otherPaymentGetways #otherGatwaysDiv {
+    text-align: center;
+    background-color: #E3F1FF;
+    border-radius: 20px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
