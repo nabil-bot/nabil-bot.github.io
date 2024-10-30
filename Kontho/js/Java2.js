@@ -8,6 +8,8 @@ fetch('navbar.html')
 
 
 
+
+
 function loadFeatures(features) {
     const container = document.getElementById('featureContainer');
 
@@ -350,3 +352,4 @@ function sendRequest (mainLink) {
 //      button.addEventListener('click', sendRequestByMessenger(myParameter));
 //	 
 //    };
+

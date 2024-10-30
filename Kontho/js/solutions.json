@@ -1,0 +1,10 @@
+{
+  "Fix for Missing Topbar Icons": {
+      "videoSrcLink": "https://www.youtube.com/embed/JHHiY52qxbI",
+      "description": "If you install Nms Kontho from the Microsoft Store without fully uninstalling the installer version, some issues might arise. To resolve this, simply delete the folder at:<br><br>Documents → 📁 Kontho (delete)<br><br>Then restart Nms Kontho."
+  },
+  "Advanced Spellchecker": {
+      "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=160",
+      "description": "You can add context to receive specific spelling recommendations from Google suggestions, Gemini AI, and the Google Transliteration API. This helps you get more accurate word suggestions. So even if the word is not saved in your offline dictionary, you can still get suggestions. This means that you do not have to search Google every time you want to check the spelling of a word or name."
+  }
+}
