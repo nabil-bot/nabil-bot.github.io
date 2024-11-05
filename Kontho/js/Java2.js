@@ -232,8 +232,8 @@ document.getElementById('language-toggle').addEventListener('change', function()
 		document.getElementById('subsPlanHeader').style.fontFamily = "Noto Sans Bengali, sans-serif";
 		document.getElementById('subsPlanHeader').innerHTML = 'সাবস্ক্রিপশন প্ল্যান';
 		
-		document.getElementById('freeTrialMsg').style.fontFamily = "Noto Sans Bengali, sans-serif";
-		document.getElementById('freeTrialMsg').innerHTML = 'ফ্রী ট্রায়াল key পেতে যোগাযোগ করুন:&nbsp; <a href="m.me/101469266332395" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://wa.me/8801689865823" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></a> <a href="https://t.me/NmsKontho" target="_blank"><i class="fa-brands fa-telegram"></i> </a><br>📣<strong>কেনার আগে ট্রায়াল Key ব্যবহারপূর্বক অ্যাপ্লিকেশানটি মূল্যায়ন করে নিতে উৎসাহিত করা হয়।</strong>';
+		// document.getElementById('freeTrialMsg').style.fontFamily = "Noto Sans Bengali, sans-serif";
+		// document.getElementById('freeTrialMsg').innerHTML = 'ফ্রী ট্রায়াল key পেতে যোগাযোগ করুন:&nbsp; <a href="m.me/101469266332395" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://wa.me/8801689865823" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></a> <a href="https://t.me/NmsKontho" target="_blank"><i class="fa-brands fa-telegram"></i> </a><br>📣<strong>কেনার আগে ট্রায়াল Key ব্যবহারপূর্বক অ্যাপ্লিকেশানটি মূল্যায়ন করে নিতে উৎসাহিত করা হয়।</strong>';
     	
 		
 		
@@ -283,8 +283,8 @@ document.getElementById('language-toggle').addEventListener('change', function()
 		document.getElementById('subsPlanHeader').innerHTML = 'Subscription Plans';
 		
 		
-		document.getElementById('freeTrialMsg').style.fontFamily = "";
-		document.getElementById('freeTrialMsg').innerHTML = 'Obtain your free trial key from any of our contact platforms:&nbsp; <a href="m.me/101469266332395" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://wa.me/8801689865823" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></a> <a href="https://t.me/NmsKontho" target="_blank"><i class="fa-brands fa-telegram"></i> </a><br>📣<strong>We encourage users to try the application using the trial key before considering a purchase.</strong>';
+		// document.getElementById('freeTrialMsg').style.fontFamily = "";
+		// document.getElementById('freeTrialMsg').innerHTML = 'Obtain your free trial key from any of our contact platforms:&nbsp; <a href="m.me/101469266332395" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://wa.me/8801689865823" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></a> <a href="https://t.me/NmsKontho" target="_blank"><i class="fa-brands fa-telegram"></i> </a><br>📣<strong>We encourage users to try the application using the trial key before considering a purchase.</strong>';
 		
 		document.getElementById('howToBuyHead').style.fontFamily = "";
 		document.getElementById('howToBuyHead').innerHTML = '<strong>How to buy a serial key?</strong> Just follow these 2 steps:'
