@@ -42,7 +42,7 @@ function ShowMsStoreMsg(){
 	
 	}else{
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Microsoft Store থেকে Nms Kontho ইনস্টল করার আগে</strong>";
-		document.querySelector('#confirmationWindow p').innerHTML = "যদি আপনি পূর্বে ইনস্টলার ব্যবহার করে Nms Kontho ইনস্টল করে থাকেন, তবে আপনার পিসিতে ডকুমেন্টস ডিরেক্টরিতে যদি একটি <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> ফোল্ডার থাকে তাহলে তা ডিলিট করে দিন।<br><br>Documents --> Kontho (remove)";
+		document.querySelector('#confirmationWindow p').innerHTML = "যদি আপনি পূর্বে ইনস্টলার ব্যবহার করে Nms Kontho ইনস্টল করে থাকেন, এবং আপনার পিসিতে ডকুমেন্টস ডিরেক্টরিতে যদি একটি <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> ফোল্ডার থাকে তাহলে তা ডিলিট করে নিন।<br><br>Documents --> Kontho (remove)";
 	}
 	// document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;I've read the warning and I would like to download the Installer.</strong>";
 	

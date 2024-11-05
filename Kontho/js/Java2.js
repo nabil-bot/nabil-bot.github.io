@@ -241,7 +241,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
 		document.getElementById('howToBuyHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
 		
 		document.getElementById('claimInst').style.fontFamily = "Noto Sans Bengali, sans-serif";
-		document.getElementById('claimInst').innerHTML = 'পছন্দের প্ল্যান অনুযায়ী টাকা পাঠানোর পর ফোনের <strong>শেষের চারটি ডিজিট</strong> বা <strong>ট্রানসাকশান আইডি</strong> অথবা <strong>স্ক্রিনশট</strong> এবং <strong>প্ল্যান</strong> উল্লেখ করে নিম্নোক্ত যেকোনো মাধ্যমে যোগাযোগ করুন।<br><br><i class="fa-solid fa-hourglass-start"></i> সাধারণত <strong>কয়েক সেকেন্ড</strong> থেকে শুরু করে  <strong>মিনিট</strong>, এমনকি ডিমান্ড বেশি থাকা অবস্থায় key পাঠাতে <strong>এক ঘন্টা</strong> পর্যন্ত সময় লাগতে পারে।'
+		document.getElementById('claimInst').innerHTML = 'পছন্দের প্ল্যান অনুযায়ী সেন্ড মানি করার পর ফোনের <strong>শেষের চারটি ডিজিট</strong> বা <strong>ট্রানসাকশান আইডি</strong> অথবা <strong>স্ক্রিনশট</strong> এবং <strong>প্ল্যান</strong> উল্লেখ করে নিম্নোক্ত যেকোনো মাধ্যমে যোগাযোগ করুন।<br><br><i class="fa-solid fa-hourglass-start"></i> সাধারণত <strong>কয়েক সেকেন্ড</strong> থেকে শুরু করে  <strong>মিনিট</strong>, এমনকি ডিমান্ড বেশি থাকা অবস্থায় key পাঠাতে <strong>এক ঘন্টা</strong> পর্যন্ত সময় লাগতে পারে।'
 		
 		document.getElementById('howToActivateHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
 		document.getElementById('howToActivateHead').innerHTML = '<i class="fa-solid fa-circle-play"></i> এক্টিভেশন প্রক্রিয়া জানতে <strong>১ মিনিটের</strong> ছোট্ট ভিডিওটি দেখে নিন।'
