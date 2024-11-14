@@ -519,3 +519,14 @@ tbody tr #8YA {
     margin-left: 8px;
 	background-color: #058eff;
 }
+#activation #proFeaturesList {
+    align-content: center;
+}
+
+#otherGatwaysDiv {
+	text-align: center;}.row .col-lg-4 .rounded.img-fluid {
+}
+#otherPaymentGetways{
+    background-color: #D5DAFF;
+	border: medium;
+}
