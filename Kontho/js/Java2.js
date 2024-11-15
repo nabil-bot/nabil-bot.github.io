@@ -8,92 +8,88 @@ fetch('navbar.html')
 
 
 
-
-
-function loadFeatures(features) {
-    const container = document.getElementById('featureContainer');
-
-    // Iterate over each feature in the JSON
-    for (const [header, feature] of Object.entries(features)) {
-        // Create the row div
-        const rowDiv = document.createElement('div');
-        rowDiv.classList.add('row');
-		
-		rowDiv.setAttribute('data-aos', 'flip-up');
-        // Create the video column
-        const colVideoDiv = document.createElement('div');
-        colVideoDiv.classList.add('col-lg-5');
-
-        const embedDiv = document.createElement('div');
-        embedDiv.classList.add('embed-responsive', 'embed-responsive-16by9');
-
-        const iframe = document.createElement('iframe');
-        iframe.classList.add('embed-responsive-item');
-        iframe.setAttribute('src', feature.videoSrcLink);
-        iframe.setAttribute('allowfullscreen', '');
-
-        embedDiv.appendChild(iframe);
-        colVideoDiv.appendChild(embedDiv);
-
-        // Create the text column
-        const colTextDiv = document.createElement('div');
-        colTextDiv.classList.add('col-lg-7');
-
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card', 'col-md-4', 'col-lg-12');
-
-        const cardBodyDiv = document.createElement('div');
-        cardBodyDiv.classList.add('card-body');
-
-        // Set the feature header
-        const h5 = document.createElement('h5');
-        h5.classList.add('card-title');
-        h5.innerHTML = header.replace(/([A-Z])/g, ' $1'); // Convert camelCase to spaced words
-
-        // Set the feature description
-        const p = document.createElement('p');
-        p.classList.add('card-text');
-        p.innerHTML = feature.description;
-
-        // Append elements to card body
-        cardBodyDiv.appendChild(h5);
-        cardBodyDiv.appendChild(p);
-        cardDiv.appendChild(cardBodyDiv);
-        colTextDiv.appendChild(cardDiv);
-
-        // Append video and text columns to the row
-        rowDiv.appendChild(colVideoDiv);
-        rowDiv.appendChild(colTextDiv);
-
-        // Append the row to the container
-        container.appendChild(rowDiv);
-    }
-}
-
-// Call the function to load features
-
-let features = [];
-
-fetch('js/features.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json(); // Parse the JSON data
-    })
-    .then(data => {
-        features = data; // Store the JSON data into the `features` variable
-        loadFeatures(features); // Call the loadFeatures function with the loaded features
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
-
-
-
-// loadFeatures(features);
-
-
+//
+//
+//function loadFeatures(features) {
+//    const container = document.getElementById('featureContainer');
+//
+//    // Iterate over each feature in the JSON
+//    for (const [header, feature] of Object.entries(features)) {
+//        // Create the row div
+//        const rowDiv = document.createElement('div');
+//        rowDiv.classList.add('row');
+//		
+//		rowDiv.setAttribute('data-aos', 'flip-up');
+//        // Create the video column
+//        const colVideoDiv = document.createElement('div');
+//        colVideoDiv.classList.add('col-lg-5');
+//
+//        const embedDiv = document.createElement('div');
+//        embedDiv.classList.add('embed-responsive', 'embed-responsive-16by9');
+//
+//        const iframe = document.createElement('iframe');
+//        iframe.classList.add('embed-responsive-item');
+//        iframe.setAttribute('src', feature.videoSrcLink);
+//        iframe.setAttribute('allowfullscreen', '');
+//
+//        embedDiv.appendChild(iframe);
+//        colVideoDiv.appendChild(embedDiv);
+//
+//        // Create the text column
+//        const colTextDiv = document.createElement('div');
+//        colTextDiv.classList.add('col-lg-7');
+//
+//        const cardDiv = document.createElement('div');
+//        cardDiv.classList.add('card', 'col-md-4', 'col-lg-12');
+//
+//        const cardBodyDiv = document.createElement('div');
+//        cardBodyDiv.classList.add('card-body');
+//
+//        // Set the feature header
+//        const h5 = document.createElement('h5');
+//        h5.classList.add('card-title');
+//        h5.innerHTML = header.replace(/([A-Z])/g, ' $1'); // Convert camelCase to spaced words
+//
+//        // Set the feature description
+//        const p = document.createElement('p');
+//        p.classList.add('card-text');
+//        p.innerHTML = feature.description;
+//
+//        // Append elements to card body
+//        cardBodyDiv.appendChild(h5);
+//        cardBodyDiv.appendChild(p);
+//        cardDiv.appendChild(cardBodyDiv);
+//        colTextDiv.appendChild(cardDiv);
+//
+//        // Append video and text columns to the row
+//        rowDiv.appendChild(colVideoDiv);
+//        rowDiv.appendChild(colTextDiv);
+//
+//        // Append the row to the container
+//        container.appendChild(rowDiv);
+//    }
+//}
+//
+//// Call the function to load features
+//
+//let features = [];
+//
+//fetch('js/features.json')
+//    .then(response => {
+//        if (!response.ok) {
+//            throw new Error('Network response was not ok');
+//        }
+//        return response.json(); // Parse the JSON data
+//    })
+//    .then(data => {
+//        features = data; // Store the JSON data into the `features` variable
+//        loadFeatures(features); // Call the loadFeatures function with the loaded features
+//    })
+//    .catch(error => {
+//        console.error('There was a problem with the fetch operation:', error);
+//    });
+//
+//
 
 
 

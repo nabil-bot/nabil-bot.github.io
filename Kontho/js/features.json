@@ -1,4 +1,9 @@
 {
+    "v1 Promo": {
+        "videoSrcLink": "https://www.youtube.com/embed/zbtELYJaAJU",
+        "description": "Introducing the ultimate solution for effortless Bangla and English typing."
+    },
+    
     "Continuous Word Prediction": {
         "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=264",
         "description": "While typing, Kontho will continuously try to guess the word you want, even for misspelled words. If you are using the Pro version, suggestions will come from the Google Recommendation API. Most of the time, you wont need to type the whole word just select it from the suggestion window to complete it."
