@@ -172,7 +172,7 @@ function increaseCount() {
   let count = parseInt(NODElement.textContent);
   count++;
 
-  NODElement.innerHTML = `<strong>${count}</strong> devices <i class="fa-solid fa-computer"></i>`;
+  NODElement.innerHTML = `<strong>${count}</strong> devices <i class="fa-solid fa-computer"></i><br>at a time`;
 
 
   setPrice(count)
@@ -191,9 +191,9 @@ function decreaseCount() {
 
 	
 	if (count == 1) {
-		NODElement.innerHTML = `<strong>${count}</strong> device <i class="fa-solid fa-computer"></i>`;
+		NODElement.innerHTML = `<strong>${count}</strong> device <i class="fa-solid fa-computer"></i><br>at a time`;
 	} else {
-		NODElement.innerHTML = `<strong>${count}</strong> devices <i class="fa-solid fa-computer"></i>`;
+		NODElement.innerHTML = `<strong>${count}</strong> devices <i class="fa-solid fa-computer"></i><br>at a time`;
 	}
   
 
