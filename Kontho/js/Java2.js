@@ -95,7 +95,35 @@ fetch('navbar.html')
 
 
 
-function setPrice(count) {
+// function setPrice(count) {
+//   let basePrices = {
+//     count10DA: [25, 50],  // Base prices for count = 1, 2, 3
+//     count1MA: [60, 120],
+//     count3MA: [160, 300],
+//     count6MA: [250, 480],
+//     count1YA: [425, 800],
+//     count8YA: [875, 1020],
+//     count8YAINR: [820, 920]
+//   };
+
+//   if (count == 1){
+//     countIndex = 0;
+//   } else {
+//     countIndex = 1;
+//   };
+
+//   // Update prices based on count
+//   count10DA.innerHTML = `${calculatePrice(basePrices.count10DA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+//   count1MA.innerHTML = `${calculatePrice(basePrices.count1MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+//   count3MA.innerHTML = `${calculatePrice(basePrices.count3MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+//   count6MA.innerHTML = `${calculatePrice(basePrices.count6MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+//   count1YA.innerHTML = `${calculatePrice(basePrices.count1YA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+//   count8YA.innerHTML = `${calculatePrice(basePrices.count8YA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>\n\n <br> ${calculatePrice(basePrices.count8YAINR[countIndex], count)}  <i class="fa-solid fa-indian-rupee-sign"></i>`;
+// }
+
+
+
+function setPrice(count, discountPercent = 20, minimum=200) {
   let basePrices = {
     count10DA: [25, 50],  // Base prices for count = 1, 2, 3
     count1MA: [60, 120],
@@ -106,20 +134,35 @@ function setPrice(count) {
     count8YAINR: [820, 920]
   };
 
-  if (count == 1){
+  if (count == 1) {
     countIndex = 0;
   } else {
     countIndex = 1;
-  };
+  }
 
-  // Update prices based on count
-  count10DA.innerHTML = `${calculatePrice(basePrices.count10DA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-  count1MA.innerHTML = `${calculatePrice(basePrices.count1MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-  count3MA.innerHTML = `${calculatePrice(basePrices.count3MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-  count6MA.innerHTML = `${calculatePrice(basePrices.count6MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-  count1YA.innerHTML = `${calculatePrice(basePrices.count1YA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-  count8YA.innerHTML = `${calculatePrice(basePrices.count8YA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>\n\n <br> ${calculatePrice(basePrices.count8YAINR[countIndex], count)}  <i class="fa-solid fa-indian-rupee-sign"></i>`;
+  function calculateDiscountedPrice(price, discount) {
+    return price - (price * (discount / 100));
+  }
+
+  function generatePriceHTML(basePrice, discountedPrice) {
+    if (discountPercent > 0 && basePrice>minimum) {
+      return `<s style="color: gray;">${basePrice}</s><br>${discountedPrice.toFixed(0)}`;
+    } else {
+      return `${basePrice}`;
+    }
+  }
+
+  // Update prices based on count and discount
+  count10DA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count10DA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count10DA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+  count1MA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count1MA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count1MA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+  count3MA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count3MA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count3MA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+  count6MA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count6MA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count6MA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+  count1YA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count1YA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count1YA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
+  count8YA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count8YA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i><br>${generatePriceHTML(calculatePrice(basePrices.count8YAINR[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YAINR[countIndex], count), discountPercent))} <i class="fa-solid fa-indian-rupee-sign"></i>`;
 }
+
+
+
 
 // Function to calculate price based on count and increase percentage
 function calculatePrice(basePrice, count) {
@@ -237,7 +280,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
 		document.getElementById('howToBuyHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
 		
 		document.getElementById('claimInst').style.fontFamily = "Noto Sans Bengali, sans-serif";
-		document.getElementById('claimInst').innerHTML = 'পছন্দের প্ল্যান অনুযায়ী সেন্ড মানি করার পর ফোনের <strong>শেষের চারটি ডিজিট</strong> বা <strong>ট্রানসাকশান আইডি</strong> অথবা <strong>স্ক্রিনশট</strong> এবং <strong>প্ল্যান</strong> উল্লেখ করে নিম্নোক্ত যেকোনো মাধ্যমে যোগাযোগ করুন।<br><br><i class="fa-solid fa-hourglass-start"></i> সাধারণত <strong>কয়েক সেকেন্ড</strong> থেকে শুরু করে  <strong>মিনিট</strong>, এমনকি ডিমান্ড বেশি থাকা অবস্থায় key পাঠাতে <strong>এক ঘন্টা</strong> পর্যন্ত সময় লাগতে পারে।'
+		document.getElementById('claimInst').innerHTML = 'পছন্দের প্ল্যান অনুযায়ী সেন্ড মানি করার পর ফোনের শেষের চারটি ডিজিট বা ট্রানসাকশান আইডি অথবা স্ক্রিনশট এবং প্ল্যান উল্লেখ করে নিম্নোক্ত যেকোনো মাধ্যমে মেসেজ করুন।<br><br><i class="fa-solid fa-hourglass-start"></i> সাধারণত <strong>কয়েক সেকেন্ড</strong> থেকে শুরু করে  <strong>মিনিট</strong>, এমনকি ডিমান্ড বেশি থাকা অবস্থায় key পাঠাতে <strong>এক ঘন্টা</strong> পর্যন্ত সময় লাগতে পারে।'
 		
 		document.getElementById('howToActivateHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
 		document.getElementById('howToActivateHead').innerHTML = '<i class="fa-solid fa-circle-play"></i> এক্টিভেশন প্রক্রিয়া জানতে <strong>১ মিনিটের</strong> ছোট্ট ভিডিওটি দেখে নিন।'
@@ -286,7 +329,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
 		document.getElementById('howToBuyHead').innerHTML = '<strong>How to buy a serial key?</strong> Just follow these 2 steps:'
         
 		document.getElementById('claimInst').style.fontFamily = "";
-		document.getElementById('claimInst').innerHTML = 'After sending the payment for your selected subscription plan, contact us on any of the following platforms with the <strong>last 4 digits</strong> of your phone number or <strong>transaction ID</strong> or a <strong>screenshot</strong>, along with your <strong>plan details</strong>.<br><br><i class="fa-solid fa-hourglass-start"></i> If demand is high, it may take <strong>up to an hour</strong> to send the key.'
+		document.getElementById('claimInst').innerHTML = 'After sending the payment for your selected subscription plan, send message on any of the following platforms with the <strong>last 4 digits</strong> of your phone number or <strong>transaction ID</strong> or a <strong>screenshot</strong>, along with your <strong>plan details</strong>.<br><br><i class="fa-solid fa-hourglass-start"></i> If demand is high, it may take <strong>up to an hour</strong> to send the key.'
 		
 		document.getElementById('howToActivateHead').style.fontFamily = "";
 		document.getElementById('howToActivateHead').innerHTML = '<i class="fa-solid fa-circle-play"></i> Watch the full <strong>1-min</strong> video to learn how to activate Nms Kontho properly.'
@@ -349,3 +392,69 @@ function sendRequest (mainLink) {
 //	 
 //    };
 
+setPrice(count=1, discountPercent=20, minimum=200);
+
+
+
+
+
+
+
+function timeLeft(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+};
+
+
+  var today = new Date();
+  var deadline = 'January 1 ' + (today.getFullYear() + 1) + " 00:00:00";
+  if (today.getMonth() == 0 && today.getDate() == 1) {
+    deadline = 'January 1 ' + (today.getFullYear()) + " 00:00:00";
+  };
+  
+//  $("#header").hover(function() {
+//    $(this).toggleClass('bluelight');
+//  });
+//  
+//  $(".clock").hover(function() {
+//    $(this).toggleClass('bluelight');
+//  });
+  
+  var setClock = function(newyear){
+    var timeinterval = setInterval(function(){
+      var t = timeLeft(newyear);
+      $('#days').text(t.days);
+      $('#hours').text(t.hours);
+      $('#mins').text(('0' + t.minutes).slice(-2));
+      $('#secs').text(('0' + t.seconds).slice(-2));
+      if(t.total<=0){
+        clearInterval(timeinterval);
+        var now = new Date();
+        var yearStr = now.getFullYear().toString();
+        $('#header').text("Happy New Year!!!");
+        $('#days').text(yearStr[0]);
+        $('#days-text').text("Happy");
+        $('#hours').text(yearStr[1]);
+        $('#hours-text').text("New");
+        $('#mins').text(yearStr[2]);
+        $('#mins-text').text("Year");
+        $('#secs').text(yearStr[3]);
+        $('#secs-text').text("!!!");
+        $('#info').text("Countdown starts again tomorrow!");
+      }
+    },1000);
+  };
+  
+  setClock(deadline);
+  
+;

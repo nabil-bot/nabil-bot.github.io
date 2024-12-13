@@ -533,3 +533,121 @@ tbody tr #8YA {
 tbody tr #8YA {
     background-color: #FFDFE0; !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bluelight {
+    text-shadow: 0 0 10px #3498DB,
+                 0 0 20px #3498DB,
+                 0 0 30px #3498DB,
+                 0 0 40px #2980B9,
+                 0 0 70px #2980B9,
+                 0 0 80px #2980B9,
+                 0 0 100px #2980B9,
+                 0 0 150px #2980B9;
+  }
+  
+  .clock {
+      overflow: hidden;
+  }
+  
+  .col-md-12 {
+      overflow: hidden;
+      padding-bottom: 20px;
+  }
+  
+  .top-pane {
+    margin-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #34495E;
+    border: 0px;
+  }
+  
+  .bottom-pane {
+    margin-top: 0px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #2C3E50;
+    border: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .num {
+      font-size: 100px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .num {
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .num {
+      font-size: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .text {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .text {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text {
+      font-size: 15px;
+    }
+  }
+  
+
+  
+  
+
+
+#CountDownClock{
+	display: flex;
+	flex-direction: row;
+}
+  
+
+#header{
+	text-align: center;
+}
+
+#howToBuyHead{
+	text-align: center;
+	
+}
+  
