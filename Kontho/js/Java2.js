@@ -122,7 +122,7 @@ fetch('navbar.html')
 
 
 
-function setPrice(count, discountPercent = 20, minimum=200) {
+function setPrice(count, discountPercent = 0, minimum=200) {
   let basePrices = {
     count10DA: [25, 50],  // Base prices for count = 1, 2, 3
     count1MA: [60, 120],
