@@ -260,6 +260,17 @@ function copyMobileNumber() {
 
 document.getElementById('language-toggle').addEventListener('change', function() {
     if (this.checked) {
+      document.getElementById('numberSerial').style.fontFamily = "Noto Sans Bengali, sans-serif";
+		document.getElementById('numberSerial').innerHTML = 'সংখ্যা';
+
+      document.getElementById('totalAmount').style.fontFamily = "Noto Sans Bengali, sans-serif";
+		document.getElementById('totalAmount').innerHTML = 'মোট পরিমাণ';
+
+      document.getElementById('daysHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
+		document.getElementById('daysHead').innerHTML = 'দিন';
+
+    document.getElementById('UnloadAllPremiumFeatures').style.fontFamily = "Noto Sans Bengali, sans-serif";
+		document.getElementById('UnloadAllPremiumFeatures').innerHTML = 'সকল প্রিমিয়াম ফিচার আনলক করুন';
         
 		document.getElementById('step1').style.fontFamily = "Noto Sans Bengali, sans-serif";
 		document.getElementById('step1').innerHTML = 'ধাপ ১: সেন্ড মানি।';
@@ -310,7 +321,21 @@ document.getElementById('language-toggle').addEventListener('change', function()
 		document.getElementById('renewalPlatsHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
 		document.getElementById('renewalPlatsHead').innerHTML = 'যে মাধ্যমে রিকোয়েস্ট পাঠাতে চান সেখানে ক্লিক করুন:'
 	} else {
-		
+		document.getElementById('numberSerial').style.fontFamily = "";
+		document.getElementById('numberSerial').innerHTML = 'Number&nbsp;';
+    
+    document.getElementById('totalAmount').style.fontFamily = "";
+		document.getElementById('totalAmount').innerHTML = 'Total Amount&nbsp;&nbsp;';
+
+
+
+    document.getElementById('daysHead').style.fontFamily = "";
+		document.getElementById('daysHead').innerHTML = 'Days&nbsp;';
+    
+    document.getElementById('UnloadAllPremiumFeatures').style.fontFamily = "";
+		document.getElementById('UnloadAllPremiumFeatures').innerHTML = 'Unlock All Premium Features';
+
+
 		document.getElementById('step1').style.fontFamily = "";
 		document.getElementById('step1').innerHTML = 'Step 1: Send Money';
 		
