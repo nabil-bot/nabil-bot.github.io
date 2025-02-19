@@ -150,7 +150,6 @@ function setPrice(count, discountPercent = 0, minimum=200) {
       return `${basePrice}`;
     }
   }
-
   // Update prices based on count and discount
   count10DA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count10DA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count10DA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
   count1MA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count1MA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count1MA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
@@ -159,8 +158,6 @@ function setPrice(count, discountPercent = 0, minimum=200) {
   count1YA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count1YA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count1YA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
   count8YA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count8YA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i><br>${generatePriceHTML(calculatePrice(basePrices.count8YAINR[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YAINR[countIndex], count), discountPercent))} <i class="fa-solid fa-indian-rupee-sign"></i>`;
 }
-
-
 
 
 // Function to calculate price based on count and increase percentage
@@ -243,7 +240,6 @@ function decreaseCount() {
 };
 
 
-
 function copyMobileNumber() {
       const mobileNumber = document.getElementById("mobileNumber");
       const el = document.createElement("textarea");
@@ -254,9 +250,6 @@ function copyMobileNumber() {
       document.body.removeChild(el);
       alert("copied: " + el.value);
     }
-
-
-
 
 document.getElementById('language-toggle').addEventListener('change', function() {
     if (this.checked) {
