@@ -122,7 +122,7 @@ fetch('navbar.html')
 
 
 
-function setPrice(count, discountPercent = 0, minimum=200) {
+function setPrice(count, discountPercent = 20, minimum=200) {
   let basePrices = {
     count10DA: [25, 50],  // Base prices for count = 1, 2, 3
     count1MA: [60, 120],
@@ -409,7 +409,7 @@ function sendRequest (mainLink) {
 //	 
 //    };
 
-setPrice(count=1, discountPercent=0, minimum=200);
+setPrice(count=1);
 
 
 
@@ -475,3 +475,46 @@ setPrice(count=1, discountPercent=0, minimum=200);
 //   setClock(deadline);
   
 // ;
+
+
+function setOfferCountdown(finishDate) {
+  const daysNum = document.getElementById("daysNum");
+  const hoursNum = document.getElementById("hoursNum");
+  const minutesNum = document.getElementById("minutesNum");
+  const secondsNum = document.getElementById("secondsNum");
+
+  let intervalId; // Declare in outer scope so updateCountdown can access it
+
+  function updateCountdown() {
+      const now = new Date();
+      const timeLeft = finishDate.getTime() - now.getTime();
+
+      if (timeLeft <= 0) {
+          daysNum.textContent = "00";
+          hoursNum.textContent = "00";
+          minutesNum.textContent = "00";
+          secondsNum.textContent = "00";
+          clearInterval(intervalId); // Stop updating when time is up
+          // Optional: show "Offer expired" message here
+      } else {
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+          daysNum.textContent = days.toString().padStart(2, "0");
+          hoursNum.textContent = hours.toString().padStart(2, "0");
+          minutesNum.textContent = minutes.toString().padStart(2, "0");
+          secondsNum.textContent = seconds.toString().padStart(2, "0");
+      }
+  }
+
+  updateCountdown(); // Initial update
+  intervalId = setInterval(updateCountdown, 1000); // Start interval
+}
+
+  
+  // Example usage:
+  // Set the finish date (year, month (0-indexed), day, hour, minute, second)
+  const finishDate = new Date(2025, 3, 16, 23, 59, 59); // December 25th, 2024, 23:59:59
+  setOfferCountdown(finishDate);

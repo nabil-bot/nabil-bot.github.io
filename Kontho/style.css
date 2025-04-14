@@ -651,3 +651,60 @@ tbody tr #8YA {
 	
 }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* countdown style ============= */
+
+.offerCountDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .countdown-item {
+    text-align: center;
+  }
+  
+  .countdown-item span {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .offerTag {
+    background-color: #f0f0f0;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+  }
+  
+  .offerTag h5 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal;
+    color: #555;
+  }
+
+
+
