@@ -120,9 +120,17 @@ fetch('navbar.html')
 //   count8YA.innerHTML = `${calculatePrice(basePrices.count8YA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>\n\n <br> ${calculatePrice(basePrices.count8YAINR[countIndex], count)}  <i class="fa-solid fa-indian-rupee-sign"></i>`;
 // }
 
+discountPercent = 15; // Default discount percentage
 
 
-function setPrice(count, discountPercent = 20, minimum=200) {
+function setOfferPercentage(percent) {
+  const offerPercent = document.getElementById("offerPercent");
+  offerPercent.textContent = `${percent}%`;
+}
+
+setOfferPercentage(discountPercent); // Updates text to "Limited Time Offer: 30% Off"
+
+function setPrice(count, minimum=200) {
   let basePrices = {
     count10DA: [25, 50],  // Base prices for count = 1, 2, 3
     count1MA: [60, 120],
