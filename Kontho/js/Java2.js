@@ -6,121 +6,13 @@ fetch('navbar.html')
                document.getElementById('navbarContainer2').innerHTML = data;
            });
 
-
-//
-//
-//function loadFeatures(features) {
-//    const container = document.getElementById('featureContainer');
-//
-//    // Iterate over each feature in the JSON
-//    for (const [header, feature] of Object.entries(features)) {
-//        // Create the row div
-//        const rowDiv = document.createElement('div');
-//        rowDiv.classList.add('row');
-//		
-//		rowDiv.setAttribute('data-aos', 'flip-up');
-//        // Create the video column
-//        const colVideoDiv = document.createElement('div');
-//        colVideoDiv.classList.add('col-lg-5');
-//
-//        const embedDiv = document.createElement('div');
-//        embedDiv.classList.add('embed-responsive', 'embed-responsive-16by9');
-//
-//        const iframe = document.createElement('iframe');
-//        iframe.classList.add('embed-responsive-item');
-//        iframe.setAttribute('src', feature.videoSrcLink);
-//        iframe.setAttribute('allowfullscreen', '');
-//
-//        embedDiv.appendChild(iframe);
-//        colVideoDiv.appendChild(embedDiv);
-//
-//        // Create the text column
-//        const colTextDiv = document.createElement('div');
-//        colTextDiv.classList.add('col-lg-7');
-//
-//        const cardDiv = document.createElement('div');
-//        cardDiv.classList.add('card', 'col-md-4', 'col-lg-12');
-//
-//        const cardBodyDiv = document.createElement('div');
-//        cardBodyDiv.classList.add('card-body');
-//
-//        // Set the feature header
-//        const h5 = document.createElement('h5');
-//        h5.classList.add('card-title');
-//        h5.innerHTML = header.replace(/([A-Z])/g, ' $1'); // Convert camelCase to spaced words
-//
-//        // Set the feature description
-//        const p = document.createElement('p');
-//        p.classList.add('card-text');
-//        p.innerHTML = feature.description;
-//
-//        // Append elements to card body
-//        cardBodyDiv.appendChild(h5);
-//        cardBodyDiv.appendChild(p);
-//        cardDiv.appendChild(cardBodyDiv);
-//        colTextDiv.appendChild(cardDiv);
-//
-//        // Append video and text columns to the row
-//        rowDiv.appendChild(colVideoDiv);
-//        rowDiv.appendChild(colTextDiv);
-//
-//        // Append the row to the container
-//        container.appendChild(rowDiv);
-//    }
-//}
-//
-//// Call the function to load features
-//
-//let features = [];
-//
-//fetch('js/features.json')
-//    .then(response => {
-//        if (!response.ok) {
-//            throw new Error('Network response was not ok');
-//        }
-//        return response.json(); // Parse the JSON data
-//    })
-//    .then(data => {
-//        features = data; // Store the JSON data into the `features` variable
-//        loadFeatures(features); // Call the loadFeatures function with the loaded features
-//    })
-//    .catch(error => {
-//        console.error('There was a problem with the fetch operation:', error);
-//    });
-//
-//
+discountPercent = 0; // Default discount percentage
+ // Set the finish date (year, month (0-indexed), day, hour, minute, second)
+const finishDate = new Date(2025, 3, 16, 23, 59, 59); // December 25th, 2024, 23:59:59
 
 
 
-
-
-// function setPrice(count) {
-//   let basePrices = {
-//     count10DA: [25, 50],  // Base prices for count = 1, 2, 3
-//     count1MA: [60, 120],
-//     count3MA: [160, 300],
-//     count6MA: [250, 480],
-//     count1YA: [425, 800],
-//     count8YA: [875, 1020],
-//     count8YAINR: [820, 920]
-//   };
-
-//   if (count == 1){
-//     countIndex = 0;
-//   } else {
-//     countIndex = 1;
-//   };
-
-//   // Update prices based on count
-//   count10DA.innerHTML = `${calculatePrice(basePrices.count10DA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-//   count1MA.innerHTML = `${calculatePrice(basePrices.count1MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-//   count3MA.innerHTML = `${calculatePrice(basePrices.count3MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-//   count6MA.innerHTML = `${calculatePrice(basePrices.count6MA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-//   count1YA.innerHTML = `${calculatePrice(basePrices.count1YA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
-//   count8YA.innerHTML = `${calculatePrice(basePrices.count8YA[countIndex], count)} <i class="fa-solid fa-bangladeshi-taka-sign"></i>\n\n <br> ${calculatePrice(basePrices.count8YAINR[countIndex], count)}  <i class="fa-solid fa-indian-rupee-sign"></i>`;
-// }
-
-discountPercent = 15; // Default discount percentage
+const offerCountDownDiv = document.getElementById('offerCountDown');
 
 
 function setOfferPercentage(percent) {
@@ -460,6 +352,9 @@ function setOfferCountdown(finishDate) {
 
   
   // Example usage:
-  // Set the finish date (year, month (0-indexed), day, hour, minute, second)
-  const finishDate = new Date(2025, 3, 16, 23, 59, 59); // December 25th, 2024, 23:59:59
-  setOfferCountdown(finishDate);
+  if (discountPercent === 0) {
+    offerCountDownDiv.style.display = 'none';
+  }else{
+    setOfferCountdown(finishDate);
+  }
+ 
