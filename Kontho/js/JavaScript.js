@@ -38,8 +38,7 @@ function ShowMsStoreMsg(){
 
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Before installing Nms Kontho from the Microsoft Store</strong>";
-		document.querySelector('#confirmationWindow p').innerHTML = "If you have previously installed Nms Kontho using the installer, check the Documents directory on your PC for a <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> folder and delete it if you find one.<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
-	
+		document.querySelector('#confirmationWindow p').innerHTML =  "<p>⚠️ Due to recent policy updates from Microsoft, this app is temporarily unavailable.</p><br>🔧 We're trying our best to release the new version soon 🚀." //"If you have previously installed Nms Kontho using the installer, check the Documents directory on your PC for a <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> folder and delete it if you find one.<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
 	}else{
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Microsoft Store থেকে Nms Kontho ইনস্টল করার আগে</strong>";
 		document.querySelector('#confirmationWindow p').innerHTML = "যদি আপনি পূর্বে ইনস্টলার ব্যবহার করে Nms Kontho ইনস্টল করে থাকেন, এবং আপনার পিসিতে ডকুমেন্টস ডিরেক্টরিতে যদি একটি <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> ফোল্ডার থাকে তাহলে তা ডিলিট করে নিন।<br><br>Documents --> Kontho (remove)";
