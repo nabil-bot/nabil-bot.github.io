@@ -1,3 +1,4 @@
+<!-- http://127.0.0.1/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,12 +71,14 @@
 								target="_blank">Microsoft Store</a>.</strong>💥&nbsp;<br><br>
 						🔵Sometimes the version available on the Microsoft Store may not be the latest one.
 					</p>
-					<div class="container">
+					<div class="container" id="confirmationCheckbox">
 						<input type="checkbox" id="enableInstallerBtnCheckbox">
-						<label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID"><strong>&nbsp;I've
+						<label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID"><strong>I've
 								read the warning and I would like to download the installer.</strong></label>
 					</div>
-					<button type="button" class="btn btn-success" id="downloadButton">Download&nbsp;</button>
+					<!-- <button type="button" class="btn btn-success" id="downloadButton">Download&nbsp;</button> -->
+					<button type="button" class="btn btn-success" id="32bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 32-bit  </button>
+					<button type="button" class="btn btn-success" id="64bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 64-bit  </button>
 					<button type="button" class="btn btn-secondary" onClick="cancelfunc()">Cancel&nbsp;</button>
 				</div>
 			</div>

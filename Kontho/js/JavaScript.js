@@ -1,4 +1,4 @@
-var version = 6.155
+var version = 7.0
 
 
 fetch('navbar.html')
@@ -23,11 +23,15 @@ function confirmationWinCommonTast() {
 	document.getElementById('enableInstallerBtnCheckbox').style.display = '';
 	document.getElementById('enableInstallerBtnCheckboxID').style.display = '';
 	const checkbox = document.getElementById('enableInstallerBtnCheckbox');
-	const downloadButton = document.querySelector('#confirmationWindow .btn-success');
+	const downloadButton1 = document.getElementById('32bitInstallerDownloadButton');
+	const downloadButton2 = document.getElementById('64bitInstallerDownloadButton');
 
-	downloadButton.disabled = true;
+	document.getElementById('32bitInstallerDownloadButton').innerHTML = '<i class="fa-solid fa-download"></i> 32-bit  ';
+	downloadButton1.disabled = true;
+	downloadButton2.disabled = true;
 	checkbox.addEventListener('change', function() {
-	  downloadButton.disabled = !this.checked; // Enable button when checkbox is checked
+	  downloadButton1.disabled = !this.checked; // Enable button when checkbox is checked
+	  downloadButton2.disabled = !this.checked;
 	});
 	var element = document.querySelector('.blurArea');
 		element.style.filter = 'blur(10px)'; 
@@ -35,7 +39,7 @@ function confirmationWinCommonTast() {
 
 function ShowMsStoreMsg(){
 	document.getElementById('confirmationWindow').style.display = 'block';
-
+	
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Before installing Nms Kontho from the Microsoft Store</strong>";
 		document.querySelector('#confirmationWindow p').innerHTML =  "<p>⚠️ Due to recent policy updates from Microsoft, this app is temporarily unavailable.</p>🔧 আসন্ন ভার্সনটি ৩২-বিট এবং ৬৪-বিট উভয় অপারেটিং সিস্টেমে সমর্থিত হবে।🚀.<br>In the meantime, you can still use the installer version 💻." //"If you have previously installed Nms Kontho using the installer, check the Documents directory on your PC for a <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> folder and delete it if you find one.<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
@@ -46,18 +50,19 @@ function ShowMsStoreMsg(){
 	// document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;I've read the warning and I would like to download the Installer.</strong>";
 	
 	
-	document.querySelector('#confirmationWindow .btn-success').innerHTML = '<i class="fas fa-external-link-alt"></i><strong> Microsoft Store</strong>';
+	document.getElementById('32bitInstallerDownloadButton').innerHTML = '<i class="fas fa-external-link-alt"></i><strong> MS Store</strong>';
 	
-
+	downloadButton = document.getElementById('32bitInstallerDownloadButton');
 	downloadButton.disabled = false;
 
-	document.getElementById('downloadButton').addEventListener('click', function() {
+	downloadButton.addEventListener('click', function() {
 		var link = "https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"; // Decide which link to open
 		window.open(link, '_blank'); // Opens in a new tab
 	});
 	
-	document.getElementById('enableInstallerBtnCheckbox').style.display = 'none';
-	document.getElementById('enableInstallerBtnCheckboxID').style.display = 'none';
+	document.getElementById('confirmationCheckbox').style.display = 'none';
+	// document.getElementById('enableInstallerBtnCheckboxID').style.display = 'none';
+	document.getElementById('64bitInstallerDownloadButton').style.display = 'none';
 	var element = document.querySelector('.blurArea');
 		element.style.filter = 'blur(10px)';
 }
@@ -65,7 +70,7 @@ function ShowMsStoreMsg(){
 // JavaScript function to load content from index2.html
 function showInstallerConfirmationFunc() {
 	document.getElementById('confirmationWindow').style.display = 'block';
-
+	document.getElementById('enableInstallerBtnCheckbox').checked = false;
 	
 
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
@@ -81,12 +86,26 @@ function showInstallerConfirmationFunc() {
 	
 	}
 	
-	document.querySelector('#confirmationWindow .btn-success').innerHTML = '<strong>Download</strong>';
-	document.getElementById('downloadButton').addEventListener('click', function() {
-		var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Kontho_Installer.zip"; // Decide which link to open
+	// document.querySelector('#confirmationWindow .btn-success').innerHTML = '<strong>Download</strong>';
+	document.getElementById('32bitInstallerDownloadButton').addEventListener('click', function() {
+		var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x32_Installer.zip"; // Decide which link to open
 		window.open(link, '_blank'); // Opens in a new tab
 	});
-	
+	document.getElementById('64bitInstallerDownloadButton').addEventListener('click', function() {
+		var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x64_Installer.zip"; // Decide which link to open
+		window.open(link, '_blank'); // Opens in a new tab
+	});
+
+	// document.getElementById('32bitPortableDownloadButton').addEventListener('click', function() {
+	// 	var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x32_Portable.zip"; // Decide which link to open
+	// 	window.open(link, '_blank'); // Opens in a new tab
+	// });
+	// document.getElementById('64bitPortableDownloadButton').addEventListener('click', function() {
+	// 	var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x64_Portable.zip; // Decide which link to open
+	// 	window.open(link, '_blank'); // Opens in a new tab
+	// });
+	document.getElementById('confirmationCheckbox').style.display = '';
+	document.getElementById('64bitInstallerDownloadButton').style.display = '';
 	confirmationWinCommonTast()
 }
 
@@ -94,7 +113,7 @@ function showInstallerConfirmationFunc() {
 function showPortableConfirmationFunc() {
 	document.getElementById('confirmationWindow').style.display = 'block';
 	
-	
+	document.getElementById('enableInstallerBtnCheckbox').checked = false;
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Are you sure you want to download Nms Kontho Portable❓</strong>";
 		document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Portable version, but some antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from the <strong><a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a>.</strong>💥&nbsp;<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
@@ -104,11 +123,24 @@ function showPortableConfirmationFunc() {
 		document.querySelector('#confirmationWindow p').innerHTML = "📢 দয়া করে জেনে রাখুন যে, পোর্টেবল ব্যবহার করা সম্পূর্ণরূপে ✅ <strong>নিরাপদ</strong>, তবে কিছু অ্যান্টিভাইরাস এটি 🚩 <strong>ফ্ল্যাগ</strong> করে মুছে দিতে পারে। এই সমস্যা এড়াতে, আমরা Nms Kontho সরাসরি <a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a> থেকে ইনস্টল করার পরামর্শ দিচ্ছি। 💥<br><br>🔵 কখনও কখনও Microsoft Store-এর সংস্করণটি লেটেস্ট নাও হতে পারে। (প্রকাশিত হতে দেরি হয় কিছুটা)";
 		document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;সতর্কতা পড়েছি এবং আমি পোর্টেবল ডাউনলোড করতে চাই।</strong>";
 	}
-	document.querySelector('#confirmationWindow .btn-success').innerHTML = '<strong>Download</strong>';
-	document.getElementById('downloadButton').addEventListener('click', function() {
-		var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Kontho_Portable.zip"; // Decide which link to open
+	// document.querySelector('#confirmationWindow .btn-success').innerHTML = '<strong>Download</strong>';
+	// document.getElementById('downloadButton').addEventListener('click', function() {
+	// 	var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Kontho_Portable.zip"; // Decide which link to open
+	// 	window.open(link, '_blank'); // Opens in a new tab
+	// });
+
+	document.getElementById('32bitInstallerDownloadButton').addEventListener('click', function() {
+		var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x32_Portable.zip"; // Decide which link to open
 		window.open(link, '_blank'); // Opens in a new tab
 	});
+	document.getElementById('64bitInstallerDownloadButton').addEventListener('click', function() {
+		var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x64_Portable.zip"; // Decide which link to open
+		window.open(link, '_blank'); // Opens in a new tab
+	});
+
+	document.getElementById('confirmationCheckbox').style.display = '';
+	document.getElementById('64bitInstallerDownloadButton').style.display = '';
+
 	confirmationWinCommonTast()
 }
 
