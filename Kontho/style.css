@@ -27,8 +27,8 @@ body {
     text-align: center;
     font-weight: bold;
     background-color: #F3F9FF;
-    -webkit-box-shadow: 0px 0px 3px #0028FF;
-    box-shadow: 0px 0px 3px #0028FF;
+    /* -webkit-box-shadow: 0px 0px 3px #0028FF; */
+    /* box-shadow: 0px 0px 3px #0028FF; */
     border-radius: 4px;
 }
 
@@ -42,8 +42,8 @@ body {
     margin-left: 10px;
     padding-top: 12px;
     text-shadow: 0 0px;
-    -webkit-box-shadow: 0 0 5px #002FFF;
-    box-shadow: 0 0 5px #002FFF;
+    -webkit-box-shadow: 0 0 5px #002FFF; 
+    box-shadow: 0 0 5px #002FFF; 
     border-radius: 14px;
     padding-right: 12px;
     padding-bottom: 12px;
@@ -105,8 +105,8 @@ display: flex;
     border-radius: 34px;
     padding-top: 8px;
     padding-bottom: 8px;
-    -webkit-box-shadow: 0px 0px 4px #0011FF;
-    box-shadow: 0px 0px 4px #0011FF;
+    /* -webkit-box-shadow: 0px 0px 4px #0011FF;
+    box-shadow: 0px 0px 4px #0011FF; */
 }
 .container-fluid .container .navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light {
     -webkit-box-shadow: 0px 0px 5px #0004FF;
@@ -157,7 +157,7 @@ background-color: #eafaff !important;
 }
 h2 {
     text-align: center;
-	box-shadow: 0px 0px 4px #0011FF;
+	/* box-shadow: 0px 0px 4px #0011FF; */
 	border-radius: 34px;
 	padding: 8px;
 	background-color: #F8F9FA;
