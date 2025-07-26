@@ -55,6 +55,7 @@ body {
     padding-bottom: 12px;
     background-color: #DBE9FF;
     border-radius: 47px;
+    font-family: "Noto sans bengali";
 }
 .container-fluid .container #confirmationWindow {
     background-color: #EFF5FF;
