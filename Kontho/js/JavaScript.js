@@ -70,6 +70,7 @@ function ShowMsStoreMsg(){
 // JavaScript function to load content from index2.html
 function showInstallerConfirmationFunc() {
 	document.getElementById('confirmationWindow').style.display = 'block';
+	document.getElementById('tutorial-link').style.display = 'none';
 	document.getElementById('enableInstallerBtnCheckbox').checked = false;
 	
 
@@ -114,7 +115,7 @@ function showInstallerConfirmationFunc() {
 
 function showPortableConfirmationFunc() {
 	document.getElementById('confirmationWindow').style.display = 'block';
-	
+	document.getElementById('tutorial-link').style.display = '';
 	document.getElementById('enableInstallerBtnCheckbox').checked = false;
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Are you sure you want to download Nms Kontho Portable❓</strong>";
