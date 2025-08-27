@@ -1,7 +1,6 @@
 <!-- http://127.0.0.1/index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,6 @@
 	<meta property="og:description"
 		content="Kontho typing software, bangla typing software, English typing, Speech recognition software, Bangla speech-to-text software " />
 	<meta name="next-head-count" content="8" />
-
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="icon" href="Imgs/Kontho3.png" />
 	<!-- Bootstrap -->
@@ -24,64 +22,58 @@
 	<!-- AOS CSS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body style="padding-top: 70px">
-	
 	<div class="container-fluid">
 		<div class="container">
-	
-			
-<!--
-		  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Navbar</a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-			    <ul class="navbar-nav mr-auto">
-			      <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-			      <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
-			      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
-			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#">Something else here</a> </div>
-		          </li>
-			      <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
-		        </ul>
-			    <form class="form-inline my-2 my-lg-0">
-			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		        </form>
-		    </div>
-		  </nav>
--->
-			
-			
-			
 			<div id="navbarContainer"></div>
 			<div class="container" id="confirmationWindow">
 				<h4><strong>Are you sure you want to download Nms Kontho installer❓</strong></h4>
 				<div class="container">
-					<!-- <p>📢<strong>Please note that while it is completely ✅safe</strong> to use the Installer, but some
+					<p>📢<strong>Please note that while it is completely ✅safe</strong> to use the Installer, but some
 						antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from
 						the <strong><a href="https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"
 								target="_blank">Microsoft Store</a>.</strong>💥&nbsp;<br><br>
 						🔵Sometimes the version available on the Microsoft Store may not be the latest one.
-					</p> -->
-					<p>📢Please note that while the installer is completely ✅<strong>safe</strong> to use, some antivirus programs may 🚩 flag it and isolate the app.
 					</p>
-
-					<!-- <a src="https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> How to use the portable version?</a> -->
-
-					<a href="https://youtu.be/_LhydHtnaGI" target="_blank" id="tutorial-link"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> How to use the portable version?</a>
+					<a href="https://youtu.be/_LhydHtnaGI" target="_blank" id="tutorial-link"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i>How to use the portable version?</a>
+					
 					<div class="container" id="confirmationCheckbox">
 						<input type="checkbox" id="enableInstallerBtnCheckbox">
 						<label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID"><strong>I've
 								read the warning and I would like to download the installer.</strong></label>
 					</div>
-					<!-- <button type="button" class="btn btn-success" id="downloadButton">Download&nbsp;</button> -->
+					<div style="display: flex; gap: 10px;">
+					<button type="button" class="btn btn-success" id="MsStoreDownloadButton" style="display: 'none';"><i class="fas fa-external-link-alt"></i> Ms store</button>
 					<button type="button" class="btn btn-success" id="32bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 32-bit  </button>
 					<button type="button" class="btn btn-success" id="64bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 64-bit  </button>
 					<button type="button" class="btn btn-secondary" onClick="cancelfunc()">Cancel&nbsp;</button>
+					</div> 
 				</div>
 			</div>
+			<!-- <div class="container" id="confirmationWindow">
+				<h4><strong>Are you sure you want to download Nms Kontho installer❓</strong></h4>
+				<div class="container">
+					<p>📢<strong>Please note that while it is completely ✅safe</strong> to use the Installer, but some
+						antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from
+						the <strong><a href="https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"
+								target="_blank">Microsoft Store</a>.</strong>💥&nbsp;<br><br>
+						🔵Sometimes the version available on the Microsoft Store may not be the latest one.
+					</p>
+					<a href="https://youtu.be/_LhydHtnaGI" target="_blank" id="tutorial-link"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i>How to use the portable version?</a>
+					
+					<div class="container" id="confirmationCheckbox">
+						<input type="checkbox" id="enableInstallerBtnCheckbox">
+						<label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID"><strong>I've
+								read the warning and I would like to download the installer.</strong></label>
+					</div>
+
+					<div style="display: flex; gap: 10px;">
+						<button type="button" class="btn btn-success" id="32bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 32-bit  </button>
+						<button type="button" class="btn btn-success" id="64bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 64-bit  </button>
+					</div>
+					<button type="button" class="btn btn-secondary" onClick="cancelfunc()">Cancel&nbsp;</button>
+				</div>
+			</div> -->
 
 			<div class="blurArea">
 				<div class="row">
@@ -96,11 +88,11 @@
 								</h5>
 								<h6 data-aos="fade-right"class="card-subtitle mb-2 text-muted">হোক লেখা প্রাণবন্ত&nbsp; &nbsp;</h6>
 								<div class="container">
-									<!-- <button type="button" class="btn btn-primary" onClick="ShowMsStoreMsg()"
+									<button type="button" class="btn btn-primary" onClick="ShowMsStoreMsg()"
 									data-aos="fade-right" data-aos-duration="1000"
 									> <img
 											src="Imgs/ms_store_logo.png" alt="" width="20" height="20"
-											class="img-fluid" /> <strong>Ms Store</strong>&nbsp;</button> -->
+											class="img-fluid" /> <strong>Ms Store</strong>&nbsp;</button>
 
 
 									<button type="button" class="btn installer"

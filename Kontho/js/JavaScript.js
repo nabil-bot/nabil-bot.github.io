@@ -1,4 +1,4 @@
-var version = 7.014
+var version = 7.015
 
 
 fetch('navbar.html')
@@ -39,54 +39,51 @@ function confirmationWinCommonTast() {
 
 function ShowMsStoreMsg(){
 	document.getElementById('confirmationWindow').style.display = 'block';
-	
+	document.getElementById('tutorial-link').style.display = 'none';
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Before installing Nms Kontho from the Microsoft Store</strong>";
-		document.querySelector('#confirmationWindow p').innerHTML =  "<p>⚠️ Due to recent policy updates from Microsoft, this app is temporarily unavailable.</p>🔧 আসন্ন ভার্সনটি ৩২-বিট এবং ৬৪-বিট উভয় অপারেটিং সিস্টেমে সমর্থিত হবে।🚀.<br>In the meantime, you can still use the installer version 💻." //"If you have previously installed Nms Kontho using the installer, check the Documents directory on your PC for a <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> folder and delete it if you find one.<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
+		document.querySelector('#confirmationWindow p').innerHTML =  "If you have previously installed Nms Kontho using the installer, check the Documents directory on your PC for a <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> folder and delete it if you find one.<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one." //"If you have previously installed Nms Kontho using the installer, check the Documents directory on your PC for a <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> folder and delete it if you find one.<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
 	}else{
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Microsoft Store থেকে Nms Kontho ইনস্টল করার আগে</strong>";
-		document.querySelector('#confirmationWindow p').innerHTML = "⚠️ মাইক্রোসফটের সাম্প্রতিক নীতিমালা পরিবর্তনের কারণে অ্যাপটি সাময়িকভাবে স্টোরে অনুপলব্ধ।🔧 আমরা সর্বোচ্চ চেষ্টা করছি নতুন সংস্করণটি খুব শিগগিরই প্রকাশ করার জন্য 🚀।<br> এই সময়ে, আপনি ইনস্টলার সংস্করণটি ব্যবহার করতে পারেন 💻।" // "যদি আপনি পূর্বে ইনস্টলার ব্যবহার করে Nms Kontho ইনস্টল করে থাকেন, এবং আপনার পিসিতে ডকুমেন্টস ডিরেক্টরিতে যদি একটি <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> ফোল্ডার থাকে তাহলে তা ডিলিট করে নিন।<br><br>Documents --> Kontho (remove)";
+		document.querySelector('#confirmationWindow p').innerHTML = "যদি ইতঃপূর্বে ইনস্টলার ব্যবহার করে Nms Kontho ইনস্টল করে থাকেন, এবং আপনার পিসিতে ডকুমেন্টস ডিরেক্টরিতে যদি একটি <i class='fa-regular fa-folder'></i> <strong>Kontho</strong> ফোল্ডার থাকে তাহলে তা ডিলিট করে নিন।<br><br>Documents --> Kontho (remove)" // "⚠️ মাইক্রোসফটের সাম্প্রতিক নীতিমালা পরিবর্তনের কারণে অ্যাপটি সাময়িকভাবে স্টোরে অনুপলব্ধ।🔧 আমরা সর্বোচ্চ চেষ্টা করছি নতুন সংস্করণটি খুব শিগগিরই প্রকাশ করার জন্য 🚀।<br> এই সময়ে, আপনি ইনস্টলার সংস্করণটি ব্যবহার করতে পারেন 💻।" // ;
 	}
 	// document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;I've read the warning and I would like to download the Installer.</strong>";
-	
-	
-	document.getElementById('32bitInstallerDownloadButton').innerHTML = '<i class="fas fa-external-link-alt"></i><strong> MS Store</strong>';
-	
-	downloadButton = document.getElementById('32bitInstallerDownloadButton');
-	downloadButton.disabled = false;
-
+	// document.getElementById('32bitInstallerDownloadButton').innerHTML = '<i class="fas fa-external-link-alt"></i><strong> MS Store</strong>';
+	// downloadButton.disabled = false;
+	downloadButton = document.getElementById('MsStoreDownloadButton');
 	downloadButton.addEventListener('click', function() {
 		var link = "https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"; // Decide which link to open
 		window.open(link, '_blank'); // Opens in a new tab
 	});
-	
+	document.getElementById('MsStoreDownloadButton').style.display = 'block';
 	document.getElementById('confirmationCheckbox').style.display = 'none';
-	// document.getElementById('enableInstallerBtnCheckboxID').style.display = 'none';
+	document.getElementById('32bitInstallerDownloadButton').style.display = 'none';
 	document.getElementById('64bitInstallerDownloadButton').style.display = 'none';
 	var element = document.querySelector('.blurArea');
 		element.style.filter = 'blur(10px)';
 }
-
 // JavaScript function to load content from index2.html
 function showInstallerConfirmationFunc() {
 	document.getElementById('confirmationWindow').style.display = 'block';
 	document.getElementById('tutorial-link').style.display = 'none';
+	document.getElementById('MsStoreDownloadButton').style.display = 'none';
 	document.getElementById('enableInstallerBtnCheckbox').checked = false;
 	
+	document.getElementById('32bitInstallerDownloadButton').style.display = 'block';
+	document.getElementById('64bitInstallerDownloadButton').style.display = 'block';
 
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
 		
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Are you sure you want to download Nms Kontho installer❓</strong>";
-		// document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Installer, but some antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from the <strong><a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a>.</strong>💥&nbsp;<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
+		document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Installer, but some antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from the <strong><a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a>.</strong>💥&nbsp;<br>"; // <br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.
 
-		document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Installer, but some antivirus may flag it 🚩 and isolate the app.";
+		// document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Installer, but some antivirus may flag it 🚩 and isolate the app.";
 		document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;I've read the warning and I would like to download the Installer.</strong>";
 	
 	} else {
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>আপনি কি Nms Kontho ইনস্টলার ডাউনলোড করতে চান❓</strong>";
-		document.querySelector('#confirmationWindow p').innerHTML = "📢 দয়া করে জেনে রাখুন যে, ইনস্টলারটি ব্যবহার করা সম্পূর্ণরূপে ✅ <strong>নিরাপদ</strong>, তবে কিছু অ্যান্টিভাইরাস এটি 🚩 ফ্ল্যাগ করে মুছে দিতে পারে।";
+		document.querySelector('#confirmationWindow p').innerHTML = "📢 দয়া করে জেনে রাখুন যে, ইনস্টলারটি ব্যবহার করা সম্পূর্ণরূপে ✅ <strong>নিরাপদ</strong>, তবে কিছু অ্যান্টিভাইরাস এটি 🚩 ফ্ল্যাগ করে মুছে দিতে পারে। এই সমস্যা এড়াতে, Nms Kontho সরাসরি <a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a> থেকে ইনস্টল করার পরামর্শ দিচ্ছি। 💥<br>";
 		document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;সতর্কতা পড়েছি এবং আমি ইনস্টলার ডাউনলোড করতে চাই।</strong>";
-	
 	}
 	
 	// document.querySelector('#confirmationWindow .btn-success').innerHTML = '<strong>Download</strong>';
@@ -99,42 +96,33 @@ function showInstallerConfirmationFunc() {
 		window.open(link, '_blank'); // Opens in a new tab
 	});
 
-	// document.getElementById('32bitPortableDownloadButton').addEventListener('click', function() {
-	// 	var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x32_Portable.zip"; // Decide which link to open
-	// 	window.open(link, '_blank'); // Opens in a new tab
-	// });
-	// document.getElementById('64bitPortableDownloadButton').addEventListener('click', function() {
-	// 	var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x64_Portable.zip; // Decide which link to open
-	// 	window.open(link, '_blank'); // Opens in a new tab
-	// });
 	document.getElementById('confirmationCheckbox').style.display = '';
 	document.getElementById('64bitInstallerDownloadButton').style.display = '';
 	confirmationWinCommonTast()
 }
 
-
 function showPortableConfirmationFunc() {
 	document.getElementById('confirmationWindow').style.display = 'block';
+	document.getElementById('MsStoreDownloadButton').style.display = 'none';
+	document.getElementById('32bitInstallerDownloadButton').style.display = 'block';
+	document.getElementById('64bitInstallerDownloadButton').style.display = 'block';
+
 	document.getElementById('tutorial-link').style.display = '';
 	document.getElementById('enableInstallerBtnCheckbox').checked = false;
 	if (document.getElementById("navLangSwitchBtn").textContent === "বাংলা") {
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>Are you sure you want to download Nms Kontho Portable❓</strong>";
-		// document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Portable version, but some antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from the <strong><a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a>.</strong>💥&nbsp;<br><br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.";
+		document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Portable version, but some antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from the <strong><a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a>.</strong>💥&nbsp;<br>"; // <br>🔵Sometimes the version available on the Microsoft Store may not be the latest one.
 
-		document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Portable version, but some antivirus may flag it 🚩 and isolate the app.";
+		// document.querySelector('#confirmationWindow p').innerHTML = "📢Please note that while it is completely ✅<strong>safe</strong> to use the Portable version, but some antivirus may flag it 🚩 and isolate the app.";
 		document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;I've read the warning and I would like to download the Portable.</strong>";
 	} else{
 		document.querySelector('#confirmationWindow h4').innerHTML = "<strong>আপনি কি Nms Kontho পোর্টেবল ডাউনলোড করতে চান❓</strong>";
-		// document.querySelector('#confirmationWindow p').innerHTML = "📢 দয়া করে জেনে রাখুন যে, পোর্টেবল ব্যবহার করা সম্পূর্ণরূপে ✅ <strong>নিরাপদ</strong>, তবে কিছু অ্যান্টিভাইরাস এটি 🚩 <strong>ফ্ল্যাগ</strong> করে মুছে দিতে পারে। এই সমস্যা এড়াতে, আমরা Nms Kontho সরাসরি <a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a> থেকে ইনস্টল করার পরামর্শ দিচ্ছি। 💥<br><br>🔵 কখনও কখনও Microsoft Store-এর সংস্করণটি লেটেস্ট নাও হতে পারে। (প্রকাশিত হতে দেরি হয় কিছুটা)";
+		document.querySelector('#confirmationWindow p').innerHTML = "📢 দয়া করে জেনে রাখুন যে, পোর্টেবল ব্যবহার করা সম্পূর্ণরূপে ✅ <strong>নিরাপদ</strong>, তবে কিছু অ্যান্টিভাইরাস এটি 🚩 <strong>ফ্ল্যাগ</strong> করে মুছে দিতে পারে। এই সমস্যা এড়াতে, Nms Kontho সরাসরি <a href='https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare' target='_blank'>Microsoft Store</a> থেকে ইনস্টল করার পরামর্শ দিচ্ছি। 💥<br>"; // <br>🔵 কখনও কখনও Microsoft Store-এর সংস্করণটি লেটেস্ট নাও হতে পারে। (প্রকাশিত হতে দেরি হয় কিছুটা)
 
-		document.querySelector('#confirmationWindow p').innerHTML = "📢 দয়া করে জেনে রাখুন যে, পোর্টেবল ব্যবহার করা সম্পূর্ণরূপে ✅ <strong>নিরাপদ</strong>, তবে কিছু অ্যান্টিভাইরাস এটি 🚩 <strong>ফ্ল্যাগ</strong> করে মুছে দিতে পারে।";
+		// document.querySelector('#confirmationWindow p').innerHTML = "📢 দয়া করে জেনে রাখুন যে, পোর্টেবল ব্যবহার করা সম্পূর্ণরূপে ✅ <strong>নিরাপদ</strong>, তবে কিছু অ্যান্টিভাইরাস এটি 🚩 <strong>ফ্ল্যাগ</strong> করে মুছে দিতে পারে।";
 		document.querySelector('label[for="enableInstallerBtnCheckbox"]').innerHTML = "<strong>&nbsp;সতর্কতা পড়েছি এবং আমি পোর্টেবল ডাউনলোড করতে চাই।</strong>";
 	}
-	// document.querySelector('#confirmationWindow .btn-success').innerHTML = '<strong>Download</strong>';
-	// document.getElementById('downloadButton').addEventListener('click', function() {
-	// 	var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Kontho_Portable.zip"; // Decide which link to open
-	// 	window.open(link, '_blank'); // Opens in a new tab
-	// });
+
 
 	document.getElementById('32bitInstallerDownloadButton').addEventListener('click', function() {
 		var link = "https://github.com/nabil-bot/KonthoExes/raw/refs/heads/main/Nms_Kontho_x32_Portable.zip"; // Decide which link to open
