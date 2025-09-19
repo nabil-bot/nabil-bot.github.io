@@ -6,14 +6,15 @@ fetch('navbar.html')
                document.getElementById('navbarContainer2').innerHTML = data;
            });
 
+
 discountPercent = 0; // Default discount percentage
  // Set the finish date (year, month (0-indexed), day, hour, minute, second)
-const finishDate = new Date(2025, 3, 16, 23, 59, 59); // December 25th, 2024, 23:59:59
+const finishDate = new Date(2025, 10, 23, 23, 59, 59); // December 25th, 2024, 23:59:59
 
 
 const offerCountDownDiv = document.getElementById('offerCountDown');
 
-
+offerCountDownDiv.style.display = 'none';
 function setOfferPercentage(percent) {
   const offerPercent = document.getElementById("offerPercent");
   offerPercent.textContent = `${percent}%`;
