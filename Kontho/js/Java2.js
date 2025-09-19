@@ -11,7 +11,6 @@ discountPercent = 0; // Default discount percentage
 const finishDate = new Date(2025, 3, 16, 23, 59, 59); // December 25th, 2024, 23:59:59
 
 
-
 const offerCountDownDiv = document.getElementById('offerCountDown');
 
 
@@ -58,6 +57,11 @@ function setPrice(count, minimum=200) {
   count1YA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count1YA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count1YA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i>`;
   count8YA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count8YA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i><br>${generatePriceHTML(calculatePrice(basePrices.count8YAINR[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YAINR[countIndex], count), discountPercent))} <i class="fa-solid fa-indian-rupee-sign"></i>`;
 }
+
+// function changeLangFunc() {
+//   console.log('changeLangFunc called');
+// }
+
 
 
 // Function to calculate price based on count and increase percentage
@@ -292,15 +296,19 @@ function setTextAndFont(elementId, banglaText, isBangla) {
         }
     }
 }
-
-document.getElementById('language-toggle').addEventListener('change', function() {
-    const isBangla = this.checked;
+let state = false; // default
+// document.getElementById('language-toggle').addEventListener('change',
+ function changeLangFunc() {
+    state = !state;
+    const isBangla = state;
     setTextAndFont('s1H', '১০', isBangla);
     setTextAndFont('s2H', '৩০', isBangla);
     setTextAndFont('s3H', '৯০', isBangla);
     setTextAndFont('s4H', '১৮০', isBangla);
     setTextAndFont('s5H', '৩৬৫', isBangla);
     setTextAndFont('s6H', '১৪৬০', isBangla);
+    setTextAndFont('saveTime', 'যে পরিমাণ সময় সাশ্রয় হবে, তার তুলনায় নিম্নোক্ত 💰 মূল্য তালিকা খুবই সামান্য।', isBangla);
+
     setTextAndFont('numberSerial', 'সংখ্যা', isBangla);
     setTextAndFont('totalAmount', 'মোট পরিমাণ', isBangla);
     setTextAndFont('daysHead', 'দিন', isBangla);
@@ -325,7 +333,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
         inputField.style.fontFamily = isBangla ? "Noto Sans Bengali, sans-serif" : "";
         inputField.placeholder = isBangla ? 'আইডি এখানে পেস্ট করুন।' : originalTexts.get('DeviceIdInputField');
     }
-});
+};
 
 
 async function PasteIDFunc () {
