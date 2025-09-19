@@ -58,12 +58,6 @@ function setPrice(count, minimum=200) {
   count8YA.innerHTML = `${generatePriceHTML(calculatePrice(basePrices.count8YA[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YA[countIndex], count), discountPercent))} <i class="fa-solid fa-bangladeshi-taka-sign"></i><br>${generatePriceHTML(calculatePrice(basePrices.count8YAINR[countIndex], count), calculateDiscountedPrice(calculatePrice(basePrices.count8YAINR[countIndex], count), discountPercent))} <i class="fa-solid fa-indian-rupee-sign"></i>`;
 }
 
-// function changeLangFunc() {
-//   console.log('changeLangFunc called');
-// }
-
-
-
 // Function to calculate price based on count and increase percentage
 function calculatePrice(basePrice, count) {
   if (count <= 2) {
@@ -100,8 +94,6 @@ const count6MA = document.getElementById('6MA');
 const count1YA = document.getElementById('1YA');
 const count8YA = document.getElementById('8YA');
 
-
-// Add click event listeners
 increaseBtn.addEventListener('click', function() {
   increaseCount();
 });
@@ -110,7 +102,6 @@ decreaseBtn.addEventListener('click', function() {
   decreaseCount();
 });
 
-// Function to increase count
 function increaseCount() {
   let count = parseInt(NODElement.textContent);
   count++;
@@ -121,8 +112,6 @@ function increaseCount() {
   setPrice(count)
 }
 
-
-// Function to decrease count
 function decreaseCount() {
   // Assuming there's an element with an ID "count"
 
