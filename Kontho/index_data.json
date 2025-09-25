@@ -1,0 +1,98 @@
+{
+"en": {
+"hero": {
+"title": "Nms Kontho: Your Ultimate Typing Solution",
+"subtitle": "Seamlessly switch between voice and text to write in Bangla and English.",
+"downloadButton": "Download Now"
+},
+"version": {
+"title": "Current Version",
+"subtext": "Latest stable release"
+},
+"installation": {
+"header": "How to Install",
+"content": "Follow these simple steps to install the application on your computer:",
+"steps": [
+"Click the download button for your system (32-bit or 64-bit).",
+"Open the downloaded installer and follow the on-screen instructions.",
+"Launch the application and start typing!"
+],
+"note": "Please ensure you agree to the terms and conditions before downloading."
+},
+"faq": {
+"header": "Frequently Asked Questions",
+"questions": [
+{
+"q": "What is Nms Kontho?",
+"a": "Nms Kontho is a versatile typing and speech-to-text application designed for both Bangla and English languages."
+},
+{
+"q": "Is the software free?",
+"a": "We offer a free version with all basic features and a Pro version with additional functionalities."
+}
+]
+},
+"policy": {
+"header": "Policy & Terms",
+"sections": [
+{
+"title": "Data Privacy:",
+"content": "We do not collect any personal data or usage information from our users, and we do not share any information with third parties."
+},
+{
+"title": "Future Updates:",
+"content": "In the future, we may add or remove features in both the free and Pro versions as needed."
+}
+]
+},
+"footer": "Copyright © 2023 Nms Kontho | All rights reserved."
+},
+"bn": {
+"hero": {
+"title": "এনএমএস কণ্ঠ: আপনার সেরা টাইপিং সমাধান",
+"subtitle": "বাংলা এবং ইংরেজি উভয় ভাষায় ভয়েস এবং টেক্সটের মধ্যে নির্বিঘ্নে লেখালেখি করুন।",
+"downloadButton": "এখনই ডাউনলোড করুন"
+},
+"version": {
+"title": "বর্তমান ভার্সন",
+"subtext": "সর্বশেষ স্থিতিশীল রিলিজ"
+},
+"installation": {
+"header": "কিভাবে ইনস্টল করবেন",
+"content": "আপনার কম্পিউটারে অ্যাপ্লিকেশনটি ইনস্টল করতে এই সহজ পদক্ষেপগুলি অনুসরণ করুন:",
+"steps": [
+"আপনার সিস্টেমের জন্য ডাউনলোড বোতামে ক্লিক করুন (32-bit বা 64-bit)।",
+"ডাউনলোড করা ইনস্টলারটি খুলুন এবং অন-স্ক্রিন নির্দেশাবলী অনুসরণ করুন।",
+"অ্যাপ্লিকেশনটি চালু করুন এবং টাইপ করা শুরু করুন!"
+],
+"note": "ডাউনলোড করার আগে দয়া করে শর্তাবলী মেনে চলুন।"
+},
+"faq": {
+"header": "সচরাচর জিজ্ঞাসিত প্রশ্নাবলী",
+"questions": [
+{
+"q": "এনএমএস কণ্ঠ কী?",
+"a": "এনএমএস কণ্ঠ একটি বহুমুখী টাইপিং এবং স্পিচ-টু-টেক্সট অ্যাপ্লিকেশন যা বাংলা এবং ইংরেজি উভয় ভাষার জন্য ডিজাইন করা হয়েছে।"
+},
+{
+"q": "সফটওয়্যারটি কি বিনামূল্যে?",
+"a": "আমরা মৌলিক বৈশিষ্ট্য সহ একটি বিনামূল্যের সংস্করণ এবং অতিরিক্ত কার্যকারিতা সহ একটি প্রো সংস্করণ অফার করি।"
+}
+]
+},
+"policy": {
+"header": "নীতিমালা এবং শর্তাবলী",
+"sections": [
+{
+"title": "ডেটা গোপনীয়তা:",
+"content": "আমরা আমাদের ব্যবহারকারীদের কাছ থেকে কোনো ব্যক্তিগত ডেটা বা ব্যবহারের তথ্য সংগ্রহ করি না, এবং আমরা তৃতীয় পক্ষের সাথে কোনো তথ্য শেয়ার করি না।"
+},
+{
+"title": "ভবিষ্যত আপডেট:",
+"content": "ভবিষ্যতে, প্রয়োজনে আমরা বিনামূল্যে এবং প্রো উভয় সংস্করণেই ফিচার যোগ বা সরিয়ে নিতে পারি।"
+}
+]
+},
+"footer": "কপিরাইট © ২০২৩ এনএমএস কণ্ঠ | সর্বস্বত্ব সংরক্ষিত।"
+}
+}

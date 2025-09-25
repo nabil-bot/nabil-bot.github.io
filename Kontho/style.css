@@ -1,28 +1,11 @@
 @charset "utf-8";
-/* ===== Google Font Import - Poppins and Edu SA Beginner ===== */
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {scroll-behavior: smooth;}
+body {min-width: 485px; /* Set the desired minimum width */}
 
-
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    min-width: 485px; /* Set the desired minimum width */
-}
-
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-
-#navLangSwitchBtn{
-	font-family: Noto Sans Bengali;
-}
-
+body {font-family: "Poppins", sans-serif;}
+#navLangSwitchBtn{font-family: Noto Sans Bengali;}
 .container-fluid .container #mainFooterId {
     text-align: center;
     font-weight: bold;
@@ -31,12 +14,7 @@ body {
     /* box-shadow: 0px 0px 3px #0028FF; */
     border-radius: 4px;
 }
-
-
-.card {
-	border: none;
-}
-
+.card {border: none;}
 .container-fluid .container .row {
     margin-top: 25px;
     margin-left: 10px;
@@ -61,15 +39,12 @@ body {
     background-color: #EFF5FF;
     padding-bottom: 24px;
     padding-top: 20px;
-    border-radius: 14px;
-}
-
+    border-radius: 14px;}
 
 .card-body .container .btn.installer {
     background-color: #C5FFC7;
     color: #000000;
 }
-
 .container .row .col-lg-10 {
     display: flex;
     align-items: center;
@@ -652,21 +627,6 @@ tbody tr #8YA {
 	
 }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* countdown style ============= */
 
