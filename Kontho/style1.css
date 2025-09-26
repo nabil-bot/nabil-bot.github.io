@@ -1,0 +1,182 @@
+/* =======================
+   Global Styles
+======================= */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* =======================
+   Navbar
+======================= */
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: #007bff !important;
+}
+
+#navLangSwitchBtn {
+  font-weight: bold;
+  padding: 4px 12px;
+}
+
+/* =======================
+   Hero Section
+======================= */
+.app-logo {
+  max-width: 200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+.app-logo:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  border-radius: 16px;
+  background: #ffffff;
+  border: none;
+}
+.card-body {
+  padding: 2rem;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px 18px;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   Confirmation Box
+======================= */
+.confirmation-box {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  max-width: 700px;
+  transition: all 0.3s ease;
+}
+.confirmation-box h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.confirmation-box p {
+  font-size: 0.95rem;
+}
+
+/* =======================
+   Sections
+======================= */
+section {
+  padding: 40px 0;
+}
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+#InstallationPara,
+#msgForUsersPara,
+#policyParas {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* =======================
+   FAQ Styles
+======================= */
+#faq .card {
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+#faq .card-header {
+  background: #f1f5fb;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#faq .card-header h5 a {
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+#faq .card-header h5 a:hover {
+  color: #007bff;
+}
+#faq .card-body {
+  background: #fff;
+  padding: 15px;
+  border-radius: 0 0 12px 12px;
+  font-size: 0.95rem;
+}
+
+/* =======================
+   Footer
+======================= */
+.mainFooter {
+  background: #f1f5fb;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+}
+.mainFooter p {
+  margin: 0;
+  padding: 12px;
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 768px) {
+  .app-logo {
+    max-width: 150px;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+}

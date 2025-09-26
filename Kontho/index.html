@@ -2,427 +2,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nms Kontho</title>
-	<meta name="title" content="Nms Kontho: typing application" />
-	<meta name="keywords"
-		content="Nms Kontho,kontho keyboard, Kontho typing software, Bangla typing software, Bangla writing software, English speech to text, Bangla speech to text, voice to text, voice to text software, voice to text in Word, speech recognition, speech to text Bangla, voice recognition, typing software">
-	<meta property="og:description"
-		content="Kontho typing software, bangla typing software, English typing, Speech recognition software, Bangla speech-to-text software " />
-	<meta name="next-head-count" content="8" />
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<link rel="icon" href="Imgs/Kontho3.png" />
-	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nms Kontho - Download</title>
+
+  <!-- Meta Info -->
+  <meta name="title" content="Nms Kontho: typing application" />
+  <meta name="keywords" content="Nms Kontho, kontho keyboard, Bangla typing software, speech to text, voice recognition, typing app" />
+  <meta property="og:description" content="Download Nms Kontho - Bangla & English speech-to-text typing software" />
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" href="Imgs/Kontho3.png" />
 </head>
 <body style="padding-top: 70px">
-	<div class="container-fluid">
-		<div class="container">
-			<div id="navbarContainer"></div>
-			<div class="container" id="confirmationWindow">
-				<h4><strong>Are you sure you want to download Nms Kontho installer❓</strong></h4>
-				<div class="container">
-					<p>📢<strong>Please note that while it is completely ✅safe</strong> to use the Installer, but some
-						antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from
-						the <strong><a href="https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"
-								target="_blank">Microsoft Store</a>.</strong>💥&nbsp;<br><br>
-						🔵Sometimes the version available on the Microsoft Store may not be the latest one.
-					</p>
-					<a href="https://youtu.be/_LhydHtnaGI" target="_blank" id="tutorial-link"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i>How to use the portable version?</a>
-					
-					<div class="container" id="confirmationCheckbox">
-						<input type="checkbox" id="enableInstallerBtnCheckbox">
-						<label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID"><strong>I've
-								read the warning and I would like to download the installer.</strong></label>
-					</div>
-					<div style="display: flex; gap: 10px;">
-					<button type="button" class="btn btn-success" id="MsStoreDownloadButton" style="display: 'none';"><i class="fas fa-external-link-alt"></i> Ms store</button>
-					<button type="button" class="btn btn-success" id="32bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 32-bit  </button>
-					<button type="button" class="btn btn-success" id="64bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 64-bit  </button>
-					<button type="button" class="btn btn-secondary" onClick="cancelfunc()">Cancel&nbsp;</button>
-					</div> 
-				</div>
-			</div>
-			<!-- <div class="container" id="confirmationWindow">
-				<h4><strong>Are you sure you want to download Nms Kontho installer❓</strong></h4>
-				<div class="container">
-					<p>📢<strong>Please note that while it is completely ✅safe</strong> to use the Installer, but some
-						antivirus may flag it 🚩. To avoid this issue, we recommend installing Nms Kontho directly from
-						the <strong><a href="https://www.microsoft.com/store/productId/9NZ2FZ4SJN7Z?ocid=pdpshare"
-								target="_blank">Microsoft Store</a>.</strong>💥&nbsp;<br><br>
-						🔵Sometimes the version available on the Microsoft Store may not be the latest one.
-					</p>
-					<a href="https://youtu.be/_LhydHtnaGI" target="_blank" id="tutorial-link"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i>How to use the portable version?</a>
-					
-					<div class="container" id="confirmationCheckbox">
-						<input type="checkbox" id="enableInstallerBtnCheckbox">
-						<label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID"><strong>I've
-								read the warning and I would like to download the installer.</strong></label>
-					</div>
+  <!-- Navbar -->
+  <div id="navbarContainer"></div>
 
-					<div style="display: flex; gap: 10px;">
-						<button type="button" class="btn btn-success" id="32bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 32-bit  </button>
-						<button type="button" class="btn btn-success" id="64bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 64-bit  </button>
-					</div>
-					<button type="button" class="btn btn-secondary" onClick="cancelfunc()">Cancel&nbsp;</button>
-				</div>
-			</div> -->
+  <!-- Main Section -->
+  <div class="container-fluid">
+    <div class="container blurArea">
+      <!-- Hero Section -->
+      <div class="row align-items-center my-5">
+        <div class="col-lg-4 text-center" data-aos="zoom-in">
+          <img src="Imgs/Kontho3.png" alt="Nms Kontho Logo" class="img-fluid app-logo" />
+        </div>
+        <div class="col-lg-8">
+          <div class="card shadow-lg border-0" data-aos="fade-left">
+            <div class="card-body">
+              <h3 class="card-title">
+                <strong>Nms Kontho v<span id="variableValue">0</span></strong>
+              </h3>
+              <p class="text-muted">হোক লেখা প্রাণবন্ত</p>
+              <div class="btn-group flex-wrap" style="gap: 10px;">
+                <button type="button" class="btn btn-primary" onclick="ShowMsStoreMsg()" data-aos="fade-up" data-aos-delay="200">
+                  <img src="Imgs/ms_store_logo.png" width="20" height="20" alt="MS Store" /> <strong>Ms Store</strong>
+                </button>
+                <button type="button" class="btn btn-success" onclick="showInstallerConfirmationFunc()" title="Installer version" data-aos="fade-up" data-aos-delay="400">
+                  <i class="fa fa-download"></i> <strong>Installer</strong>
+                </button>
+                <button type="button" class="btn btn-info" onclick="showPortableConfirmationFunc()" title="Portable version" data-aos="fade-up" data-aos-delay="600">
+                  <i class="fa fa-download"></i> <strong>Portable</strong>
+                </button>
+                <button type="button" class="btn btn-dark" onclick="openArchive()" title="Older Versions" data-aos="fade-up" data-aos-delay="800">
+                  <i class="fa-brands fa-github"></i> <strong>Archive</strong>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="blurArea">
-				<div class="row">
-					<div data-aos="flip-left" class="col-lg-2"><img src="Imgs/Kontho3.png" alt="" width="799" height="799"
-							class="img-fluid" />&nbsp;</div>
-					<div class="col-lg-10">
-						<div class="card col-md-4 offset-lg-0 col-lg-12">
-							<div class="card-body"
-							
-							>
-								<h5 class="card-title"><strong>Nms Kontho v<span id="variableValue">0</span></strong>
-								</h5>
-								<h6 data-aos="fade-right"class="card-subtitle mb-2 text-muted">হোক লেখা প্রাণবন্ত&nbsp; &nbsp;</h6>
-								<div class="container">
-									<button type="button" class="btn btn-primary" onClick="ShowMsStoreMsg()"
-									data-aos="fade-right" data-aos-duration="1000"
-									> <img
-											src="Imgs/ms_store_logo.png" alt="" width="20" height="20"
-											class="img-fluid" /> <strong>Ms Store</strong>&nbsp;</button>
+      <!-- Confirmation Window (Hidden Initially) -->
+      <div class="container confirmation-box" id="confirmationWindow" style="display: none;">
+        <h4><strong>Are you sure you want to download Nms Kontho installer❓</strong></h4>
+        <div>
+          <p id="confirmationText">📢 Please note: while it is safe, antivirus may flag it 🚩. MS Store recommended.</p>
+          <a href="https://youtu.be/_LhydHtnaGI" target="_blank" id="tutorial-link">
+            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> How to use the portable version?
+          </a>
+          <div id="confirmationCheckbox" class="mt-3">
+            <input type="checkbox" id="enableInstallerBtnCheckbox" />
+            <label for="enableInstallerBtnCheckbox" id="enableInstallerBtnCheckboxID">
+              <strong>I’ve read the warning and want to download.</strong>
+            </label>
+          </div>
+          <div class="d-flex gap-2 mt-3 flex-wrap">
+            <button type="button" class="btn btn-success" id="MsStoreDownloadButton" style="display: none;">
+              <i class="fas fa-external-link-alt"></i> Ms Store
+            </button>
+            <button type="button" class="btn btn-success" id="32bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 32-bit</button>
+            <button type="button" class="btn btn-success" id="64bitInstallerDownloadButton"><i class="fa-solid fa-download"></i> 64-bit</button>
+            <button type="button" class="btn btn-secondary" onclick="cancelfunc()">Cancel</button>
+          </div>
+        </div>
+      </div>
 
+      <!-- Installation Section -->
+      <section id="installation" class="my-5">
+        <h2 class="text-center" id="InstallationHeader" data-aos="zoom-in">Installation</h2>
+        <div id="InstallationPara" class="mt-3"></div>
+      </section>
 
-									<button type="button" class="btn installer"
-										onclick="showInstallerConfirmationFunc()"
-										title="Some antivirus may flag the Installer version."
-										data-aos="fade-right" data-aos-duration="1250"
-										><i
-											class="fa fa-download"></i> <strong>Installer</strong>&nbsp;</button>
-									<button type="button" class="btn installer" onclick="showPortableConfirmationFunc()"
-										title="Some antivirus may flag the Portable version."
-										data-aos="fade-right" data-aos-duration="1750"
-										><i
-											class="fa fa-download"></i>
-										<strong>Portable</strong><strong>&nbsp;</strong>&nbsp;</button>
-									<button type="button" class="btn btn-primary" title="Older Versions"
-										onclick="openArchive()"
-										data-aos="fade-right" data-aos-duration="2000"
-										><i class="fa-brands fa-github"></i>
-										<strong>Archive</strong>&nbsp;</button>
-								</div>
-							</div>
-						</div>
-						&nbsp;
-					</div>
-				</div>
-				<br>
-				<div class="container">
-					<div class="container">
-						<h2 class="text-center" data-aos="zoom-in" id="InstallationHeader"><strong>Installation</strong></h2>
-					</div>
-					<br>
-					<div class="container" id="InstallationPara">
-						<p data-aos="fade-up">📌<strong>System Requirements:</strong> To ensure a seamless installation
-							and utilization of this application, your system must meet the following requirements.&nbsp;
-						</p>
-						<p data-aos="fade-up">&nbsp;<strong>Operating system:</strong> Windows 10, 11, or later
-							(Windows 10 is the minimum requirement)</p>
-						<p data-aos="fade-up">&nbsp;<strong>RAM</strong>: Minimum 4 GB Recommended.&nbsp;</p>
-						<p data-aos="fade-up">&nbsp;<strong>Disk space:</strong> Minimum 65 MB available.&nbsp;</p>
-						<p data-aos="fade-up"><strong>&nbsp;Additional Information:</strong> This app works by establishing communication with other applications. Therefore, if any other application in the system interferes with it or fails to interact properly, this app may not function as expected.&nbsp;</p>
-						<!-- <p data-aos="fade-up">🔹<strong>If you intend to download the installer or the portable version,
-								please be aware that some antivirus software may flag these versions. To avoid this
-								issue, you can install the application directly from the Microsoft Store.</strong></p> -->
+      <!-- Message Section -->
+      <section id="message" class="my-5">
+        <h2 class="text-center" id="msgForUseresHeader" data-aos="zoom-in">📧 Message For All Users</h2>
+        <div id="msgForUsersPara" class="mt-3"></div>
+      </section>
 
-						<p data-aos="fade-up">🔹<strong>If you intend to download the installer or the portable version,
-								please be aware that some antivirus software may flag these versions.</strong></p>		
-					</div>
-				</div>
-				<br>
-				<div class="container">
-					<div class="container">
-						<h2 class="text-center" data-aos="zoom-in" id="msgForUseresHeader"><strong>📧 Message For All Users</strong></h2>
-					</div>
-					<br>
-					<div class="container" id="msgForUsersPara">
-						<p data-aos="fade-up">This was my school project that I began working on during the pandemic in
-							2020. Aimed at automating🚀 my daily tasks. The first release was in 2021, and now thousands
-							of people are using it. There's still a long way to go. I'm the only one working on it, so
-							I'd really appreciate any feedback to make it better.🔥&nbsp;</p>
-						<p data-aos="fade-up">&nbsp;🐛<strong> Bug Reporting:</strong>&nbsp;No software is entirely free
-							of bugs. If you encounter any anomalies, glitches, or issues during your experience with Nms
-							Kontho, I kindly request that you report them via the official Nms Kontho Facebook page,
-							accessible through this link: 🔗 Nms Kontho Facebook Page.&nbsp;</p>
-						<p data-aos="fade-up">&nbsp;📌 <strong>Antivirus Flagging:</strong> 🚩Certain antivirus
-							applications may flag the installer and portable version of Nms Kontho. To avoid
-							encountering such issues, we recommend installing Nms Kontho from the Microsoft Store.&nbsp;
-						</p>
-						<p data-aos="fade-up">&nbsp;Your input and support are deeply appreciated as they contribute to
-							the refinement and enhancement of this project. Thank you for your understanding and
-							collaboration in making Nms Kontho a more robust and reliable application for all
-							users.&nbsp;</p>
-						<p data-aos="fade-up">&nbsp;🦺<strong>Developer:</strong> <strong>Md Nabil Mostofa</strong></p>
-					</div>
-				</div>
-				<br>
-				<div class="container" id="faq"><br>
-					<div class="container">
-						<h2 class="text-center" data-aos="zoom-in" id="FAQHeader"><strong>Frequently Asked Questins and
-								Answers</strong></h2>
-					</div>
-					<br>
+      <!-- FAQ Section -->
+      <section id="faq" class="my-5">
+        <h2 class="text-center" id="FAQHeader" data-aos="zoom-in">Frequently Asked Questions and Answers</h2>
+        <div class="container mt-3" id="accordion1"></div>
+      </section>
 
-					<div class="container">
-						<div id="accordion1" role="tablist">
-							<div class="card">
-								<div class="card-header" role="tab" id="headingOne1" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a id="faqH1"
-											data-toggle="collapse" href="#collapseOne1" role="button"
-											aria-expanded="true" aria-controls="collapseOne1"> 🔷Why is the website link
-											like this❓</a>
-										<a data-toggle="collapse" href="#collapseOne1" role="button"
-											aria-expanded="true" aria-controls="collapseOne1">
-											<i class="fa-solid fa-angles-down"></i>
-										</a>
-									</h5>
-								</div>
-								<div id="collapseOne1" class="collapse show" role="tabpanel"
-									aria-labelledby="headingOne1" data-parent="#accordion1" data-aos="fade-up">
-									<div class="card-body" id="faqA1"><strong>Answer:</strong> 💠The website link appears this way
-										because it's hosted on my personal GitHub repository.<br>Since this is
-										<strong>not a commercial</strong> application, I opted for this solution to
-										reduce costs.</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="headingTwo1" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a id="faqH2"
-											class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button"
-											aria-expanded="false" aria-controls="collapseTwo1"> 🔷Why do I have to pay
-											for the Access Plus edition❓&nbsp; </a>
+      <!-- Policy Section -->
+      <section id="policy" class="my-5">
+        <h2 class="text-center" id="policyHeader" data-aos="zoom-in">Policy</h2>
+        <div id="policyParas" class="mt-3"></div>
+      </section>
+    </div>
+  </div>
 
-										<a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button"
-											aria-expanded="false" aria-controls="collapseTwo1" data-aos="fade-up">
-											<i class="fa-solid fa-angles-down"></i></a>
+  <!-- Footer -->
+  <footer class="mainFooter text-center py-3 mt-5">
+    <p>Copyright © 2025 Nms Kontho | All rights reserved.</p>
+  </footer>
 
-									</h5>
-								</div>
-								<div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
-									data-parent="#accordion1" data-aos="fade-up">
-									<div class="card-body" id="faqA2"><strong>Answer:</strong> Some of the APIs used in this
-										application are not free, and I’m also working on building an ecosystem around
-										it to support ongoing development and maintenance.<br>Time is the real wealth ⏳ — and the time you save is priceless compared to these prices.</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header" role="tab" id="headingThree1" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a
-											class="collapsed" data-toggle="collapse" href="#collapseThree1"
-											role="button" aria-expanded="false" aria-controls="collapseThree1" id="faqH3"> 🔷Why do some antivirus software flag the Installer and Portable version❓ </a>
-
-										<a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button"
-											aria-expanded="false" aria-controls="collapseThree1">
-											<i class="fa-solid fa-angles-down"></i>
-										</a>
-									</h5>
-								</div>
-								<div id="collapseThree1" class="collapse" role="tabpanel"
-									aria-labelledby="headingThree1" data-parent="#accordion1" data-aos="fade-up">
-									<div class="card-body" id="faqA3"><strong>Answer:</strong> 💠Applications of this nature
-										require a code signature certificate to facilitate distribution without
-										encountering flagging issues. As an individual without organizational backing,
-										navigating this process can be challenging.<br><strong>By installing this
-											application through the Microsoft Store, you can avoid encountering the
-											flagging issue.</strong></div>
-								</div>
-							</div>
-
-							<!--				=======================================================================-->
-
-							<div class="card">
-								<div class="card-header" role="tab" id="isItSafeToUse" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a
-											class="collapsed" data-toggle="collapse" href="#collapseSafe1" role="button"
-											aria-expanded="false" aria-controls="collapseSafe1" id="faqH4"> 🔷Is It Safe to Use Nms Kontho❓ </a>
-
-										<a class="collapsed" data-toggle="collapse" href="#collapseSafe1" role="button"
-											aria-expanded="false" aria-controls="collapseSafe1">
-											<i class="fa-solid fa-angles-down"></i>
-										</a>
-									</h5>
-								</div>
-								<div id="collapseSafe1" class="collapse" role="tabpanel" aria-labelledby="isItSafeToUse"
-									data-parent="#accordion1" data-aos="fade-up">
-									<div class="card-body" id="faqA4"><strong>Answer:</strong> 💠Yes, it's <strong>safe</strong> to
-										use any version of Nms Kontho, as long as you download it from the official
-										website or Microsoft Store.<br>The same application is packaged in three
-										formats: an installer (.exe), a portable version, and an MSIX package for the
-										Microsoft Store. Each option is safe; however, the MSIX package undergoes a
-										longer certification process to appear in the store.<br>
-										We offer both installer and portable versions outside the Microsoft Store to
-										avoid some of its limitations, like the lack of access to older versions and the
-										delay in releasing updates. Microsoft Store isn’t ideal for version migration,
-										so these download options provide flexibility and timely access to the latest
-										releases.</div>
-								</div>
-							</div>
-
-							<!--				=========================================================================-->
-
-							<!--				=======================================================================-->
-
-							<div class="card">
-								<div class="card-header" role="tab" id="ourLimitations" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a
-											class="collapsed" data-toggle="collapse" href="#limitationsSaction" role="button"
-											aria-expanded="false" aria-controls="limitationsSaction" id="faqH5"> 🔷Our Limitations❗</a>
-
-										<a class="collapsed" data-toggle="collapse" href="#limitationsSaction" role="button"
-											aria-expanded="false" aria-controls="limitationsSaction">
-											<i class="fa-solid fa-angles-down"></i>
-										</a>
-									</h5>
-								</div>
-								<div id="limitationsSaction" class="collapse" role="tabpanel" aria-labelledby="ourLimitations"
-									data-parent="#accordion1" data-aos="fade-up">
-									<div class="card-body" id="faqA5"><strong>Answer:</strong> 💠Kontho currently has approximately 200,000 active users. As we are not yet in the commercial phase, managing such a large user base with a small team poses significant challenges.<strong>We recommend that users with limited computer knowledge opt for the free version of Kontho instead of paid plans.</strong><br>
-										we encourage users to troubleshoot minor issues independently, as relying on our team for small problems is discouraged. Currently, we do not offer a dedicated 24/7 user support service. If possible, seek help from an experienced person nearby.
-										<br>During times of high traffic, we may not be able to respond to everyone immediately and we may need to prioritize messages based on their urgency. To facilitate faster support, please provide all necessary details in a single message when reaching out.</div>
-								</div>
-							</div>
-
-							<!--				=========================================================================-->
-
-
-
-
-
-
-
-							<div class="card">
-								<div class="card-header" role="tab" id="headingFour1" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a
-											class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button"
-											aria-expanded="false" aria-controls="collapseFour1"> 🔷Are Mac or Linux
-											versions available❓</a>
-
-										<a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button"
-											aria-expanded="false" aria-controls="collapseFour1">
-											<i class="fa-solid fa-angles-down"></i></a>
-									</h5>
-								</div>
-								<div id="collapseFour1" class="collapse" role="tabpanel" aria-labelledby="headingFour1"
-									data-parent="#accordion1">
-									<div class="card-body"><strong>Answer:</strong>💠The release of a stable Mac or
-										Linux version may take over a year.</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="headingFive1" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a
-											class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button"
-											aria-expanded="false" aria-controls="collapseFive"> 🔷How can I get a free
-											trial❓</a>
-
-										<a class="collapsed" data-toggle="collapse" href="#collapseFive1" role="button"
-											aria-expanded="false" aria-controls="collapseFive">
-											<i class="fa-solid fa-angles-down"></i></a>
-									</h5>
-								</div>
-								<div id="collapseFive1" class="collapse" role="tabpanel" aria-labelledby="headingFive1"
-									data-parent="#accordion1">
-									<div class="card-body"><strong>Answer:</strong>💠You can use the Pro version for free each time you update the application to the latest version. We have discontinued the use of free trial keys due to misuse.
-									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" role="tab" id="headingSix1" data-aos="fade-up">
-									<h5 class="mb-0 d-flex justify-content-between align-items-center"> <a
-											class="collapsed" data-toggle="collapse" href="#collapseSix1" role="button"
-											aria-expanded="false" aria-controls="collapseSix1"> 🔷How can I request for
-											a feature❓</a>
-
-										<a class="collapsed" data-toggle="collapse" href="#collapseSix1" role="button"
-											aria-expanded="false" aria-controls="collapseSix1">
-											<i class="fa-solid fa-angles-down"></i></a>
-									</h5>
-								</div>
-								<div id="collapseSix1" class="collapse" role="tabpanel" aria-labelledby="headingSix1"
-									data-parent="#accordion1">
-									<div class="card-body"><strong>Answer:</strong>💠If you wish to request a feature
-										for the upcoming version of Nms Kontho, please reach out to the developer via
-										their Gmail at <strong>mdnabilmustofa2021@gmail.com</strong></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="container" id="policy">
-					<div class="container">
-						<h2 class="text-center" data-aos="zoom-in" id="policyHeader"><strong>Policy</strong></h2>
-						<div class="container" id="policyParas">
-							<p data-aos="fade-up"><strong>Acceptance of Terms:</strong> By using this application, you
-								agree to these terms and conditions. If you do not agree, please refrain from using the
-								application.</p>
-							<p data-aos="fade-up"><strong>Freemium Model:</strong> This application offers both free and
-								paid features. The free version may have limited functionality compared to the Pro
-								version..</p>
-							<p data-aos="fade-up"><strong>&nbsp;Refund: </strong>Since the release of NMS Kontho v7, which uses a permanent serial key system, we have discontinued our refund policy.<br>
-Please try the trial version before purchasing a serial key, or consider buying a short-duration key to test the app.
-							</p>
-							
-							
-							<p data-aos="fade-up"><strong>&nbsp;System Compatibility and Issue:</strong>When a software-related issue is reported to us, we first try to recreate the problem on our own PCs. If we encounter the same issue, it is concluded to be a bug in the software. However, if we do not experience the same issue on our systems, we conclude that it is a system environment-related issue.
-								Since the software works by establishing communication with other applications, any interference or inability of other applications in the system environment to interact properly with it may prevent the app from functioning as expected.
-								Before releasing a new version of the application, it is submitted to the Microsoft Store, where a moderator (a real human) thoroughly examines various aspects of the software and grants approval for publishing on the Microsoft Store. (This is primarily why publication on the Microsoft Store takes longer.) During this review process, if even the smallest issue—ranging from the icon to software-related functionality—is identified, the application is rejected.
-							</p>
-							
-							
-							<p data-aos="fade-up"><strong>&nbsp;Our Limitations: </strong>This is not a commercial application and <b>we do not have a dedicated user support team.</b> Managing a large user base with a small team is challenging. We encourage users to troubleshoot minor issues independently. Relying on us for minor issues is discouraged. If possible, seek help from an experienced person nearby. During times of high traffic, we may not be able to respond to everyone. We encourage users with limited computer experience to consider the free version of Kontho rather than paid plans.
-							</p>
-							
-							<p data-aos="fade-up"><strong>User-Generated Data:</strong> You can save and manage words
-								using this app. Your dictionary file (.pkl) is stored on your device, and we don't
-								access or share it with any third parties.</p>
-							<p data-aos="fade-up"><strong>&nbsp;Word Contribution:</strong> You have the option to
-								contribute to our dictionary by adding a word to our Google Firebase data server. This
-								feature is entirely voluntary. You can do so by checking the <i
-									class="fa-solid fa-check"></i> <strong>Contribute</strong> checkbox when
-								adding a new word. By default, this option is unchecked.&nbsp;</p>
-
-							<p data-aos="fade-up">&nbsp;<strong>No Personal Data Collection:</strong> "Nms Kontho" does
-								not collect any personal data, and we do not share any information with third
-								parties.&nbsp;</p>
-							<p data-aos="fade-up"><strong>&nbsp;Future Updates: </strong>In the future, we may add or
-								remove features in both the free and Pro versions as needed.</p>
-							<p data-aos="fade-up"><strong>Changes: </strong>We reserve the right to update these terms
-								and conditions at any time. Any changes will be effective immediately upon posting in
-								the application. We encourage you to review these terms periodically.</p>
-
-							<p data-aos="fade-up"><strong>&nbsp;Limitation of Liability: </strong>The application is
-								provided on an "as is" basis. We are not liable for any direct, indirect, incidental, or
-								consequential damages arising from your use of the application.</p>
-							<p><strong>&nbsp;Contact Us: </strong>If you have any questions or concerns about your
-								privacy or this policy, please feel free to contact us at mdnabilmustofa2021@gmail.com
-							</p>
-
-						</div>
-					</div>
-				</div>
-				<br>
-			</div>
-
-			<footer class="mainFooter" id="mainFooterId">Copyright © 2023 Nms Kontho | All rights reserved.</footer>
-		</div>
-	</div>
-	<script src="js/JavaScript.js"></script>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.4.1.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
+  <!-- Scripts -->
+  <script src="js/JavaScript.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
