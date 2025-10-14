@@ -1,7 +1,7 @@
 {
     "v7+ Promo": {
-        "videoSrcLink": "https://www.youtube.com/embed/OxEQn5JPsGo",
-        "description": "📹 এই ভিডিওটি Creative Commons লাইসেন্সের অধীনে আপলোড করা হয়েছে। ✨ তাই যে কেউ চাইলে ডাউনলোড করে 🔄 রি-আপলোড করতে পারবেন। 🔗\nVideo file link: https://drive.google.com/file/d/1N_8zAFO86XTlvUyoSxUEkN80ftbiZABF/view?usp=sharing\n\n           https://drive.google.com/drive/folders/1MQeEBUUn2izCzpCK64OIvRNJ0Fz5x_qa?usp=sharing"},
+        "videoSrcLink": "https://www.youtube.com/embed/6wAlGCfU34k",
+        "description": "📹 এই ভিডিওটি Creative Commons লাইসেন্সের অধীনে আপলোড করা হয়েছে। ✨ তাই যে কেউ চাইলে ডাউনলোড করে 🔄 রি-আপলোড করতে পারবেন। "},
 
     "v1 Promo": {
         "videoSrcLink": "https://www.youtube.com/embed/zbtELYJaAJU",
@@ -28,6 +28,11 @@
         "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1782",
         "description": "In addition to regular words, you can save special entries like email addresses, phone numbers, and web URLs. After saving, just type a small part of the text, and Kontho will suggest the full entry, allowing you to easily complete it. This way, you don't need to remember the entire text or worry about copying and pasting."
     },
+
+    "Adaptive Dictionary": {
+        "videoSrcLink": "https://www.youtube.com/embed/6wAlGCfU34k?start=275",
+        "description": "কণ্ঠ ব্যবহার করে যতো লিখবেন এটা ততো আপনার টাইপিং প্যাটার্ন সম্পর্কে জানবে এবং সে অনুযায়ী ওয়ার্ড সাজেষ্ট করবে। অর্থাৎ অপ্রয়োজনীয় শব্দের তুলনায় প্রয়োজনীয় শব্দ আগে সাজেষ্ট করে। এতে করে মাত্র কয়েকটা ক্যারেক্টার টাইপ করেই ওয়ার্ড সাজেশন উইন্ডো থেকে ওয়ার্ড কমপ্লিট করে নেওয়া যায়।"
+    },
 	
 	"Speech to Text (Voice typing)": {
         "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1380",
@@ -52,5 +57,9 @@
 	"Custom Layout Builder:": {
         "videoSrcLink": "https://www.youtube.com/embed/kdF0NgkRBmo?start=1883",
         "description": "Unlike Avro, Kontho allows you to build advanced layouts like Phonetic and customize each of the default layouts. You have the flexibility to decide what output each key should produce."
+    },
+    "Customizable OSK": {
+        "videoSrcLink": "https://www.youtube.com/embed/6wAlGCfU34k?start=403",
+        "description": "On screen keyboard"
     }
 }
