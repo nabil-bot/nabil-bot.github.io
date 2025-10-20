@@ -669,3 +669,47 @@ tbody tr #8YA {
 
 
 
+
+
+
+
+
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.25s;
+
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.faq-question:hover {
+  color: #007bff;
+}
+
+/* Wrapper for height animation */
+.faq-answer-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+/* Expanded state */
+.faq-answer-wrapper.open {
+  max-height: 500px; /* big enough to fit text */
+}
+
+.faq-answer {
+  padding-top: 6px;
+  color: #444;
+  line-height: 1.5;
+}
+

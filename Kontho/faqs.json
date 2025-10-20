@@ -1,0 +1,73 @@
+{
+  "english": [
+    {
+      "question": "🔷Why is the website link like this❓",
+      "answer": "<strong>Answer:</strong> 💠The website link appears this way because it's hosted on my personal GitHub repository.<br>Since this is <strong>not a commercial</strong> application, I opted for this solution to reduce costs."
+    },
+    {
+      "question": "🔷Why do I have to pay for the Access Plus edition❓ ",
+      "answer": "<strong>Answer:</strong> Some of the APIs used in this application are not free, and I’m also working on building an ecosystem around it to support ongoing development and maintenance."
+    },
+    {"question":" 🔷Can I change the device after activation❓",
+    "answer": "<strong>Answer:</strong> 💠 <strong>Yes</strong>, of course you can. You can change the activated device as many times as you like, and you can activate using the same key even after setting up new Windows. You don't even have to seek out assistance.<br>But keep in mind that <strong>after abandoning a device, you cannot activate it again using the same key 🔑.</strong>"
+    },
+    {
+      "question": "🔷Why do some antivirus software flag the Installer and Portable version❓",
+      "answer": "<strong>Answer:</strong> 💠Applications of this nature require a code signature certificate to facilitate distribution without encountering flagging issues. As an individual without organizational backing, navigating this process can be challenging.<br><strong>By installing this application through the Microsoft Store, you can avoid encountering the flagging issue.</strong>"
+    },
+    {
+      "question": "🔷Is It Safe to Use Nms Kontho❓",
+      "answer": "<strong>Answer:</strong> 💠Yes, it's <strong>safe</strong> to use any version of Nms Kontho, as long as you download it from the official website or Microsoft Store.<br>The same application is packaged in three formats: an installer (.exe), a portable version, and an MSIX package for the Microsoft Store. Each option is safe; however, the MSIX package undergoes a longer certification process to appear in the store.<br> We offer both installer and portable versions outside the Microsoft Store to avoid some of its limitations, like the lack of access to older versions and the delay in releasing updates. Microsoft Store isn’t ideal for version migration, so these download options provide flexibility and timely access to the latest releases."
+    },
+    {
+      "question": "🔷Our Limitations",
+      "answer": "<strong>Answer:</strong> 💠Kontho currently has approximately 200,000 active users. As we are not yet in the commercial phase, managing such a large user base with a small team poses significant challenges.<strong>We recommend that users with limited computer knowledge opt for the free version of Kontho instead of paid plans.</strong><br> we encourage users to troubleshoot minor issues independently, as relying on our team for small problems is discouraged. Currently, we do not offer a dedicated 24/7 user support service. If possible, seek help from an experienced person nearby. <br>During times of high traffic, we may not be able to respond to everyone immediately and we may need to prioritize messages based on their urgency. To facilitate faster support, please provide all necessary details in a single message when reaching out."
+    },
+    {
+      "question": "🔷Are Mac or Linux versions available❓",
+      "answer": "<strong>Answer:</strong>💠The release of a stable Mac or Linux version may take over a year."
+    },
+    {
+      "question": "🔷How can I get a free trial",
+      "answer": "<strong>Answer:</strong>💠You can use the Pro version for free each time you update the application to the latest version. We have discontinued the use of free trial keys due to misuse."
+    },
+    {
+      "question": " 🔷How can I request for a feature❓",
+      "answer": "<strong>Answer:</strong>💠If you wish to request a feature for the upcoming version of Nms Kontho, please reach out to the developer via their Gmail at <strong>mdnabilmustofa2021@gmail.com</strong>"
+    }
+    
+  ],
+  "bangla": [
+    {
+      "question": "🔷ওয়েবসাইট লিঙ্কটি এমন কেন❓",
+      "answer": "<strong>উত্তর:</strong> 💠 ওয়েবসাইটের লিঙ্কটি এমন হওয়ার কারণ এটি আমার ব্যক্তিগত GitHub Repository তে হোস্ট করা হয়েছে।<br>যেহেতু এটি কোনো বাণিজ্যিক অ্যাপ্লিকেশন নয়।"
+    },
+    {
+      "question": "🔷কেন Access Plus সংস্করণ ব্যবহারের জন্য অর্থ প্রদান করতে হয়❓",
+      "answer": "<strong>উত্তর:</strong> 💠 এই অ্যাপ্লিকেশনে ব্যবহৃত কিছু API বিনামূল্যে নয়, এবং আমি এটাকে ঘিরে এমন একটি ইকোসিস্টেম দাঁড় করানোর চেষ্টা করছি যাতে এর ধারাবাহিক উন্নয়ন ও রক্ষণাবেক্ষণ সম্ভব হয়।<br>যে পরিমাণ সময় সাশ্রয় হবে, তার তুলনায় নিম্নোক্ত 💰 মূল্য তালিকা খুবই সামান্য।"
+    },
+    {"question":" 🔷একটা ডিভাইসে এক্টিভেট করার পর সেই ডিভাইস কি চেঞ্জ করতে পারবো❓",
+    "answer": "<strong>উত্তর:</strong> 💠 <strong>জ্বি,</strong> যতবার ইচ্ছা ডিভাইস পরিবর্তন করা যায়, তবে কোনো ডিভাইস একবার পরিত্যাগ করলে একই key 🔑 ব্যবহার করে সেই ডিভাইসে পুনরায় Activate করা সম্ভব হবে না।"
+    },
+    {
+        "question": "🔷কেন কিছু অ্যান্টিভাইরাস ইনস্টলার এবং পোর্টেবল সংস্করণকে ফ্ল্যাগ করে❓",
+        "answer": "<strong>উত্তর:</strong> 💠 এই ধরনের অ্যাপ্লিকেশন বিতরণের জন্য একটি কোড সিগনেচার সার্টিফিকেট প্রয়োজন, যা ফ্ল্যাগিং সমস্যাগুলি এড়াতে সহায়ক। তবে, কোনো প্রতিষ্ঠানিক সহায়তা ছাড়াই একজন ব্যক্তির পক্ষে এই প্রক্রিয়াটি সম্পন্ন করা অত্যন্ত চ্যালেঞ্জিং।<br>Microsoft Store থেকে এই অ্যাপ্লিকেশনটি ইনস্টল করলে ফ্ল্যাগিং সমস্যাটি এড়ানো যাবে।"
+    },
+    {
+        "question": "🔷Nms Kontho ব্যবহার করা কি নিরাপদ❓",
+        "answer": "<strong>উত্তর:</strong> 💠 হ্যাঁ, আপনি যদি অফিসিয়াল ওয়েবসাইট বা Microsoft Store থেকে Nms Kontho ডাউনলোড করেন তবে <strong>এটি ব্যবহার করা সম্পূর্ণ নিরাপদ</strong>।<br><br> একই অ্যাপ্লিকেশন তিনটি ফরম্যাটে উপলব্ধ: ইনস্টলার (.exe), পোর্টেবল ভার্সন, এবং Microsoft Store-এর জন্য একটি MSIX প্যাকেজ। প্রতিটি ফরম্যাটই নিরাপদ, তবে MSIX প্যাকেজটি স্টোরে প্রকাশিত হওয়ার জন্য দীর্ঘতর একটি সার্টিফিকেশন প্রক্রিয়ার মধ্য দিয়ে যায়।<br> আমরা Microsoft Store-এর বাইরেও ইনস্টলার এবং পোর্টেবল সংস্করণ ডাউনলোড করার সুযোগ করে দিয়েছি, কারণ স্টোরের কিছু সীমাবদ্ধতা রয়েছে, যেমন পুরোনো সংস্করণের অ্যাক্সেসের অভাব এবং আপডেট প্রকাশে বিলম্ব। Microsoft Store ভার্সন পরিবর্তনের জন্য তেমন আদর্শ নয়, তাই এই ডাউনলোড বিকল্পগুলো প্রদান করা হয়।"
+    },{
+        "question": "🔷আমাদের সীমাবদ্ধতা❗",
+        "answer": "<strong>উত্তর:</strong> 💠বর্তমানে কন্ঠের প্রায় ২ লক্ষ অ্যাক্টিভ ইউজার রয়েছে। এখনো বাণিজ্যিক পর্যায়ে না পৌঁছানোয়, ছোট একটি টিম দিয়ে এতো বড় ইউজার বেস হ্যান্ডেল করা বেশ চ্যালেঞ্জের। কম্পিউটার ব্যবহারে অনভিজ্ঞদের জন্য আমাদের পরামর্শ হলো, কন্ঠ-এর ফ্রি ভার্সন ব্যবহার করা, পেইড প্ল্যান না নেওয়া।<br>ছোটখাটো সমস্যা নিজেরাই সমাধান করার চেষ্টা করার জন্য ব্যবহারকারীদের উৎসাহিত করা হয়। আমাদের উপর নির্ভরশীলতাকে নিরুৎসাহিত করা হচ্ছে। কারণ আমাদের এখনো 24/7 ডেডিকেটেড ইউজার সাপোর্ট টিম নেই। সম্ভব হলে আপনার আশেপাশে অভিজ্ঞ কারো সাহায্য নিতে পারেন।<br>ডিমান্ড বেশি থাকা অবস্থায় সবাইকে রিপ্লাই দেওয়া সম্ভব হয়ে উঠে না। "
+    },{
+        "question": "🔷ম্যাক এবং লিনাক্স ভার্সন কি আছে❓",
+        "answer": "<strong>উত্তর:</strong> 💠লিনাক্সের কাজ অতি দ্রুত শুরু করা হবে, এবং তা রিলিজে ১ বছর বা তারও কম সময় লাগতে পারে।<br>কিন্তু ম্যাক এ এর থেকে কিছু বেশি সময় লাগতে পারে।"
+    },{
+        "question": "🔷ফ্রী ট্রায়াল কীভাবে ব্যবহার করবো❓",
+        "answer": "<strong>উত্তর:</strong> 💠প্রত্যেকবার নতুন কোনো ভার্সন রিলিজ হলে সব ফিচার আনলক করা হয়, টেস্টিং এর জন্য।<br>অপব্যবহার এর কারণে ট্রায়াল key বন্ধ করা হয়েছে।"
+    },{
+        "question": "🔷কোনো ফিচার এর জন্য রিকোয়েস্ট কীভাবে করবো❓",
+        "answer": "<strong>উত্তর:</strong> 💠 যদি কোন ফিচারের কথা মাথায় আসে তাহলে সরাসরি মেইল করতে পারেন এই ঠিকানায়: <strong>mdnabilmustofa2021@gmail.com</strong>"
+    }
+  ]
+}
