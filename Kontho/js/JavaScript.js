@@ -20,7 +20,117 @@ $(document).ready(function() {
       $("#variableValue").text(now.toFixed(3));
     }
   });
+
+
+
+
+   // select either .hover-img (if you added it) or .img-fluid (your original)
+  const img = document.querySelector('.hover-img, .img-fluid');
+  if (!img) {
+    console.warn('Hover script: target <img> (.hover-img or .img-fluid) not found.');
+    return;
+  }
+
+  // Ensure smooth rendering
+  img.style.transformOrigin = 'center center';
+  img.style.willChange = 'transform';
+
+  let rotX = 0, rotY = 0;
+  let targetX = 0, targetY = 0;
+
+  const strength = 8; // max tilt in degrees (reduce for subtler effect)
+  const ease = 0.12;  // easing speed (0.05 = slower, 0.2 = snappier)
+
+  // update targets on mousemove
+  img.addEventListener('mousemove', (e) => {
+    const r = img.getBoundingClientRect();
+    const x = e.clientX - r.left;
+    const y = e.clientY - r.top;
+    const cx = r.width / 2;
+    const cy = r.height / 2;
+
+    targetX = ((y - cy) / cy) * strength;     // rotateX
+    targetY = ((x - cx) / cx) * -strength;    // rotateY (inverse)
+  });
+
+  // reset when mouse leaves
+  img.addEventListener('mouseleave', () => {
+    targetX = 0;
+    targetY = 0;
+  });
+
+  // optional: tiny pop when entering
+  img.addEventListener('mouseenter', () => {
+    // nothing required, but you can tweak scale/pop here if wanted
+  });
+
+  // RAF loop for smooth motion
+  (function loop() {
+    rotX += (targetX - rotX) * ease;
+    rotY += (targetY - rotY) * ease;
+
+    // subtle scale based on tilt magnitude
+    const tiltMagnitude = Math.sqrt(rotX * rotX + rotY * rotY);
+    const scale = 1 + Math.min(0.06, tiltMagnitude / 180);
+
+    img.style.transform = `perspective(1200px) rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg) scale(${scale.toFixed(3)})`;
+
+    requestAnimationFrame(loop);
+  })();
+
+
+
+
+
 });
+
+
+
+
+
+
+
+
+const img = document.querySelector('.hover-img');
+
+let rotationX = 0;
+let rotationY = 0;
+let targetX = 0;
+let targetY = 0;
+
+img.addEventListener('mousemove', (e) => {
+  const rect = img.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+
+  // target rotation values (gentler & smoother)
+  targetX = ((y - centerY) / centerY) * 10;
+  targetY = ((x - centerX) / centerX) * -10;
+});
+
+img.addEventListener('mouseleave', () => {
+  targetX = 0;
+  targetY = 0;
+});
+
+// Smooth animation using requestAnimationFrame
+function animate() {
+  rotationX += (targetX - rotationX) * 0.1;
+  rotationY += (targetY - rotationY) * 0.1;
+  img.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg) scale(1.05)`;
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+
+
+
+
 
 
 
