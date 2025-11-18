@@ -7,14 +7,15 @@ fetch('navbar.html')
            });
 
 
-discountPercent = 0; // Default discount percentage
+discountPercent = 25; // Default discount percentage
  // Set the finish date (year, month (0-indexed), day, hour, minute, second)
-const finishDate = new Date(2025, 10, 23, 23, 59, 59); // December 25th, 2024, 23:59:59
+// new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds)
+const finishDate = new Date(2025, 10, 22, 0, 0, 0, 0); // January 1, 2026, 00:00:00// December 25th, 2024, 23:59:59
 
 
 const offerCountDownDiv = document.getElementById('offerCountDown');
 
-offerCountDownDiv.style.display = 'none';
+
 function setOfferPercentage(percent) {
   const offerPercent = document.getElementById("offerPercent");
   offerPercent.textContent = `${percent}%`;
@@ -145,124 +146,6 @@ function copyMobileNumber() {
       alert("copied: " + el.value);
     }
 
-// document.getElementById('language-toggle').addEventListener('change', function() {
-//     if (this.checked) {
-//       document.getElementById('numberSerial').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('numberSerial').innerHTML = 'সংখ্যা';
-
-//       document.getElementById('totalAmount').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('totalAmount').innerHTML = 'মোট পরিমাণ';
-
-//       document.getElementById('daysHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('daysHead').innerHTML = 'দিন';
-
-//     document.getElementById('UnloadAllPremiumFeatures').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('UnloadAllPremiumFeatures').innerHTML = 'সকল প্রিমিয়াম ফিচার আনলক করুন';
-        
-// 		document.getElementById('step1').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('step1').innerHTML = 'ধাপ ১: সেন্ড মানি।';
-    	
-// 		document.getElementById('step2').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('step2').innerHTML = 'ধাপ ২: key সংগ্রহ। <i class="fa-solid fa-key" style="color: #5e6a75;"></i>';
-		
-// 		document.getElementById('subsPlanHeader').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('subsPlanHeader').innerHTML = 'সাবস্ক্রিপশন প্ল্যান';
-		
-		
-// 		document.getElementById('howToBuyHead').innerHTML = 'সিরিয়াল key কিনতে নিম্নোক্ত <strong>২টি ধাপ</strong> অনুসরণ করুন'
-// 		document.getElementById('howToBuyHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
-		
-// 		document.getElementById('claimInst').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('claimInst').innerHTML = 'পছন্দের প্ল্যান অনুযায়ী সেন্ড মানি করার পর ফোনের শেষের চারটি ডিজিট বা ট্রানসাকশান আইডি অথবা স্ক্রিনশট এবং প্ল্যান উল্লেখ করে নিম্নোক্ত যেকোনো মাধ্যমে মেসেজ করুন।<br><br><i class="fa-solid fa-hourglass-start"></i> সাধারণত <strong>কয়েক সেকেন্ড</strong> থেকে শুরু করে  <strong>মিনিট</strong>, এমনকি ডিমান্ড বেশি থাকা অবস্থায় key পাঠাতে <strong>এক ঘন্টা</strong> পর্যন্ত সময় লাগতে পারে।'
-		
-// 		document.getElementById('howToActivateHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('howToActivateHead').innerHTML = '<i class="fa-solid fa-circle-play"></i> এক্টিভেশন প্রক্রিয়া জানতে <strong>১ মিনিটের</strong> ছোট্ট ভিডিওটি দেখে নিন।'
-		
-		
-// 		document.getElementById('InstructionHeaderForActivation').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('InstructionHeaderForActivation').innerHTML = 'এক্টিভেশনের ধাপ সমূহ:'
-		
-		
-// 		document.getElementById('howToActivate').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('howToActivate').innerHTML = '১। কম্পিউটারের টাইমজোন <strong>Dhaka, Bangladesh</strong> সেট করে নিন এবং দেখেনিন সময় ঠিক আছে কি না।<br>২। সিরিয়াল key দিয়ে এক্টিভেট করার পর <strong>device ID</strong> একটি নিরাপদ জায়গায় সেভ করে রাখুন।<br><br><i class="fa-solid fa-thumbtack" style="color: #ff0000;"></i> মেয়াদ থাকাকালীন device ID ব্যাবহার করে ঐ ডিভাইসে Nms Kontho <strong>যতবার ইচ্ছা</strong> এক্টিভেট করা যাবে।<br><i class="fa-regular fa-star"></i> প্রয়োজন হলে <strong>বিনামূল্যে রিনিউ</strong> করে নেওয়া যাবে।'
-		
-
-
-
-//     document.getElementById('RenewPeraHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('RenewPeraHead').innerHTML = 'আইডি <strong>রিনিউ</strong> করতে চান?'
-		
-// 		document.getElementById('renewReqHeader').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('renewReqHeader').innerHTML = 'ডিভাইস আইডি রিনিউ করতে রিকোয়েস্ট পাঠান।'
-		
-// 		const inputField = document.getElementById('DeviceIdInputField');
-//       	inputField.style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		inputField.placeholder = 'আইডি এখানে পেস্ট করুন।';  // Set the placeholder text
-		
-// 		document.getElementById('renewalPlatsHead').style.fontFamily = "Noto Sans Bengali, sans-serif";
-// 		document.getElementById('renewalPlatsHead').innerHTML = 'যে মাধ্যমে রিকোয়েস্ট পাঠাতে চান সেখানে ক্লিক করুন:'
-// 	} else {
-// 		document.getElementById('numberSerial').style.fontFamily = "";
-// 		document.getElementById('numberSerial').innerHTML = 'Number&nbsp;';
-    
-//     document.getElementById('totalAmount').style.fontFamily = "";
-// 		document.getElementById('totalAmount').innerHTML = 'Total Amount&nbsp;&nbsp;';
-
-
-
-//     document.getElementById('daysHead').style.fontFamily = "";
-// 		document.getElementById('daysHead').innerHTML = 'Days&nbsp;';
-    
-//     document.getElementById('UnloadAllPremiumFeatures').style.fontFamily = "";
-// 		document.getElementById('UnloadAllPremiumFeatures').innerHTML = 'Unlock All Premium Features';
-
-
-// 		document.getElementById('step1').style.fontFamily = "";
-// 		document.getElementById('step1').innerHTML = 'Step 1: Send Money';
-		
-// 		document.getElementById('step2').style.fontFamily = "";
-// 		document.getElementById('step2').innerHTML = 'Step 2: Claim the Key <i class="fa-solid fa-key" style="color: #5e6a75;"></i>';
-		
-// 		document.getElementById('subsPlanHeader').style.fontFamily = "";
-// 		document.getElementById('subsPlanHeader').innerHTML = 'Subscription Plans';
-		
-		
-// 		// document.getElementById('freeTrialMsg').style.fontFamily = "";
-// 		// document.getElementById('freeTrialMsg').innerHTML = 'Obtain your free trial key from any of our contact platforms:&nbsp; <a href="m.me/101469266332395" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> <a href="https://wa.me/8801689865823" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></a> <a href="https://t.me/NmsKontho" target="_blank"><i class="fa-brands fa-telegram"></i> </a><br>📣<strong>We encourage users to try the application using the trial key before considering a purchase.</strong>';
-		
-// 		document.getElementById('howToBuyHead').style.fontFamily = "";
-// 		document.getElementById('howToBuyHead').innerHTML = '<strong>How to buy a serial key?</strong> Just follow these 2 steps:'
-        
-// 		document.getElementById('claimInst').style.fontFamily = "";
-// 		document.getElementById('claimInst').innerHTML = 'After sending the payment for your selected subscription plan, send message on any of the following platforms with the <strong>last 4 digits</strong> of your phone number or <strong>transaction ID</strong> or a <strong>screenshot</strong>, along with your <strong>plan details</strong>.<br><br><i class="fa-solid fa-hourglass-start"></i> If demand is high, it may take <strong>up to an hour</strong> to send the key.'
-		
-// 		document.getElementById('howToActivateHead').style.fontFamily = "";
-// 		document.getElementById('howToActivateHead').innerHTML = '<i class="fa-solid fa-circle-play"></i> Watch the full <strong>1-min</strong> video to learn how to activate Nms Kontho properly.'
-		
-		
-// 		document.getElementById('InstructionHeaderForActivation').style.fontFamily = "";
-// 		document.getElementById('InstructionHeaderForActivation').innerHTML = 'Activation Instructions:'
-		
-// 		document.getElementById('howToActivate').style.fontFamily = "";
-// 		document.getElementById('howToActivate').innerHTML = '1️⃣ Set your system timezone to <strong>Dhaka, Bangladesh</strong>and ensure your device time is correct.&nbsp;<br>2️⃣ Use one-time <strong>serial key</strong> for activation and save the <strong>device ID</strong> in a safe place.<br><br><i class="fa-solid fa-thumbtack" style="color: #ff0000;"></i> You can use that <strong>device ID</strong> to activate Nms Kontho on the same device <strong>unlimited times</strong> until the serial key expires. You can also renew the ID for <strong>free</strong>.<br><i class="fa-regular fa-star"></i> When needed, simply send us your device ID, and we will renew it for you in just a couple of minutes.'
-    
-	
-		
-// 		document.getElementById('RenewPeraHead').style.fontFamily = "";
-// 		document.getElementById('RenewPeraHead').innerHTML = 'Need to <strong>Renew</strong> Your Device ID?'
-		
-// 		document.getElementById('renewReqHeader').style.fontFamily = "";
-// 		document.getElementById('renewReqHeader').innerHTML = 'Request for a Renewed Serial Key'
-		
-// 		const inputField = document.getElementById('DeviceIdInputField');
-//       	inputField.style.fontFamily = "";
-// 		inputField.placeholder = 'Paste your Device ID here';  // Set the placeholder text
-		
-// 		document.getElementById('renewalPlatsHead').style.fontFamily = "";
-// 		document.getElementById('renewalPlatsHead').innerHTML = 'Select where you want to send the request'
-// 	}
-// });
-
 
 const originalTexts = new Map();
 
@@ -361,8 +244,6 @@ function sendRequest (mainLink) {
 setPrice(count=1);
 
 
-
-
 function setOfferCountdown(finishDate) {
   const daysNum = document.getElementById("daysNum");
   const hoursNum = document.getElementById("hoursNum");
@@ -403,7 +284,9 @@ function setOfferCountdown(finishDate) {
   // Example usage:
   if (discountPercent === 0) {
     offerCountDownDiv.style.display = 'none';
+    
   }else{
     setOfferCountdown(finishDate);
+    // offerCountDownDiv.style.display = 'none';
   }
  
