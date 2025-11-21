@@ -7,7 +7,7 @@ fetch('navbar.html')
            });
 
 
-discountPercent = 20; // Default discount percentage
+discountPercent = 0; // Default discount percentage
  // Set the finish date (year, month (0-indexed), day, hour, minute, second)
 // new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds)
 const finishDate = new Date(2025, 10, 22, 0, 0, 0, 0); // January 1, 2026, 00:00:00// December 25th, 2024, 23:59:59
