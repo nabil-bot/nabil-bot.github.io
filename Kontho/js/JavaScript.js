@@ -1,4 +1,4 @@
-var version = 7.031
+var version = 7.032
 
 
 fetch('navbar.html')
