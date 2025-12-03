@@ -81,47 +81,43 @@
 		  </table>
   </div>
 
+
+
+
+  
+
   <br>
   <br>
-  <!-- Paste this HTML where you want the table -->
-<div class="pricing-table">
-  <div class="plan plan--free" aria-labelledby="free-title">
-    <header class="plan__header">
-      <h3 id="free-title" class="plan__title">Free</h3>
-      <p class="plan__price"><span class="price-amount">$0</span><span class="price-period"> / mo</span></p>
-    </header>
+ 
 
-    <ul class="plan__features" role="list">
-      <li><span class="icon icon--yes" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/></svg></span>Up to 3 projects</li>
-      <li><span class="icon icon--yes" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/></svg></span>Basic analytics</li>
-      <li><span class="icon icon--no" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18.3 5.71l-1.41-1.41L12 9.19 7.11 4.3 5.7 5.71 10.59 10.6 5.7 15.49l1.41 1.41L12 12.01l4.89 4.89 1.41-1.41L13.41 10.6z"/></svg></span>Priority support</li>
-      <li><span class="icon icon--no" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18.3 5.71l-1.41-1.41L12 9.19 7.11 4.3 5.7 5.71 10.59 10.6 5.7 15.49l1.41 1.41L12 12.01l4.89 4.89 1.41-1.41L13.41 10.6z"/></svg></span>Team seats</li>
-    </ul>
+<div class="feature-compare">
+  <div class="compare-header">
+    <div class="col feature-col">
+		
 
-    <footer class="plan__footer">
-      <button class="btn btn--outline">Get Started</button>
-    </footer>
+		
+		
+		<span class="icon icon--limited" title="Limited">
+  <svg viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
+  </svg> </span> <a style="color: #98a5b1;">= Limited</a></div>
+    <div class="col free-col">Free</div>
+    <div class="col pro-col">Pro</div>
   </div>
 
-  <div class="plan plan--pro" aria-labelledby="pro-title">
-    <div class="ribbon">Popular</div>
-    <header class="plan__header">
-      <h3 id="pro-title" class="plan__title">Pro</h3>
-      <p class="plan__price"><span class="price-amount">$12</span><span class="price-period"> / mo</span></p>
-    </header>
-
-    <ul class="plan__features" role="list">
-      <li><span class="icon icon--yes" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/></svg></span>Unlimited projects</li>
-      <li><span class="icon icon--yes" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/></svg></span>Advanced analytics</li>
-      <li><span class="icon icon--yes" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/></svg></span>Priority support</li>
-      <li><span class="icon icon--yes" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/></svg></span>Team seats & roles</li>
-    </ul>
-
-    <!-- <footer class="plan__footer">
-      <button class="btn btn--primary">Upgrade</button>
-    </footer> -->
-  </div>
+  <div id="featureRows"></div>
 </div>
+
+<script src="features.js"></script>
+
+
+
+
+
+
+
+
 
 
 

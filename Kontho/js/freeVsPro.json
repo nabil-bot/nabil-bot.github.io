@@ -1,0 +1,163 @@
+{
+  "features": [
+    {
+      "name": "Voice Typing",
+      "free": true,
+      "pro": true,
+      "limited": true,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=1380"
+    },
+    {
+      "name": "Speech Mapping",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=1683"
+    },
+    {
+      "name": "Word Suggestions",
+      "free": true,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/6wAlGCfU34k?t=124"
+    }
+    ,
+    {
+      "name": "Word Customization",
+      "free": true,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=810"
+    }
+    ,
+    {
+      "name": "Basic Spellchecker",
+      "free": true,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/6wAlGCfU34k?t=148"
+    }
+    ,
+    {
+      "name": "Auto Correction",
+      "free": true,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=117"
+    }
+    
+    ,
+    {
+      "name": "Google Suggestions",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=234"
+    }
+    ,
+    {
+      "name": "Gemini Suggestions",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=1036"
+    }
+    ,
+    {
+      "name": "Predict Next Word",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=234"
+    }
+    ,
+    {
+      "name": "Word by word backup",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=89"
+    }
+    ,
+    {
+      "name": "Remember selected words",
+      "free": true,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=390"
+    }
+    ,
+    {
+      "name": "Remember recent words",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/6wAlGCfU34k?t=309"
+    }
+    ,
+    {
+      "name": "Remember recent sentences",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/6wAlGCfU34k?t=273"
+    }
+    ,
+    {
+      "name": "Snippets",
+      "free": false,
+      "pro": true,
+      "limited": true,
+      "demo": "https://youtu.be/6wAlGCfU34k?t=66"
+    }
+    
+    ,
+    {
+      "name": "Keyboard Shortcuts",
+      "free": true,
+      "pro": true,
+      "limited": true,
+      "demo": "https://youtu.be/kdF0NgkRBmo"
+    }
+    ,
+    {
+      "name": "Word Manager",
+      "free": true,
+      "pro": true,
+      "limited": true,
+      "demo": "https://youtu.be/6wAlGCfU34k?t=309"
+    }
+    ,
+    {
+      "name": "Layout/Encoder editor",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": "https://youtu.be/kdF0NgkRBmo?t=1883"
+    }
+    ,
+    {
+      "name": "Custom Appearance",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": ""
+    }
+    ,
+    {
+      "name": "Ads",
+      "free": true,
+      "pro": false,
+      "limited": true,
+      "demo": "https://www.facebook.com/share/p/163DGbe5hg/"
+    }
+    ,
+    {
+      "name": "9+ Miscellaneous Optimizations",
+      "free": false,
+      "pro": true,
+      "limited": false,
+      "demo": ""
+    }
+  ]
+}

@@ -290,3 +290,145 @@ function setOfferCountdown(finishDate) {
     // offerCountDownDiv.style.display = 'none';
   }
  
+
+
+
+
+
+async function loadFeatures() {
+  try {
+    const response = await fetch('js/freeVsPro.json');
+    const data = await response.json();
+
+    const container = document.getElementById('featureRows');
+    container.innerHTML = ''; // clear existing rows if any
+
+    data.features.forEach((item, index) => { // <--- Added 'index' here
+      const row = document.createElement('div');
+      row.className = 'compare-row';
+
+      // 1. Calculate the duration: e.g., index 0 = 300ms, index 1 = 500ms, index 2 = 700ms, etc.
+      // We start with a base duration (e.g., 300ms) and add a step (e.g., 200ms) for each item.
+      const duration = 300 + (index * 100);
+
+      // Conditional Link HTML (from previous customization)
+      const demoLinkHtml = item.demo
+        ? `<a class="demo-link" href="${item.demo}" target="_blank" title="Watch demo"><em class="fa-brands fa-youtube" style="color: #ff0000;"></em></a>`
+        : ''; // Empty string if no link exists
+
+      // 2. Add data-aos attributes to the row element
+      row.setAttribute('data-aos', 'fade-right');
+      row.setAttribute('data-aos-duration', duration); // <--- Added gradual duration
+
+      row.innerHTML = `
+        <div class="col feature-col">${demoLinkHtml} ${item.name}</div>
+
+        <div class="col free-col">
+          ${getIcon(item.free, item.limited)}
+        </div>
+
+        <div class="col pro-col">
+          ${getIcon(item.pro)}
+        </div>
+      `;
+
+      container.appendChild(row);
+    });
+
+  } catch (error) {
+    console.error("Error loading features:", error);
+  }
+}
+
+function getIcon(isEnabled, limited) {
+  if (limited){
+    return `<span class="icon icon--limited" title="Limited">
+  <svg viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="6" y1="12" x2="18" y2="12" stroke="currentColor" stroke-width="2"/>
+  </svg> </span>`;
+  }
+  
+  if (isEnabled) {
+    return `
+      <span class="icon icon--yes">
+        <svg viewBox="0 0 24 24">
+          <path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/>
+        </svg>
+      </span>
+
+    `;
+  }
+
+  return `
+    <span class="icon icon--no">
+      <svg viewBox="0 0 24 24">
+        <path d="M18.3 5.71l-1.41-1.41L12 9.19 7.11 4.3 5.7 5.71 10.59 10.6 
+        5.7 15.49l1.41 1.41L12 12.01l4.89 4.89 1.41-1.41L13.41 10.6z"/>
+      </svg>
+    </span>
+  `;
+}
+// document.addEventListener("DOMContentLoaded", loadFeatures);
+
+loadFeatures();
+
+
+
+
+
+
+// async function loadFeatures() {
+//   try {
+//     const response = await fetch('js/freeVsPro.json');
+//     const data = await response.json();
+
+//     const container = document.getElementById('featureRows');
+//     container.innerHTML = '';
+
+//     data.features.forEach(item => {
+//       const row = document.createElement('div');
+//       row.className = 'compare-row';
+//       let featureHTML = `<div class="col feature-col">${item.name}`;
+//       if (item.demo && item.demo.trim() !== "") {
+//         featureHTML += ` <a class="demo-link" href="${item.demo}" target="_blank" title="Watch demo">🎬</a>`;
+//       }
+//       featureHTML += `</div>`;
+
+//       row.innerHTML = `
+//         ${featureHTML}
+//         <div class="col free-col">${getIcon(item.free)}</div>
+//         <div class="col pro-col">${getIcon(item.pro)}</div>
+//       `;
+
+//       container.appendChild(row);
+//     });
+
+//   } catch (error) {
+//     console.error("Error loading features:", error);
+//   }
+// }
+
+// function getIcon(isEnabled) {
+//   if (isEnabled) {
+//     return `
+//       <span class="icon icon--yes">
+//         <svg viewBox="0 0 24 24">
+//           <path d="M20.285 6.708l-11.09 11.09-5.48-5.48 1.415-1.414 4.065 4.066 9.675-9.675z"/>
+//         </svg>
+//       </span>
+//     `;
+//   }
+
+//   return `
+//     <span class="icon icon--no">
+//       <svg viewBox="0 0 24 24">
+//         <path d="M18.3 5.71l-1.41-1.41L12 9.19 7.11 4.3 5.7 5.71 10.59 10.6 
+//         5.7 15.49l1.41 1.41L12 12.01l4.89 4.89 1.41-1.41L13.41 10.6z"/>
+//       </svg>
+//     </span>
+//   `;
+// }
+
+
+// document.addEventListener("DOMContentLoaded", loadFeatures);
