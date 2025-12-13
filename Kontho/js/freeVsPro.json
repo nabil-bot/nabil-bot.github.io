@@ -1,6 +1,13 @@
 {
   "features": [
     {
+      "name": "Core features of Avro and Bijoy",
+      "free": true,
+      "pro": true,
+      "limited": false,
+      "demo": ""
+    },
+    {
       "name": "Voice Typing",
       "free": true,
       "pro": true,
