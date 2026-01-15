@@ -183,7 +183,7 @@ let state = false; // default
     setTextAndFont('lifetimeH4', 'লাইফটাইম অ্যাক্সেস', isBangla);
     setTextAndFont('lifetimePrice', '১৬২৫ <i class="fa-solid fa-bangladeshi-taka-sign"></i>', isBangla);
     setTextAndFont('saveTime', 'যে পরিমাণ সময় সাশ্রয় হবে, তার তুলনায় নিম্নোক্ত 💰 মূল্য তালিকা খুবই সামান্য।', isBangla);
-    setTextAndFont('lifetimedes', '২টি ডিভাইস • এককালীন পেমেন্ট<br>ডিভাইস পরিবর্তন করতে পারবেন', isBangla);
+    setTextAndFont('lifetimedes', 'সর্বোচ্চ ২টি ডিভাইস • এককালীন পেমেন্ট<br>ডিভাইস পরিবর্তন করতে পারবেন', isBangla);
     setTextAndFont('numberSerial', 'সংখ্যা', isBangla);
     setTextAndFont('totalAmount', 'মোট পরিমাণ', isBangla);
     setTextAndFont('daysHead', 'দিন', isBangla);
